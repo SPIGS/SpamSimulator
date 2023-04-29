@@ -1,21 +1,31 @@
-.toolbar-button {
+.dropdown {
     -unity-font: url('project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#Arial');
     color: rgb(0, 0, 0);
-    background-color: rgb(191, 184, 191);
+    background-color: rgb(196, 196, 196);
+    font-size: 24px;
+    border-right-color: rgb(0, 0, 0);
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+}
+
+.dropdown-button {
+    font-size: 24px;
     border-left-color: rgba(0, 0, 0, 0);
     border-right-color: rgba(0, 0, 0, 0);
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
-    font-size: initial;
-    margin-right: 10px;
-    margin-left: 0;
-    height: auto;
-    width: auto;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    max-height: none;
+    background-color: rgb(196, 196, 196);
+    color: rgb(0, 0, 0);
+    padding-left: 30px;
+    padding-right: 30px;
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
@@ -26,12 +36,6 @@
     border-bottom-right-radius: 0;
 }
 
-.toolbar-button:hover {
+.dropdown-button:hover {
     background-color: rgb(106, 106, 106);
-    color: rgb(255, 255, 255);
-}
-
-.toolbar-button-selected {
-    background-color: rgb(106, 106, 106);
-    color: rgb(255, 255, 255);
 }
