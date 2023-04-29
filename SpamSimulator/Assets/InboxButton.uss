@@ -1,0 +1,26 @@
+.inbox-button {
+    background-color: rgba(255, 255, 255, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgba(0, 0, 0, 255);
+    -unity-text-align: middle-left;
+    -unity-background-image-tint-color: rgba(190, 56, 56, 255);
+}
+
+.inbox-button:hover {
+    background-color: rgba(188, 188, 188, 255);
+}
+
+.inbox-item-label-title {
+    font-size: 14px;
+    -unity-font-style: bold;
+    -unity-font: url('project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#Arial');
+}
+
+.inbox-item-label {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 255);
+    -unity-font: url('project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#Arial');
+}
