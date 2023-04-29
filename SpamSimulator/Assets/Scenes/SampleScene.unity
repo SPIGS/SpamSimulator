@@ -432,6 +432,7 @@ GameObject:
   - component: {fileID: 1890862834}
   - component: {fileID: 1890862837}
   - component: {fileID: 1890862836}
+  - component: {fileID: 1890862838}
   m_Layer: 5
   m_Name: UIDocument
   m_TagString: Untagged
@@ -495,3 +496,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0726031f7fcc9893836171acb6e4569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fontScale: 1
+--- !u!114 &1890862838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890862833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dbddac8118b8c46789649aecd12928b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inboxButtonTemplate: {fileID: 9197481963319205126, guid: acc23b98b19457a62b243ecb2bbbd961, type: 3}
+  fontScaler: {fileID: 1890862837}
+  newEmailDelaySec: 1
