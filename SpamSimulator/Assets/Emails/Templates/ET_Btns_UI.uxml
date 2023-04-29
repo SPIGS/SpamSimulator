@@ -1,9 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:VisualElement name="Container" class="Template_Container" style="padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px; align-items: center; flex-grow: 1;">
-        <ui:Button text="Button" display-tooltip-when-elided="true" name="B1" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgba(255, 39, 39, 255);" />
-        <ui:Button text="Button" display-tooltip-when-elided="true" name="B2" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgba(171, 109, 0, 255);" />
-        <ui:Button text="Button" display-tooltip-when-elided="true" name="B3" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgba(66, 81, 221, 255);" />
-        <ui:Button text="Button" display-tooltip-when-elided="true" name="B4" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgba(25, 214, 15, 255);" />
-        <ui:Button text="Button" display-tooltip-when-elided="true" name="B5" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgba(185, 25, 172, 255);" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(255, 39, 39);" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(171, 109, 0);" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(66, 81, 221);" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(25, 214, 15);" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(185, 25, 172);" />
     </ui:VisualElement>
 </ui:UXML>
