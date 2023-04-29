@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px; align-items: center; flex-grow: 1;">
+        <ui:VisualElement name="Img_Container" style="-unity-background-scale-mode: scale-to-fit; max-width: 100%; align-items: center; overflow: hidden; max-height: 70%;">
+            <ui:VisualElement name="Img1" style="background-image: url(&apos;project://database/Assets/rotatingspam.gif?fileID=2800000&amp;guid=896f46ceae8382147a7b12e418832395&amp;type=3#rotatingspam&apos;); width: 664px; height: 403px; -unity-background-scale-mode: scale-to-fit;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

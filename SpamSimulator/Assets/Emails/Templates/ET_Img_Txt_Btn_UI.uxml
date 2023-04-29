@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px; align-items: center; flex-grow: 1;">
+        <ui:VisualElement name="Img_Container" style="-unity-background-scale-mode: scale-to-fit; max-width: 100%; align-items: center; overflow: hidden; max-height: 20%;">
+            <ui:VisualElement name="Img1" style="background-image: url(&apos;project://database/Assets/rotatingspam.gif?fileID=2800000&amp;guid=896f46ceae8382147a7b12e418832395&amp;type=3#rotatingspam&apos;); width: 304px; height: 403px; -unity-background-scale-mode: scale-to-fit;" />
+        </ui:VisualElement>
+        <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." display-tooltip-when-elided="true" name="P1" style="white-space: normal; padding-top: 16px; padding-bottom: 16px;" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="B1" />
+    </ui:VisualElement>
+</ui:UXML>
