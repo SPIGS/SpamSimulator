@@ -1,16 +1,16 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:VisualElement name="Container" class="Template_Container" style="padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px; align-items: center; flex-grow: 1;">
         <ui:VisualElement name="Img_Container" style="-unity-background-scale-mode: scale-to-fit; max-width: 100%; align-items: center; overflow: hidden; max-height: 20%;">
-            <ui:VisualElement name="Img1" style="background-image: url(&apos;project://database/Assets/rotatingspam.gif?fileID=2800000&amp;guid=896f46ceae8382147a7b12e418832395&amp;type=3#rotatingspam&apos;); width: 664px; height: 403px; -unity-background-scale-mode: scale-to-fit;" />
+            <ui:VisualElement name="Image" style="background-image: url(&apos;project://database/Assets/Emails/Images/rotatingspam.gif?fileID=2800000&amp;guid=896f46ceae8382147a7b12e418832395&amp;type=3#rotatingspam&apos;); width: 664px; height: 403px; -unity-background-scale-mode: scale-to-fit;" />
         </ui:VisualElement>
-        <ui:Label text="Title" display-tooltip-when-elided="true" name="H1" style="white-space: normal; padding-top: 16px; padding-bottom: 0; font-size: 24px;" />
-        <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip." display-tooltip-when-elided="true" name="P1" style="white-space: normal; padding-top: 16px; padding-bottom: 16px;" />
-        <ui:Button text="Button" display-tooltip-when-elided="true" name="B1" style="font-size: 20px;" />
+        <ui:Label text="Title" display-tooltip-when-elided="true" name="Header" style="white-space: normal; padding-top: 16px; padding-bottom: 0; font-size: 24px;" />
+        <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip." display-tooltip-when-elided="true" name="Paragraph" style="white-space: normal; padding-top: 16px; padding-bottom: 16px;" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" style="font-size: 20px;" />
         <ui:VisualElement name="Img_Text_Container" style="flex-direction: row; align-items: center; width: 100%;">
             <ui:VisualElement name="Img_Container" style="-unity-background-scale-mode: scale-to-fit; max-width: none; overflow: hidden; max-height: 100%; width: 30%; align-items: center;">
-                <ui:VisualElement name="Img2" style="background-image: url(&apos;project://database/Assets/rotatingspam.gif?fileID=2800000&amp;guid=896f46ceae8382147a7b12e418832395&amp;type=3#rotatingspam&apos;); width: 100%; height: 403px; -unity-background-scale-mode: scale-to-fit;" />
+                <ui:VisualElement name="Image" style="background-image: url(&apos;project://database/Assets/Emails/Images/rotatingspam.gif?fileID=2800000&amp;guid=896f46ceae8382147a7b12e418832395&amp;type=3#rotatingspam&apos;); width: 100%; height: 403px; -unity-background-scale-mode: scale-to-fit;" />
             </ui:VisualElement>
-            <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip." display-tooltip-when-elided="true" name="P2" style="white-space: normal; flex-wrap: wrap; width: 70%; padding-left: 16px;" />
+            <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip." display-tooltip-when-elided="true" name="Paragraph" style="white-space: normal; flex-wrap: wrap; width: 70%; padding-left: 16px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
