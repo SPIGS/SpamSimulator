@@ -53,6 +53,11 @@ public class FontScaler : MonoBehaviour
             }else if(element.ClassListContains("dropdown")) {
                 element.style.paddingTop = 1 * fontScale;
                 element.style.paddingBottom = 1 * fontScale;
+            } else if (element.ClassListContains("blue-screen-text")) {
+                element.style.fontSize = 32 * fontScale;
+            } else if (element.ClassListContains("blue-screen-button"))
+            {
+                element.style.fontSize = 32 * fontScale;
             }
 
             //Name execptions
