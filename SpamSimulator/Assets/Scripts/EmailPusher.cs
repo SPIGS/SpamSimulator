@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 public class EmailPusher : MonoBehaviour
 {
     public VisualTreeAsset inboxButtonTemplate;
+    public FontScaler fontScaler;
     public float newEmailDelaySec = 1.0f; 
 
     private float timeElapsed = 0.0f;
@@ -60,7 +61,17 @@ public class EmailPusher : MonoBehaviour
 
         //Set From and Subject
         test.Q<Label>("FromLabel").text = from;
+        test.Q<Label>("FromLabel").style.fontSize = 24 * fontScaler.fontScale;
         test.Q<Label>("SubjectLabel").text = emailCounter.ToString();
+        test.Q<Label>("SubjectLabel").style.fontSize = 24 * fontScaler.fontScale;
+        test.Q<Label>("FromTitle").style.fontSize = 24 * fontScaler.fontScale;
+        test.Q<Label>("SubjectTitle").style.fontSize = 24 * fontScaler.fontScale;
+
+        //Button scaling
+        test.Q<VisualElement>("TrashIcon").style.width = 24 * fontScaler.fontScale;
+        test.Q<VisualElement>("TrashIcon").style.height = 24 * fontScaler.fontScale;
+        test.Q<VisualElement>("PassIcon").style.width = 24 * fontScaler.fontScale;
+        test.Q<VisualElement>("PassIcon").style.height = 24 * fontScaler.fontScale;
 
         //Set button callbacks
         test.Q<Button>("MainItemButton").clickable.clicked += () => {

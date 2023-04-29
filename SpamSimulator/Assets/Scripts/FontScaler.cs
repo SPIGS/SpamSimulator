@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 public class FontScaler : MonoBehaviour
 {
-    private float fontScale = 1.0f;
+    public float fontScale = 1.0f;
     private VisualElement root;
 
     void Start() {
