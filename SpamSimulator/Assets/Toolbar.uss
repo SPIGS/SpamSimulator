@@ -1,0 +1,17 @@
+.toolbar-button {
+    -unity-font: url('project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#Arial');
+    color: rgba(0, 0, 0, 255);
+    background-color: rgba(191, 184, 191, 255);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    font-size: 24px;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.toolbar-button:hover {
+    background-color: rgba(106, 106, 106, 255);
+    color: rgba(255, 255, 255, 255);
+}
