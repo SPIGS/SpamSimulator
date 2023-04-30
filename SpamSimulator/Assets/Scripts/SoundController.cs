@@ -11,22 +11,32 @@ public class SoundController : MonoBehaviour
         public string name;
     }
 
-    public NamedAudioClip[] audioClips;
-    
+    public NamedAudioClip[] soundEffects;
+    public NamedAudioClip[] musicTracks;
     [Range(0.0f, 1.0f)]
-    public float soundEffectsVolume;
-    
-    private AudioSource audioSource;
-
-    void Start () {
-        audioSource = GetComponent<AudioSource>();
-    }
+    public float soundEffectsVolume = 1.0f;
+    [Range(0.0f, 1.0f)]
+    public float musicVolume = 1.0f;
+    public AudioSource effectsSource;
+    public AudioSource musicSource;
 
     public void PlayAudioClip(string name) {
-        foreach(NamedAudioClip audioClip in audioClips) {
+        foreach(NamedAudioClip audioClip in soundEffects) {
             if (audioClip.name == name) {
-                audioSource.clip = audioClip.clip;
-                audioSource.Play();
+                effectsSource.clip = audioClip.clip;
+                effectsSource.Play();
+                break;
+            }
+        }
+    }
+
+    public void PlayMusic(string name) {
+        foreach (NamedAudioClip audioClip in soundEffects)
+        {
+            if (audioClip.name == name)
+            {
+                musicSource.clip = audioClip.clip;
+                musicSource.Play();
                 break;
             }
         }
@@ -34,6 +44,12 @@ public class SoundController : MonoBehaviour
 
     public void SetSoundEffectsVolume (float volume) {
         soundEffectsVolume = volume;
-        audioSource.volume = soundEffectsVolume;
+        effectsSource.volume = soundEffectsVolume;
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        musicVolume = volume;
+        musicSource.volume = musicVolume;
     }
 }
