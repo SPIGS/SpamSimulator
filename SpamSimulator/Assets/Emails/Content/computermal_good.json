@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Computer malfunction",
+  "Sender": "samantha@smallsoft.comp",
+  "SenderName": "Samantha",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi team,\r\n\r\nI'm having some issues with my computer. It keeps making strange noises and the screen is flashing strange colors. I've tried restarting it a few times but the problem keeps coming back. Does anyone have any ideas on what could be causing this? I really need to get this fixed as soon as possible.\r\n\r\nThanks,\r\nSamantha"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Fire alarm testing tomorrow",
+  "Sender": "john@smallsoft.comp",
+  "SenderName": "John",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi everyone,\r\n\r\nI just wanted to remind you all that we will be conducting fire alarm testing tomorrow. This is a routine test and there's no need to be alarmed. However, please be aware that there may be loud noises and flashing lights during the testing. If you have any questions or concerns, please feel free to reach out to me or the facilities team.\r\n\r\nThanks,\r\nJohn"
+  ]
+}
