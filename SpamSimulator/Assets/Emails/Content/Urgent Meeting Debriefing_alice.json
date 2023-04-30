@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Urgent Meeting Debriefing",
+  "Sender": "alice@smallsoft.comp",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi Emily,\r\n\r\nI wanted to discuss the outcome of the meeting with the bigsoft team yesterday. I thought things were going well until Tom's outburst. It was extremely unprofessional and I'm worried it may have ruined our chances of collaboration. Do you have any thoughts on how we should proceed?\r\n\r\nBest regards,\r\nAlice"
+  ]
+}

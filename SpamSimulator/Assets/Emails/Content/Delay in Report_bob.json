@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Delay in Sales Report",
+  "Sender": "bob@smallsoft.comp",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi Alice,\r\n\r\nI am sorry to inform you that I won't be able to provide the latest copy of the sales report by end of the day. The data from the system is taking longer than expected to compile and analyze. I should have it ready by tomorrow morning.\r\n\r\nPlease let me know if this is a problem or if there is anything else I can do to help.\r\n\r\nSincerely,\r\nBob"
+  ]
+}

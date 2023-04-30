@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Unprofessional Behavior",
+  "Sender": "cindy@smallsoft.comp",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Dear Alice,\r\n\r\nI am writing to report a recent incident that has left me quite upset. Last week during the meeting, Tom made several unprofessional remarks towards me and my team. I feel that this kind of behavior is unacceptable in the workplace and I would like to request that you take appropriate action to address this issue.\r\n\r\nThank you for your attention to this matter.\r\n\r\nBest regards,\r\nCindy"
+  ]
+}

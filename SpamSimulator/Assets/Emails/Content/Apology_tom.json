@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Apology for Unprofessional Remarks",
+  "Sender": "tom@smallsoft.comp",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Dear Alice and Cindy,\r\n\r\nI would like to offer my sincere apologies for the unprofessional remarks that I made during the meeting last week. My comments were inappropriate and should not have been made.\r\n\r\nI have already spoken with Cindy privately and offered my apologies. I would like to assure both of you that this will not happen again in the future.\r\n\r\nThank you for bringing this matter to my attention.\r\n\r\nSincerely,\r\nTom"
+  ]
+}
