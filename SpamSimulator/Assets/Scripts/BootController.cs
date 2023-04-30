@@ -13,7 +13,7 @@ public class BootController : MonoBehaviour
     public SoundController soundController;
     public UIDocument uIDocument;
     private float timeElapsed = 0.0f;
-    private BootStage stage = BootStage.START;
+    private BootStage stage = BootStage.BEEP;
     private VisualElement root;
     private Label startLabel;
     private int startCount = 0;
@@ -28,6 +28,7 @@ public class BootController : MonoBehaviour
     private int maxSplashCount;
 
     private enum BootStage {
+        BEEP,
         START,
         MEMCHECK,
         BOOT,
@@ -47,8 +48,6 @@ public class BootController : MonoBehaviour
         bootScreen.visible = true;
         splashScreen.visible = false;
         maxSplashCount = (int)(Screen.width / 40);
-        // Play boot beep   
-        soundController.PlaySoundEffect("Boot Beep");
     }
 
     // Update is called once per frame
@@ -56,6 +55,10 @@ public class BootController : MonoBehaviour
     {
         timeElapsed += Time.deltaTime;
         switch(stage){
+            case BootStage.BEEP:
+                soundController.PlaySoundEffect("Boot Beep");
+                stage = BootStage.START;
+            break;
             case BootStage.START:
             if (timeElapsed >= startLabelUpdateSecs) {
                 startLabel.text = startLabel.text + " .";
