@@ -96,7 +96,7 @@ namespace SpamSim
 
             inboxScrollView.Add(inboxItem);
 
-            soundController.PlayAudioClip("New Email");
+            soundController.PlaySoundEffect("New Email");
         }
 
         void OnOpenEmail(Email email)
@@ -124,7 +124,7 @@ namespace SpamSim
 
             // if delete play trash sound else play approve sound
             if (action == "delete") {
-                soundController.PlayAudioClip("Trash Email");
+                soundController.PlaySoundEffect("Trash Email");
             } else {
 
             }

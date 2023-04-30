@@ -22,7 +22,7 @@ public class BlueScreenController : MonoBehaviour
         root = uiDocument.rootVisualElement;
         Button newgameButton = root.Query<Button>("NewGame");
         newgameButton.Focus();
-        soundController.PlayAudioClip("BIOS Beep");
+        soundController.PlaySoundEffect("BIOS Beep");
     }
 
     // Update is called once per frame

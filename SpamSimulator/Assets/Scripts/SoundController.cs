@@ -17,14 +17,25 @@ public class SoundController : MonoBehaviour
     public float soundEffectsVolume = 1.0f;
     [Range(0.0f, 1.0f)]
     public float musicVolume = 1.0f;
-    public AudioSource effectsSource;
     public AudioSource musicSource;
 
-    public void PlayAudioClip(string name) {
+    void Start () {
+        foreach(NamedAudioClip clip in soundEffects) {
+            GameObject soundObject = new GameObject();
+            soundObject.name = clip.name + " Source";
+            AudioSource soundSource = soundObject.AddComponent<AudioSource>();
+            soundObject.transform.SetParent(transform);
+        }
+    }
+
+    public void PlaySoundEffect(string name) {
         foreach(NamedAudioClip audioClip in soundEffects) {
             if (audioClip.name == name) {
-                effectsSource.clip = audioClip.clip;
-                effectsSource.Play();
+                Transform soundObject = transform.Find(audioClip.name + " Source");
+                AudioSource effectSource = soundObject.GetComponent<AudioSource>();
+                effectSource.clip = audioClip.clip;
+                effectSource.volume = soundEffectsVolume;
+                effectSource.Play();
                 break;
             }
         }
@@ -33,7 +44,6 @@ public class SoundController : MonoBehaviour
     public void PlayMusic(string name) {
         foreach (NamedAudioClip audioClip in musicTracks)
         {
-            Debug.Log(audioClip.name);
             if (audioClip.name == name)
             {
                 musicSource.clip = audioClip.clip;
@@ -45,7 +55,6 @@ public class SoundController : MonoBehaviour
 
     public void SetSoundEffectsVolume (float volume) {
         soundEffectsVolume = volume;
-        effectsSource.volume = soundEffectsVolume;
     }
 
     public void SetMusicVolume(float volume)
