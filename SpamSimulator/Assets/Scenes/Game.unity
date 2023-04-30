@@ -528,8 +528,8 @@ MonoBehaviour:
   emailController: {fileID: 555065346}
   adminEmailCounters: 0100000002000000
   score: 0
-  emailDelayRange: {x: 5, y: 10}
-  spamWeight: 0
+  emailDelayRange: {x: 1, y: 2}
+  spamWeight: 0.33
   gameOver: 0
 --- !u!4 &1265334164
 Transform:
