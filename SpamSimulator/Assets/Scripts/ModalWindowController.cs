@@ -26,7 +26,6 @@ public class ModalWindowController : MonoBehaviour
         if (currentDrag != null) {
             currentDrag.style.left = (StyleLength)(mouseX - mouseXOnDrag + windowXOnDrag);
             currentDrag.style.top = (StyleLength)(Screen.height - mouseY);
-            Debug.Log(mouseY);
         }
     }
 

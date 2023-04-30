@@ -13,6 +13,7 @@ public class StoryController : MonoBehaviour
     public int maxActiveStories = 1;
     public List<string> storylineFiles;
     public List<string> spamFiles;
+    public List<string> goodGenericFiles;
     private List<string> goodEmails = new List<string>();
     private List<string> badEmails = new List<string>();
     
@@ -22,7 +23,7 @@ public class StoryController : MonoBehaviour
     
     private List<Story> stories = new List<Story>();
 
-    private List<string> activeStories;
+    private List<string> activeStories = new List<string>();
 
     void Awake () {
         // Load Stories emails
@@ -39,6 +40,13 @@ public class StoryController : MonoBehaviour
             string spamFilename = $"{spamFile}.json";
             badEmails.Add(spamFilename);
         }
+
+        //Load generic good
+        foreach (string goodFile in goodGenericFiles)
+        {
+            string goodFilename = $"{goodFile}.json";
+            goodEmails.Add(goodFilename);
+        }
        
     }
     
@@ -54,13 +62,15 @@ public class StoryController : MonoBehaviour
 
                 //Choose A story
                 Story story = stories[Random.Range(0, stories.Count)];
-                
                 //Check if we can add a new story line/ story is already active. else give a generic email.
-                if (!activeStories.Contains(story.Name) && activeStories.Count + 1 < maxActiveStories 
-                    || activeStories.Contains(story.Name) && activeStories.Count <= maxActiveStories) {
+                if (!activeStories.Contains(story.Name) && activeStories.Count + 1 <= maxActiveStories) {
                     activeStories.Add(story.Name);
+                    //Return story
+                } else if (activeStories.Contains(story.Name)) {
+                    //Return Story
                 } else {
-                    return goodEmails[Random.Range(0, goodEmails.Count)];
+                    int index = Random.Range(0, goodEmails.Count);
+                    return goodEmails[index];
                 }
 
                 // Return actual story
@@ -71,7 +81,6 @@ public class StoryController : MonoBehaviour
                     string email = story.Storyline[0];
                     story.Storyline.Remove(email);
                     story.Storyline.TrimExcess();
-
                     return email;
                 }
                 
