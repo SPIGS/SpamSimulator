@@ -819,6 +819,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5292840395744211088, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+      propertyPath: playStartupSound
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292840395744211088, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: musicTracks.Array.size
       value: 0
       objectReference: {fileID: 0}

@@ -19,6 +19,13 @@ public class SoundController : MonoBehaviour
     public float musicVolume = 1.0f;
     public AudioSource effectsSource;
     public AudioSource musicSource;
+    public bool playStartupSound = false;
+
+    void Start () {
+        if (playStartupSound) {
+            this.PlayAudioClip("Start Up");
+        }   
+    }
 
     public void PlayAudioClip(string name) {
         foreach(NamedAudioClip audioClip in soundEffects) {

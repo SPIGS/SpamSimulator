@@ -53,11 +53,16 @@ MonoBehaviour:
     name: Trash Email
   - clip: {fileID: 8300000, guid: 9f64329664fe5edc7924159ea26624e4, type: 3}
     name: BIOS Beep
+  - clip: {fileID: 8300000, guid: d8c769dfc72773284a2420a5f9788b11, type: 3}
+    name: Boot Beep
+  - clip: {fileID: 8300000, guid: a12e741fc8fa2aa63955342c4cf1f033, type: 3}
+    name: Start Up
   musicTracks: []
   soundEffectsVolume: 1
   musicVolume: 1
   effectsSource: {fileID: 6276695702607677076}
   musicSource: {fileID: 7045594474294985983}
+  playStartupSound: 0
 --- !u!82 &6276695702607677076
 AudioSource:
   m_ObjectHideFlags: 0
