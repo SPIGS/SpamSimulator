@@ -13,6 +13,9 @@ public class SoundController : MonoBehaviour
 
     public NamedAudioClip[] audioClips;
     
+    [Range(0.0f, 1.0f)]
+    public float soundEffectsVolume;
+    
     private AudioSource audioSource;
 
     void Start () {
@@ -27,5 +30,10 @@ public class SoundController : MonoBehaviour
                 break;
             }
         }
+    }
+
+    public void SetSoundEffectsVolume (float volume) {
+        soundEffectsVolume = volume;
+        audioSource.volume = soundEffectsVolume;
     }
 }

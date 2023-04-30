@@ -185,12 +185,12 @@ public class Toolbar : MonoBehaviour
     void ShowAudioSettingsModal () {
         float width = 600.0f * fontScaler.fontScale * fontScaler.fontScale;
         float height = 200.0f * fontScaler.fontScale * fontScaler.fontScale;
-        this.windowCreator.CreateModal(this.audioSettingsWindowTemplate,
+        windowCreator.CreateAudioSettingsModal(audioSettingsWindowTemplate,
                 (Screen.width / 2.0f) - width / 2.0f,
                 (Screen.height / 2.0f) - height / 2.0f,
                 width,
                 height,
-                "Audio Settings");
+                "About this game");
     }
 
     void ShowGraphicsSettingsModal()
