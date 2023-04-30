@@ -31,7 +31,6 @@ public class SoundController : MonoBehaviour
     }
 
     public void PlayMusic(string name) {
-        Debug.Log("sadfsdfa");
         foreach (NamedAudioClip audioClip in musicTracks)
         {
             Debug.Log(audioClip.name);
