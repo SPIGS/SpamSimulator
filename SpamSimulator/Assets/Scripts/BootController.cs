@@ -48,7 +48,7 @@ public class BootController : MonoBehaviour
         splashScreen.visible = false;
         maxSplashCount = (int)(Screen.width / 40);
         // Play boot beep   
-        soundController.PlaySoundEffect("BIOS Beep");
+        soundController.PlaySoundEffect("Boot Beep");
     }
 
     // Update is called once per frame
