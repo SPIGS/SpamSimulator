@@ -1,17 +1,17 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/InboxButton.uss?fileID=7433441132597879392&amp;guid=7e00b955d5bf7e52bbbe83f19b90029e&amp;type=3#InboxButton" />
     <Style src="project://database/Assets/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=521bf7393d89ac74baa331aa3a6d696d&amp;type=3#GeneralStyle" />
+    <Style src="project://database/Assets/scaler.uss?fileID=7433441132597879392&amp;guid=8c16d175bfeee7344a448ebb32324540&amp;type=3#scaler" />
     <ui:Button display-tooltip-when-elided="true" name="MainItemButton" class="gray-gray-bezel" style="font-size: initial; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; flex-grow: 1;">
         <ui:VisualElement class="gray-light-bezel" style="flex-grow: 1;">
             <ui:VisualElement style="flex-direction: row; flex-grow: 1;">
                 <ui:VisualElement name="InboxItemInfoContainer" style="flex-grow: 1; align-items: flex-start; justify-content: flex-start;">
                     <ui:VisualElement name="FromContainer" style="width: 100%; flex-direction: row; flex-grow: 1;">
-                        <ui:Label text="From:" display-tooltip-when-elided="true" name="FromTitle" style="font-size: 24px;" />
-                        <ui:Label text="Administrator" display-tooltip-when-elided="true" name="FromLabel" style="font-size: 24px;" />
+                        <ui:Label text="From:" display-tooltip-when-elided="true" name="FromTitle" class="font-scale" style="font-size: 24px;" />
+                        <ui:Label text="Administrator" display-tooltip-when-elided="true" name="FromLabel" class="font-scale" style="font-size: 24px;" />
                     </ui:VisualElement>
                     <ui:VisualElement name="SubjectContainer" style="width: 100%; flex-direction: row; flex-grow: 1;">
-                        <ui:Label text="Subject:" display-tooltip-when-elided="true" name="SubjectTitle" style="font-size: 24px;" />
-                        <ui:Label text="You&apos;ve got mail!" display-tooltip-when-elided="true" name="SubjectLabel" style="font-size: 24px; overflow: visible; visibility: visible; display: flex;" />
+                        <ui:Label text="Subject:" display-tooltip-when-elided="true" name="SubjectTitle" class="font-scale" style="font-size: 24px;" />
+                        <ui:Label text="You&apos;ve got mail!" display-tooltip-when-elided="true" name="SubjectLabel" class="font-scale" style="font-size: 24px; overflow: visible; visibility: visible; display: flex;" />
                     </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement style="flex-direction: row; align-items: center; min-width: 62px;">

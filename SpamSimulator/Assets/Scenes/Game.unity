@@ -251,7 +251,6 @@ GameObject:
   m_Component:
   - component: {fileID: 555065347}
   - component: {fileID: 555065346}
-  - component: {fileID: 555065348}
   m_Layer: 0
   m_Name: EmailController
   m_TagString: Untagged
@@ -273,7 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uI: {fileID: 1890862834}
   inboxItemTemplate: {fileID: 9197481963319205126, guid: acc23b98b19457a62b243ecb2bbbd961, type: 3}
-  fontScaler: {fileID: 555065348}
+  fontScaler: {fileID: 1825506927}
   gameController: {fileID: 1265334163}
   maxEmails: 64
 --- !u!4 &555065347
@@ -291,20 +290,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &555065348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555065345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0726031f7fcc9893836171acb6e4569, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uI: {fileID: 1890862834}
-  fontScale: 1
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,7 +449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uIDocument: {fileID: 1890862834}
-  fontScaler: {fileID: 555065348}
+  fontScaler: {fileID: 1825506927}
 --- !u!4 &892162418
 Transform:
   m_ObjectHideFlags: 0
@@ -579,6 +564,55 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1825506925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1825506926}
+  - component: {fileID: 1825506927}
+  m_Layer: 0
+  m_Name: ScaleController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1825506926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825506925}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.93310744, y: 0.6757923, z: -1.1139884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1825506927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825506925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0726031f7fcc9893836171acb6e4569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uI: {fileID: 1890862834}
+  fontScale: 1
+  fontSizeLarge: 32
+  fontSizeNormal: 24
+  fontSizeSmall: 12
 --- !u!1 &1890862833
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,4 +676,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aboutWindowTemplate: {fileID: 9197481963319205126, guid: 8be11a9c8edf5e6a08222c6a3d316435, type: 3}
   windowCreator: {fileID: 892162417}
-  fontScaler: {fileID: 555065348}
+  fontScaler: {fileID: 1825506927}

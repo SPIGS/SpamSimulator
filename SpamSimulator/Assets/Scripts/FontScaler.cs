@@ -6,78 +6,58 @@ using UnityEngine.UIElements;
 public class FontScaler : MonoBehaviour
 {
     public UIDocument uI;
-    public float fontScale = 1.0f;
-    private VisualElement root;
+    public float fontScale;
+    public float fontSizeLarge;
+    public float fontSizeNormal;
+    public float fontSizeSmall;
 
-    void Awake() {
-        float playableHeight = Screen.height;
-        fontScale = playableHeight / 1080;
+    void Awake()
+    {
+        if (fontScale == 1)
+        {
+            float playableHeight = Screen.height;
+            fontScale = playableHeight / 1080;
+        }
 
-        root = uI.rootVisualElement;
-        scaleFont(root);
-
-        // Super hardcoded stuff
-        VisualElement fileDropdown = root.Query<VisualElement>("FileDropdown");
-        fileDropdown.style.left = 10 * fontScale - fontScale *fontScale;
-        VisualElement settingsDropdown = root.Query<VisualElement>("SettingsDropdown");
-        settingsDropdown.style.left = 10 * fontScale + (55 - fontScale) * fontScale - fontScale * fontScale;
-        VisualElement toolsDropdown = root.Query<VisualElement>("ToolsDropdown");
-        toolsDropdown.style.left = 10 * fontScale + (160-fontScale) * fontScale - fontScale * fontScale;
+        scaleFont(uI.rootVisualElement);
+        //scaleImage(uI.rootVisualElement);
     }
 
-    public void scaleFont (VisualElement element) {
-        if (element.childCount == 0) {
-            element.style.fontSize = 24 * fontScale;
-            
-            if (element.style.borderBottomWidth.value > 0) {
-                element.style.borderBottomWidth = fontScale * fontScale;
-            }
-            if (element.style.borderLeftWidth.value > 0)
-            {
-                element.style.borderLeftWidth = fontScale * fontScale;
-            }
-            if (element.style.borderTopWidth.value > 0)
-            {
-                element.style.borderTopWidth = fontScale * fontScale;
-            }
-            if (element.style.borderRightWidth.value > 0)
-            {
-                element.style.borderRightWidth = fontScale * fontScale;
-            }
+    public void scaleFont(VisualElement root) 
+    {
+        List<VisualElement> elements = root.Query<VisualElement>(className: "font-scale-large").ToList();
 
-            // Style execptions
-            if (element.ClassListContains("toolbar-button")) {
-                element.style.marginRight = 10 * fontScale;
-            } else if (element.ClassListContains("dropdown-button")) {
-                element.style.paddingLeft = 30 * fontScale;
-                element.style.paddingRight = 30 * fontScale;
-            }else if(element.ClassListContains("dropdown")) {
-                element.style.paddingTop = 1 * fontScale;
-                element.style.paddingBottom = 1 * fontScale;
-            } else if (element.ClassListContains("blue-screen-text")) {
-                element.style.fontSize = 32 * fontScale;
-            } else if (element.ClassListContains("blue-screen-button")){
-                element.style.fontSize = 32 * fontScale;
-            }else if(element.ClassListContains("titlebar-button")) {
-                element.style.width = 32 * fontScale;
-                element.style.height = 32 * fontScale;
-            }
+        foreach (var element in elements)
+        {
+            element.style.fontSize = fontSizeLarge * fontScale;
+        }
 
-            //Name execptions
-            if (element.name == "ToolbarContainer") {
-                element.style.paddingLeft = 10 * fontScale;
-                element.style.paddingRight = 10 * fontScale;
-                element.style.paddingTop = 5 * fontScale;
-                element.style.paddingBottom = 5 * fontScale;
-            } else if (element.name == "LDLogo") {
-                element.style.width = 100 * fontScale;
-                element.style.height = 100 * fontScale;
-            }
+        elements = root.Query<VisualElement>(className: "font-scale").ToList();
 
-        } else if (element.childCount > 0) {
-            foreach(VisualElement child in element.Children()) {
-                scaleFont(child);
-            }
+        foreach (var element in elements)
+        {
+            element.style.fontSize = fontSizeNormal * fontScale;
+        }
+
+        elements = root.Query<VisualElement>(className: "font-scale-small").ToList();
+
+        foreach (var element in elements)
+        {
+            element.style.fontSize = fontSizeSmall * fontScale;
+        }
+    }
+
+    public void scaleImage(VisualElement root) 
+    {
+        List<VisualElement> elements = root.Query<VisualElement>(className: "image-scale").ToList();
+
+        foreach (var element in elements)
+        {
+            // Doesn't work - element.style.width.value.value is always 0
+            // Debug.Log(element.style.width.value.value);
+            // Debug.Log(element.style.height.value.value);
+            element.style.width = element.style.width.value.value * fontScale;
+            element.style.height = element.style.height.value.value * fontScale;
         }
     }
 }

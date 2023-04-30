@@ -1,8 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/InboxButton.uss?fileID=7433441132597879392&amp;guid=7e00b955d5bf7e52bbbe83f19b90029e&amp;type=3#InboxButton" />
     <Style src="project://database/Assets/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=521bf7393d89ac74baa331aa3a6d696d&amp;type=3#GeneralStyle" />
+    <Style src="project://database/Assets/scaler.uss?fileID=7433441132597879392&amp;guid=8c16d175bfeee7344a448ebb32324540&amp;type=3#scaler" />
     <ui:VisualElement class="gray-reverse-bezel" style="flex-grow: 1; margin-left: 2%; margin-right: 2%; margin-top: 2%; margin-bottom: 2%;">
-        <ui:Label text="Inbox" display-tooltip-when-elided="true" name="Label" class="gray-bezel" style="-unity-font: url(&apos;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#Arial&apos;); font-size: 25%; height: 5%; -unity-text-align: middle-left; width: 100%; visibility: visible; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 1px; padding-right: 1px; padding-top: 1px; padding-bottom: 1px;" />
+        <ui:Label text="Inbox" display-tooltip-when-elided="true" name="Label" class="gray-bezel font-scale" style="-unity-font: url(&apos;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#Arial&apos;); font-size: 25%; height: 5%; -unity-text-align: middle-left; width: 100%; visibility: visible; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 1px; padding-right: 1px; padding-top: 1px; padding-bottom: 1px;" />
         <ui:ScrollView name="InboxScrollView" vertical-scroller-visibility="AlwaysVisible" class="white-bezel" style="height: auto; padding-left: 1%; padding-right: 1%; padding-top: 1%; padding-bottom: 1%; width: 100%; flex-grow: 1;" />
     </ui:VisualElement>
 </ui:UXML>
