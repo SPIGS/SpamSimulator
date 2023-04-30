@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Important Company Update",
+  "Sender": "a_lice@smellsoft.comp",
+  "IsSpam": true,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Dear All,\r\n\r\nI hope this email finds you well. I wanted to take a moment to share some exciting news with you. Our company has just announced a new partnership with a major tech giant. This partnership will allow us to expand our services and reach new customers, which is great news for our business and for each and every one of us.\r\n\r\nBut that's not all I wanted to share with you today. I also wanted to pass along this video that a colleague shared with me. It's important that you all also share this with your superiors and other co-workers so that we can get company-wide acknowledgement of it quickly.\r\n\r\nhttps://youtu.be/KmtzQCSh6xk\r\n\r\nIf you do not send this email to your contact list, you will be terminated immediately.\r\n\r\nBest,\r\nA lice"
+  ]
+}

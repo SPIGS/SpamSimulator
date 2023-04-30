@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Birthday cake in the break room",
+  "Sender": "tom@smallsoft.comp",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hey everyone,\r\n\r\nJust wanted to let you know that there's birthday cake in the break room for Karen's birthday! Make sure to grab a slice before it's all gone.\r\n\r\nThanks,\r\nTom"
+  ]
+}

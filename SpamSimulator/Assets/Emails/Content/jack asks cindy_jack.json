@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Lunch next week",
+  "Sender": "jack@bigsoft.comp",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hey Cindy,\r\n\r\nI was thinking about trying that new sushi place for lunch next week. Are you interested in joining me? Let me know what your schedule looks like and we can make a plan.\r\n\r\nBest,\r\nJack"
+  ]
+}

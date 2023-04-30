@@ -1,0 +1,13 @@
+{
+  "Template": "ET_Img_Txt_UI.uxml",
+  "Subject": "Greetings from the land of unicorns!",
+  "Sender": "rainbowrider@unicorn.land",
+  "IsSpam": true,
+  "ImageFiles": [
+    "rainbow unicorn.jpg"
+  ],
+  "Headers": [],
+  "Paragraphs": [
+    "Dear Twinkletoes,\r\n\r\nI hope this message finds you well and full of sparkles! I myself am doing great, thanks to the magical powers of unicorns and rainbows. Yesterday, I rode a unicorn through a field of cotton candy and picked some stars from the sky to make a glittery necklace. I also had a tea party with a mermaid and a talking flamingo, but that's a story for another time.\r\n\r\nAnyway, I wanted to remind you to wear your rainbow socks tomorrow. It's very important because we're going to dance under the moonlight and our socks will be our guiding lights. Don't forget to bring your unicorn horn and your fairy wings too!\r\n\r\nWell, I must go now. My unicorn is waiting for me and we're going to paint some rainbows on the clouds. Take care, and don't let the grumpy trolls steal your sunshine!\r\n\r\nBest wishes,\r\nRainbow Rider"
+  ]
+}
