@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Collaboration issues",
+  "Sender": "emily@smallsoft.comp",
+  "SenderName": "Emily",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi team,\r\n\r\nI wanted to raise an issue we're having with our partners at Second Choice. There seems to be a miscommunication regarding the scope of the project, and we're seeing some conflicting deliverables. I'll be reaching out to them to try and resolve this, but in the meantime, let's make sure we're on the same page as a team.\r\n\r\nThanks,\r\nEmily"
+  ]
+}

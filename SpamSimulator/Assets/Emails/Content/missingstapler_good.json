@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Missing stapler",
+  "Sender": "bob@smallsoft.comp",
+  "SenderName": "Bob",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hey Jane,\r\n\r\nI'm not sure if you noticed, but my stapler seems to be missing from my desk. I searched around for it but I can't seem to find it anywhere. Do you happen to know where it went or if someone borrowed it? Thanks for any help you can provide.\r\n\r\nBest,\r\nBob"
+  ]
+}

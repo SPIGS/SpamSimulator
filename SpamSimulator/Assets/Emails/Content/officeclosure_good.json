@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Office closure",
+  "Sender": "david@smallsoft.comp",
+  "SenderName": "David",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hey team,\r\n\r\nI just received word that the office will be closed tomorrow due to a water main break. Please work from home if possible and stay safe!\r\n\r\nThanks,\r\nDavid"
+  ]
+}

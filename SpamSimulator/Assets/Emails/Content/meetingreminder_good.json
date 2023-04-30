@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Meeting reminder",
+  "Sender": "julie@smallsoft.comp",
+  "SenderName": "Julie",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hey team,\r\n\r\nJust a reminder that we have a meeting scheduled for tomorrow at 10am in the conference room. Please come prepared with any updates or questions you may have. Looking forward to seeing you all there!\r\n\r\nThanks,\r\nJulie"
+  ]
+}

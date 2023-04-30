@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "New project idea",
+  "Sender": "marc@smallsoft.comp",
+  "SenderName": "Marc",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hey team,\r\n\r\nI've been thinking about a new project idea and I wanted to get your thoughts. We could develop a mobile app that integrates with our existing software to streamline our workflow. What do you guys think? Let me know if you're interested in discussing this further.\r\n\r\nThanks,\r\nMarc"
+  ]
+}

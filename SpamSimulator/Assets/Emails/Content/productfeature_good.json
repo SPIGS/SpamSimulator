@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Product features",
+  "Sender": "john@smallsoft.comp",
+  "SenderName": "John",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Dear all,\r\n\r\nI hope this email finds you well. As you know, we are in direct competition with Bigsoft in the marketplace. In order to stay competitive, we need to make sure that our products are up-to-date and have all the latest features.\r\n\r\nI am writing to let you know that our development team is currently working on several new features that will put us ahead of Bigsoft in terms of functionality and user experience. These features include improved data visualization, more robust security options, and better integration with third-party software.\r\n\r\nLet's keep up the good work and show Bigsoft that we are a force to be reckoned with!\r\n\r\nBest regards,\r\nJohn"
+  ]
+}

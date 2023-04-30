@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Re: New project proposal",
+  "Sender": "jane@smallsoft.comp",
+  "SenderName": "Jane",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi Alex,\r\n\r\nThanks for sending over the project proposal. I reviewed it and I think it looks great overall. There are a few areas where we might want to make some adjustments, but we can discuss those further during our next meeting. Overall, though, I think this is a project that has a lot of potential.\r\n\r\nLet me know if you have any questions or if you want to schedule a time to discuss further.\r\n\r\nBest,\r\nJane"
+  ]
+}
