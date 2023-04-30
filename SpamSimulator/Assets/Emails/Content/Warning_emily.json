@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Warning for Insubordination",
+  "Sender": "emily@smallsoft.comp",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Dear Tom,\r\n\r\nI am writing to inform you that we have received reports of insubordination towards your superiors. This kind of behavior is not acceptable in the workplace and we take it very seriously. You are hereby warned that any further violation of company policy will result in disciplinary action.\r\n\r\nPlease let me know if you have any questions or concerns regarding this matter.\r\n\r\nSincerely,\r\nEmily"
+  ]
+}

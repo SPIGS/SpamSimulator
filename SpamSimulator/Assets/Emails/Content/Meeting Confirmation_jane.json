@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Meeting Confirmation",
+  "Sender": "jane@smallsoft.comp",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Dear Bob,\r\n\r\nI am writing to confirm the details of our meeting scheduled for Tuesday, June 15th at 2:00 PM in Conference Room A. Please let me know if this time and location works for you, or if we need to reschedule. If there are any specific topics or materials you would like to discuss during the meeting, please let me know.\r\n\r\nThank you and looking forward to meeting with you.\r\n\r\nBest regards,\r\nJane"
+  ]
+}

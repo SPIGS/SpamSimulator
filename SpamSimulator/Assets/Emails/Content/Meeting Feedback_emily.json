@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Meeting Feedback",
+  "Sender": "emily@smallsoft.comp",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi Cindy,\r\n\r\nI wanted to get your thoughts on the meeting with the bigsoft team yesterday. I know it was a bit chaotic, but what did you think overall? Personally, I was shocked when Tom shouted like that. It was completely unexpected and really put us in an awkward position. I hope it doesn't affect our chances of moving forward with the collaboration.\r\n\r\nBest regards,\r\nEmily"
+  ]
+}

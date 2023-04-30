@@ -1,0 +1,16 @@
+{
+  "Template": "ET_Img_Txt_Btn_UI.uxml",
+  "Subject": "Save the Date: Company Summer Picnic",
+  "Sender": "events@smallsoft.comp",
+  "IsSpam": false,
+  "ImageFiles": [
+    "smallsoft_picnic.png"
+  ],
+  "Headers": [],
+  "Paragraphs": [
+    "Dear All,\r\n\r\nWe are excited to announce that the company summer picnic will be held on Saturday, July 24th at the local park. Join us for an afternoon of food, drinks, and games with your colleagues and their families. Please see the attached flyer for more details and RSVP by Monday, July 12th if you plan to attend.\r\n\r\nTom is not invited.\r\n\r\nBest regards,\r\nEvents Committee"
+  ],
+  "Buttons": [
+    "RSVP"
+  ]
+}
