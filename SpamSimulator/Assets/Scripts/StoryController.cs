@@ -14,15 +14,15 @@ public class StoryController : MonoBehaviour
     public List<string> storylineFiles;
     public List<string> spamFiles;
     public List<string> goodGenericFiles;
-    private List<string> goodEmails = new List<string>();
-    private List<string> badEmails = new List<string>();
+    private List<string> goodEmailsAList = new List<string>();
+    private List<string> goodEmailsBList = new List<string>();
+    private List<string> badEmailsAList = new List<string>();
+    private List<string> badEmailsBList = new List<string>();
     
     [Range(0.0f, 1.0f)]
     public float storyWeight = 0.33f;
 
-    
     private List<Story> stories = new List<Story>();
-
     private List<string> activeStories = new List<string>();
 
     void Awake () {
@@ -38,21 +38,48 @@ public class StoryController : MonoBehaviour
         foreach (string spamFile in spamFiles)
         {
             string spamFilename = $"{spamFile}.json";
-            badEmails.Add(spamFilename);
+            badEmailsAList.Add(spamFilename);
         }
 
         //Load generic good
         foreach (string goodFile in goodGenericFiles)
         {
             string goodFilename = $"{goodFile}.json";
-            goodEmails.Add(goodFilename);
+            goodEmailsAList.Add(goodFilename);
         }
        
+    }
+
+    public string GetGoodGenericEmail() {
+        
+        if (goodEmailsAList.Count == 0)
+        {
+            goodEmailsAList.Clear();
+            goodEmailsAList.AddRange(goodEmailsBList);
+            goodEmailsBList.Clear();
+        }
+        int index = Random.Range(0, goodEmailsAList.Count);
+        string email = goodEmailsAList[index];
+        goodEmailsAList.Remove(email);
+        goodEmailsBList.Add(email);
+    
+        return email;
     }
     
     public string GetEmail(bool spam) {
         if (spam) {
-            return badEmails[Random.Range(0, badEmails.Count)];
+            if (badEmailsAList.Count == 0)
+            {
+                badEmailsAList.Clear();
+                badEmailsAList.AddRange(badEmailsBList);
+                badEmailsBList.Clear();
+            }
+            int index = Random.Range(0, badEmailsAList.Count);
+            string email = badEmailsAList[index];
+            badEmailsAList.Remove(email);
+            badEmailsAList.Add(email);
+
+            return email;
 
         } else {
             // Decide if good email is story or generic
@@ -69,14 +96,13 @@ public class StoryController : MonoBehaviour
                 } else if (activeStories.Contains(story.Name)) {
                     //Return Story
                 } else {
-                    int index = Random.Range(0, goodEmails.Count);
-                    return goodEmails[index];
+                    return GetGoodGenericEmail();
                 }
 
                 // Return actual story
                 if (story.Storyline.Count <= 0) {
                     stories.Remove(story);
-                    return goodEmails[Random.Range(0, goodEmails.Count)];
+                    return GetGoodGenericEmail();
                 } else {
                     string email = story.Storyline[0];
                     story.Storyline.Remove(email);
@@ -86,7 +112,7 @@ public class StoryController : MonoBehaviour
                 
             } else {
                 // Give Generic
-                return goodEmails[Random.Range(0, goodEmails.Count)];
+                return GetGoodGenericEmail();
             }
 
         }

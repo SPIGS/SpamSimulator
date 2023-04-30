@@ -527,7 +527,7 @@ MonoBehaviour:
   score: 0
   strikes: 0
   emailDelayRange: {x: 5, y: 10}
-  spamWeight: 0.33
+  spamWeight: 1
   gameOver: 0
 --- !u!4 &1265334164
 Transform:
