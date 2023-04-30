@@ -39,20 +39,24 @@ public class GameController : MonoBehaviour
 
     public void OnDeleteGoodEmail () {
         //
+        Debug.Log("Delete Good Email");
     }
 
     public void OnPassGoodEmail () {
         //score go up
         // power up points?
+        Debug.Log("Approve Good Email");
     }
 
     public void OnPassBadEmail () {
         /// various things
+        Debug.Log("Approve Bad Email");
     }
 
     public void OnDeleteBadEmail () {
         //score go up
         //power up poitns?
+        Debug.Log("Delete Bad Email");
     }
 
     public void OnFullStorage () {

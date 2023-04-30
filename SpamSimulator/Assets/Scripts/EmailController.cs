@@ -9,24 +9,32 @@ namespace SpamSim
     {
         private VisualElement emailRoot;
         private ScrollView inboxScrollView;
-        private List<Email> inbox;
+        private HashSet<Email> inbox;
         private Email currentEmail;
         private int emailCounter;
 
         public UIDocument uI;
         public VisualTreeAsset inboxItemTemplate;
         public FontScaler fontScaler;
+        public GameController gameController;
 
         // Start is called before the first frame update
         void Start()
         {
-            inbox = new List<Email>();
+            inbox = new HashSet<Email>();
             emailCounter = 0;
 
             emailRoot = uI.rootVisualElement.Q<VisualElement>(name: "EmailUI");
             inboxScrollView = uI.rootVisualElement.Q<ScrollView>(name: "InboxScrollView");
 
             AddEmail("testEmail.json");
+            AddEmail("Apology_tom.json");
+            AddEmail("Company Picnic_events.json");
+            AddEmail("Complaint_cindy.json");
+            AddEmail("Delay in Report_bob.json");
+            //AddEmail("smellsuft_widgets_intro_spam.json");
+            AddEmail("Meeting Confirmation_jane.json");
+            AddEmail("smellsuft_widgets_promo1_spam.json");
         }
 
         // Update is called once per frame
@@ -80,10 +88,10 @@ namespace SpamSim
                 OnOpenEmail(email);
             };
             inboxItem.Q<Button>("PassButton").clickable.clicked += () => {
-                OnPassEmail(inboxItem, email);
+                OnProcessEmail(inboxItem, email, "approve");
             };
             inboxItem.Q<Button>("TrashButton").clickable.clicked += () => {
-                OnTrashEmail(inboxItem, email);
+                OnProcessEmail(inboxItem, email, "delete");
             };
 
             inboxScrollView.Add(inboxItem);
@@ -96,14 +104,34 @@ namespace SpamSim
             currentEmail = email;
         }
 
-        void OnTrashEmail(VisualElement inboxItem, Email email)
+        void OnProcessEmail(VisualElement inboxItem, Email email, string action)
         {
+            inboxScrollView.Remove(inboxItem);
 
-        }
+            if (currentEmail == email) 
+            {
+                emailRoot.Clear();
+                currentEmail = null;
+            }
 
-        void OnPassEmail(VisualElement inboxItem, Email email)
-        {
+            inbox.Remove(email);
 
+            if (action == "approve" && !email.IsSpam) 
+            {
+                gameController.OnPassGoodEmail();
+            }
+            else if (action == "approve" && email.IsSpam)
+            {
+                gameController.OnPassBadEmail();
+            }
+            else if (action == "delete" && !email.IsSpam) 
+            {
+                gameController.OnDeleteGoodEmail();
+            }
+            else if (action == "delete" && email.IsSpam)
+            {
+                gameController.OnDeleteBadEmail();
+            }
         }
     }
 }

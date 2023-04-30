@@ -68,7 +68,7 @@ namespace SpamSim
 
             // Update Buttons
             int bCount = 0;
-            foreach (Button b in emailElement.Query<Button>("Image").ToList())
+            foreach (Button b in emailElement.Query<Button>("Button").ToList())
             {
                 b.text = Buttons[bCount];
                 bCount++;
