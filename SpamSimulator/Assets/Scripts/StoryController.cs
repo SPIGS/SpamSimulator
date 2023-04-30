@@ -12,11 +12,14 @@ public class StoryController : MonoBehaviour
 
     public int maxActiveStories = 1;
     public List<string> storylineFiles;
+    public List<string> spamFiles;
+    private List<string> goodEmails = new List<string>();
+    private List<string> badEmails = new List<string>();
+    
     [Range(0.0f, 1.0f)]
     public float storyWeight = 0.33f;
 
-    private List<string> goodEmails;
-    private List<string> badEmails;
+    
     private List<Story> stories = new List<Story>();
 
     private List<string> activeStories;
@@ -28,6 +31,13 @@ public class StoryController : MonoBehaviour
             string jsonString = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Storylines/{storylineFile}.json", typeof(TextAsset))).text;
             Story story = JsonUtility.FromJson<Story>(jsonString);
             this.stories.Add(story);
+        }
+
+        //Load spam
+        foreach (string spamFile in spamFiles)
+        {
+            string spamFilename = $"{spamFile}.json";
+            badEmails.Add(spamFilename);
         }
        
     }

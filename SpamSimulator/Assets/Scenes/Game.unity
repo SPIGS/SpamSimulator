@@ -449,6 +449,19 @@ MonoBehaviour:
   storylineFiles:
   - Tom_v_Cindy
   - Toms_Outburst
+  spamFiles:
+  - banana sandwich_spam
+  - company chain_spam
+  - deborahchain_spam
+  - dept of dad jokes_spam
+  - drboom chain_spam
+  - johnmarketing_spam
+  - marshmallowqueen_spam
+  - planet zog_Spam
+  - rainbowrider_spam
+  - readyforfun_spam
+  - smellsuft_widgets_intro_spam
+  - smellsuft_widgets_promo1_spam
   storyWeight: 0.33
 --- !u!4 &646660212
 Transform:
@@ -463,7 +476,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &785984137
 GameObject:
@@ -622,7 +635,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1606975670
 MonoBehaviour:
@@ -782,5 +795,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
