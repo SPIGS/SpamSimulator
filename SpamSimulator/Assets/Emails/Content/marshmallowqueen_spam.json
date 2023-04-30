@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Urgent request from the marshmallow queen!",
   "Sender": "marshmallowqueen@sweetkingdom.com",
+  "SenderName": "Marsha",
   "IsSpam": true,
   "ImageFiles": [],
   "Headers": [],

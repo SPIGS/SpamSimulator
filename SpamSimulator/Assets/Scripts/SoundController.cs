@@ -18,6 +18,7 @@ public class SoundController : MonoBehaviour
     [Range(0.0f, 1.0f)]
     public float musicVolume = 1.0f;
     public AudioSource musicSource;
+    public bool playStartupSound = false;
 
     void Start () {
         foreach(NamedAudioClip clip in soundEffects) {
@@ -25,6 +26,11 @@ public class SoundController : MonoBehaviour
             soundObject.name = clip.name + " Source";
             AudioSource soundSource = soundObject.AddComponent<AudioSource>();
             soundObject.transform.SetParent(transform);
+        }
+
+        if (playStartupSound)
+        {
+            this.PlaySoundEffect("Start Up");
         }
     }
 

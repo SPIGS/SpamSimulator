@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "UPDATE: Preventing Virus Infections",
   "Sender": "ADMIN@smallsoft.comp",
+  "SenderName": "ADMIN",
   "IsSpam": false,
   "IsAdmin": true,
   "ImageFiles": [],

@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Important Company Update",
   "Sender": "a_lice@smellsoft.comp",
+  "SenderName": "Alice",
   "IsSpam": true,
   "ImageFiles": [],
   "Headers": [],

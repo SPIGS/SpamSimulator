@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "FW: You won't believe this!",
   "Sender": "drboom@geemail.com",
+  "SenderName": "The Doctor",
   "IsSpam": true,
   "ImageFiles": [],
   "Headers": [],

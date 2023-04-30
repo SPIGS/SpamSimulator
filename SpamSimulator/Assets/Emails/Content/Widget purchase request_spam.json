@@ -2,6 +2,7 @@
   "Template": "ET_ImgBtn_x3_UI.uxml",
   "Subject": "Purchase Request",
   "Sender": "reelman@smellsuft.cump",
+  "SenderName": "R.M.",
   "IsSpam": true,
   "ImageFiles": [
     "y widget.png",
