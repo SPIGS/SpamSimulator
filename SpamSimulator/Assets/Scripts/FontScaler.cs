@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 public class FontScaler : MonoBehaviour
 {
+    public UIDocument uI;
     public float fontScale = 1.0f;
     private VisualElement root;
 
@@ -12,7 +13,7 @@ public class FontScaler : MonoBehaviour
         float playableHeight = Screen.height;
         fontScale = playableHeight / 1080;
 
-        root = GetComponent<UIDocument>().rootVisualElement;
+        root = uI.rootVisualElement;
         scaleFont(root);
 
         // Super hardcoded stuff

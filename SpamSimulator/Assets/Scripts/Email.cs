@@ -22,12 +22,15 @@ namespace SpamSim
 
         public string Template;
 
-        public static Email LoadEmail(string emailFileName)
+        public int id;
+
+        public static Email LoadEmail(string emailFileName, int id)
         {
             string jsonString = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Content/{emailFileName}", typeof(TextAsset))).text;
 
             Email email = JsonUtility.FromJson<Email>(jsonString);
 
+            email.id = id;
             email.LoadImages();
 
             return email;
