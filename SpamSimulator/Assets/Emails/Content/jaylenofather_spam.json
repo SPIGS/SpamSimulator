@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Img_UI.uxml",
+  "Subject": "Help me out",
+  "Sender": "lonelyboy@geemail.net",
+  "IsSpam": true,
+  "ImageFiles": [
+    "jayleno.jpg"
+  ],
+  "Headers": [],
+  "Paragraphs": []
+}

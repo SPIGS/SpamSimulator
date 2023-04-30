@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Img_UI.uxml",
+  "Subject": "Good Advice!",
+  "Sender": "jack@boxtoobig.comp",
+  "IsSpam": true,
+  "ImageFiles": [
+    "forestgump.jpg"
+  ],
+  "Headers": [],
+  "Paragraphs": []
+}

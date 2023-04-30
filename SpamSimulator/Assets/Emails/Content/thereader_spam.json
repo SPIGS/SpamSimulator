@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Img_UI.uxml",
+  "Subject": "Do you like to read?",
+  "Sender": "thewolf@readingisfun.net",
+  "IsSpam": true,
+  "ImageFiles": [
+    "im a reader.jpg"
+  ],
+  "Headers": [],
+  "Paragraphs": []
+}

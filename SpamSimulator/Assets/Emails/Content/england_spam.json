@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Img_UI.uxml",
+  "Subject": "ENGLAND",
+  "Sender": "milord@hermajesty.brit",
+  "IsSpam": true,
+  "ImageFiles": [
+    "england.jpg"
+  ],
+  "Headers": [],
+  "Paragraphs": []
+}
