@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="Container" class="Template_Container" style="padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px; align-items: center; flex-grow: 1;">
+    <Style src="project://database/Assets/Email%20Container.uss?fileID=7433441132597879392&amp;guid=de3baff19c89db94cac454dd67fb2905&amp;type=3#Email Container" />
+    <ui:VisualElement name="Container" class="Template_Container email-container" style="padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px; align-items: center; flex-grow: 1;">
         <ui:Label text="Title" display-tooltip-when-elided="true" name="Header" style="white-space: normal; padding-top: 16px; padding-bottom: 0; font-size: 40px;" />
         <ui:VisualElement name="Img_Text_Container" style="flex-direction: row; align-items: center; width: 100%; justify-content: space-around;">
             <ui:VisualElement name="Img_Container" style="-unity-background-scale-mode: scale-to-fit; max-width: none; overflow: hidden; max-height: 100%; width: 30%; align-items: center;">

@@ -1,0 +1,5 @@
+.email-container {
+    background-color: rgb(254, 254, 254);
+    color: rgb(34, 34, 34);
+    -unity-font: url('project://database/Assets/Fonts/DotGothic16-Regular.ttf?fileID=12800000&guid=bf0c7367de9337149b5b5a5d9e71798a&type=3#DotGothic16-Regular');
+}

@@ -1,0 +1,20 @@
+{
+  "Template": "ET_ImgBtn_x3_UI.uxml",
+  "Subject": "Purchase Request",
+  "Sender": "reelman@smellsuft.cump",
+  "IsSpam": true,
+  "ImageFiles": [
+    "y widget.png",
+    "purple x widget.png",
+    "x wiggle widget.png"
+  ],
+  "Headers": [
+    "NEW WIDGETS FROM SMALLSOFT"
+  ],
+  "Paragraphs": [],
+  "Buttons": [
+    "Buy",
+    "Buy",
+    "Buy"
+  ]
+}
