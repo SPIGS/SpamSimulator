@@ -8,6 +8,7 @@ using UnityEditor;
 public class BlueScreenController : MonoBehaviour
 {
     public UIDocument uiDocument;
+    public SoundController soundController;
     private VisualElement root;
 
     private enum Option {
@@ -21,6 +22,7 @@ public class BlueScreenController : MonoBehaviour
         root = uiDocument.rootVisualElement;
         Button newgameButton = root.Query<Button>("NewGame");
         newgameButton.Focus();
+        soundController.PlayAudioClip("BIOS Beep");
     }
 
     // Update is called once per frame

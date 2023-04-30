@@ -17,6 +17,7 @@ namespace SpamSim
         public VisualTreeAsset inboxItemTemplate;
         public FontScaler fontScaler;
         public GameController gameController;
+        public SoundController soundController; 
 
         public int maxEmails;
 
@@ -94,6 +95,8 @@ namespace SpamSim
             };
 
             inboxScrollView.Add(inboxItem);
+
+            soundController.PlayAudioClip("New Email");
         }
 
         void OnOpenEmail(Email email)
@@ -114,6 +117,14 @@ namespace SpamSim
             }
 
             inbox.Remove(email);
+
+            // if delete play trash sound else play approve sound
+            if (action == "delete") {
+                soundController.PlayAudioClip("Trash Email");
+            } else {
+
+            }
+
 
             if (action == "approve" && !email.IsSpam) 
             {
