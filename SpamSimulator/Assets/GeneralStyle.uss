@@ -9,10 +9,6 @@
     border-top-width: 1px;
     border-bottom-color: rgb(0, 0, 0);
     border-right-color: rgb(0, 0, 0);
-    padding-bottom: 1px;
-    padding-top: 1px;
-    padding-right: 1px;
-    padding-left: 1px;
 }
 
 .darkgray-flat {
@@ -113,4 +109,16 @@
     border-right-color: rgb(0, 0, 0);
     border-bottom-color: rgb(0, 0, 0);
     background-color: rgb(195, 199, 203);
+}
+
+.gray-gray-light-bezel {
+    border-left-color: rgba(195, 199, 203, 255);
+    border-top-color: rgba(195, 199, 203, 255);
+    border-right-color: rgba(134, 138, 142, 255);
+    border-bottom-color: rgba(134, 138, 142, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    background-color: rgba(195, 199, 203, 255);
 }

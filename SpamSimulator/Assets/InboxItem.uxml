@@ -1,24 +1,31 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/InboxButton.uss?fileID=7433441132597879392&amp;guid=7e00b955d5bf7e52bbbe83f19b90029e&amp;type=3#InboxButton" />
-    <ui:Button display-tooltip-when-elided="true" name="MainItemButton" class="inbox-button" style="font-size: initial;">
-        <ui:VisualElement style="flex-direction: row;">
-            <ui:VisualElement name="InboxItemInfoContainer" style="flex-grow: 1; align-items: flex-start; justify-content: flex-start;">
-                <ui:VisualElement name="FromContainer" style="width: 100%; flex-direction: row;">
-                    <ui:Label text="From:" display-tooltip-when-elided="true" name="FromTitle" class="inbox-item-label-title" style="font-size: 24px;" />
-                    <ui:Label text="Administrator" display-tooltip-when-elided="true" name="FromLabel" class="inbox-item-label" style="font-size: 24px;" />
+    <Style src="project://database/Assets/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=521bf7393d89ac74baa331aa3a6d696d&amp;type=3#GeneralStyle" />
+    <ui:Button display-tooltip-when-elided="true" name="MainItemButton" class="gray-gray-bezel" style="font-size: initial; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; flex-grow: 1;">
+        <ui:VisualElement class="gray-light-bezel" style="flex-grow: 1;">
+            <ui:VisualElement style="flex-direction: row; flex-grow: 1;">
+                <ui:VisualElement name="InboxItemInfoContainer" style="flex-grow: 1; align-items: flex-start; justify-content: flex-start;">
+                    <ui:VisualElement name="FromContainer" style="width: 100%; flex-direction: row; flex-grow: 1;">
+                        <ui:Label text="From:" display-tooltip-when-elided="true" name="FromTitle" style="font-size: 24px;" />
+                        <ui:Label text="Administrator" display-tooltip-when-elided="true" name="FromLabel" style="font-size: 24px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="SubjectContainer" style="width: 100%; flex-direction: row; flex-grow: 1;">
+                        <ui:Label text="Subject:" display-tooltip-when-elided="true" name="SubjectTitle" style="font-size: 24px;" />
+                        <ui:Label text="You&apos;ve got mail!" display-tooltip-when-elided="true" name="SubjectLabel" style="font-size: 24px; overflow: visible; visibility: visible; display: flex;" />
+                    </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement name="SubjectContainer" style="width: 100%; flex-direction: row;">
-                    <ui:Label text="Subject:" display-tooltip-when-elided="true" name="SubjectTitle" class="inbox-item-label-title" style="font-size: 24px;" />
-                    <ui:Label text="You&apos;ve got mail!" display-tooltip-when-elided="true" name="SubjectLabel" class="inbox-item-label" style="font-size: 24px;" />
+                <ui:VisualElement style="flex-direction: row; align-items: center; min-width: 62px;">
+                    <ui:Button display-tooltip-when-elided="true" name="PassButton" text=" " class="pass-button gray-bezel" style="flex-shrink: 1; margin-left: 0; margin-right: 5px; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; align-items: center; justify-content: center; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; flex-direction: column; width: 24px; height: 24px;">
+                        <ui:VisualElement class="gray-gray-light-bezel" style="flex-grow: 1; width: 100%; align-items: center; justify-content: center; height: auto;">
+                            <ui:VisualElement name="PassIcon" style="width: 100%; height: auto; background-image: url(&apos;project://database/Assets/Images/email%20good.png?fileID=2800000&amp;guid=2c728686c15d181509e3d0dfd89f8ef2&amp;type=3#email good&apos;); flex-grow: 1;" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="TrashButton" class="gray-bezel" style="flex-shrink: 1; margin-left: 0; margin-right: 5px; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; align-items: center; justify-content: center; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; width: 24px; height: 24px;">
+                        <ui:VisualElement class="gray-gray-light-bezel" style="flex-grow: 1; align-items: center; justify-content: center; width: 100%;">
+                            <ui:VisualElement name="TrashIcon" style="background-image: url(&apos;project://database/Assets/Images/delete%20email.png?fileID=2800000&amp;guid=3dbea668cffcfa74db92b65f3577d89b&amp;type=3#delete email&apos;); flex-grow: 1; width: 100%;" />
+                        </ui:VisualElement>
+                    </ui:Button>
                 </ui:VisualElement>
-            </ui:VisualElement>
-            <ui:VisualElement name="InboxItemQuickButtons" style="width: 25%; flex-direction: row; align-items: center;">
-                <ui:Button display-tooltip-when-elided="true" name="PassButton" class="pass-button" style="width: 50%; flex-shrink: 1; background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; align-items: center; justify-content: center;">
-                    <ui:VisualElement name="PassIcon" style="background-image: url(&apos;project://database/Assets/Images/email%20good.png?fileID=2800000&amp;guid=2c728686c15d181509e3d0dfd89f8ef2&amp;type=3#email good&apos;); width: 24px; height: 24px;" />
-                </ui:Button>
-                <ui:Button display-tooltip-when-elided="true" name="TrashButton" style="width: 50px; flex-shrink: 1; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-color: rgba(88, 88, 88, 0); margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; align-items: center; justify-content: center;">
-                    <ui:VisualElement name="TrashIcon" style="background-image: url(&apos;project://database/Assets/Images/delete%20email.png?fileID=2800000&amp;guid=3dbea668cffcfa74db92b65f3577d89b&amp;type=3#delete email&apos;); width: 24px; height: 24px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0);" />
-                </ui:Button>
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:Button>

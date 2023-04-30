@@ -83,13 +83,13 @@ namespace SpamSim
             inboxItem.Q<Label>("SubjectTitle").style.fontSize = 24 * fontScaler.fontScale;
 
             //Button scaling
-            VisualElement trashButton = inboxItem.Q<VisualElement>("TrashIcon");
-            trashButton.style.width = 24 * fontScaler.fontScale;
-            trashButton.style.height = 24 * fontScaler.fontScale;
+            VisualElement trashIcon = inboxItem.Q<VisualElement>("TrashIcon");
+            trashIcon.style.width = 24 * fontScaler.fontScale;
+            trashIcon.style.height = 24 * fontScaler.fontScale;
 
-            VisualElement passButton = inboxItem.Q<VisualElement>("PassIcon");
-            passButton.style.width = 24 * fontScaler.fontScale;
-            passButton.style.height = 24 * fontScaler.fontScale;
+            VisualElement passIcon = inboxItem.Q<VisualElement>("PassIcon");
+            passIcon.style.width = 24 * fontScaler.fontScale;
+            passIcon.style.height = 24 * fontScaler.fontScale;
 
             //Set button callbacks
             inboxItem.Q<Button>("MainItemButton").clickable.clicked += () => {
