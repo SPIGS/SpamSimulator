@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour
     private float timeElapsed = 0.0f;
     private int numEmailsCreated = 0;
     private int nextAdminEmail = 0;
+    private bool adminEmailIsActive = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,24 +38,27 @@ public class GameController : MonoBehaviour
             float delay = Random.Range(emailDelayRange.x, emailDelayRange.y);
             if (timeElapsed >= delay)
             {
-                if (numEmailsCreated == nextAdminEmail) {
+                if (numEmailsCreated >= nextAdminEmail && nextAdminEmail < adminEmailCounters.Length && !adminEmailIsActive) {
                     //Send an admin email
+                    adminEmailIsActive = true;
                     string email = storyController.GetAdminEmail(nextAdminEmail);
                     emailController.AddEmail(email);
                     nextAdminEmail ++;
                 } else {
-                    // Ask pretty please for a new email
-                    double randomValue = Random.Range(0.0f, 1.0f);
-                    if (randomValue <= spamWeight)
-                    {
-                        string email = storyController.GetEmail(true);
-                        emailController.AddEmail(email);
-                    }
-                    else
-                    {
-                        string email = storyController.GetEmail(false);
-                        emailController.AddEmail(email);
-                    }
+                    if (!adminEmailIsActive) {
+                        // Ask pretty please for a new email
+                        double randomValue = Random.Range(0.0f, 1.0f);
+                        if (randomValue <= spamWeight)
+                        {
+                            string email = storyController.GetEmail(true);
+                            emailController.AddEmail(email);
+                        }
+                        else
+                        {
+                            string email = storyController.GetEmail(false);
+                            emailController.AddEmail(email);
+                        }
+                    }  
                 }
                 timeElapsed = 0.0f;
                 numEmailsCreated++;
@@ -90,5 +94,9 @@ public class GameController : MonoBehaviour
     public void OnFullStorage () {
         //end game
         this.gameOver = true;
+    }
+
+    public void SetAdminEmailInactive () {
+        adminEmailIsActive = false;
     }
 }

@@ -24,6 +24,8 @@ namespace SpamSim
 
         public int id;
 
+        public bool IsAdmin;
+
         public static Email LoadEmail(string emailFileName, int id)
         {
             string jsonString = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Content/{emailFileName}", typeof(TextAsset))).text;

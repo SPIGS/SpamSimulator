@@ -116,6 +116,10 @@ namespace SpamSim
                 currentEmail = null;
             }
 
+            if (email.IsAdmin) {
+                gameController.SetAdminEmailInactive();
+            }
+
             inbox.Remove(email);
 
             // if delete play trash sound else play approve sound

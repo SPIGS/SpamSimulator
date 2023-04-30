@@ -14,7 +14,7 @@ public class StoryController : MonoBehaviour
     public List<string> storylineFiles;
     public List<string> spamFiles;
     public List<string> goodGenericFiles;
-    public List<string> adminFiles;
+    public string adminStoryline;
     private List<string> goodEmailsAList = new List<string>();
     private List<string> goodEmailsBList = new List<string>();
     private List<string> badEmailsAList = new List<string>();
@@ -25,6 +25,7 @@ public class StoryController : MonoBehaviour
 
     private List<Story> stories = new List<Story>();
     private List<string> activeStories = new List<string>();
+    private Story adminStory;
 
     void Awake () {
         // Load Stories emails
@@ -48,6 +49,10 @@ public class StoryController : MonoBehaviour
             string goodFilename = $"{goodFile}.json";
             goodEmailsAList.Add(goodFilename);
         }
+
+        //Load admin Story
+        string adminStoryLineJSON = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Storylines/{adminStoryline}.json", typeof(TextAsset))).text;
+        adminStory = JsonUtility.FromJson<Story>(adminStoryLineJSON);
        
     }
 
@@ -120,6 +125,6 @@ public class StoryController : MonoBehaviour
     }
 
     public string GetAdminEmail (int index) {
-        return adminFiles[index] + ".json";
+        return adminStory.Storyline[index];
     }
 }

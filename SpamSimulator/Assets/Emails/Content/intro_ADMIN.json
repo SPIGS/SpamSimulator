@@ -3,6 +3,7 @@
   "Subject": "Welcome to smallsoft!",
   "Sender": "ADMIN@smallsoft.comp",
   "IsSpam": false,
+  "IsAdmin": true,
   "ImageFiles": [],
   "Headers": [],
   "Paragraphs": [

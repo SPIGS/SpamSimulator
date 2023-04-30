@@ -3,6 +3,7 @@
   "Subject": "UPDATE: Preventing Virus Infections",
   "Sender": "ADMIN@smallsoft.comp",
   "IsSpam": false,
+  "IsAdmin": true,
   "ImageFiles": [],
   "Headers": [],
   "Paragraphs": [
