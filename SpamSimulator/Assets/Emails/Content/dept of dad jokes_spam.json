@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Important update from the Department of Dad Jokes",
   "Sender": "dadjokesrus@humorcentral.com",
+  "SenderName": "Dad",
   "IsSpam": true,
   "ImageFiles": [],
   "Headers": [],

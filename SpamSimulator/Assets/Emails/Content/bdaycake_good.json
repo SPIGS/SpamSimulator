@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Birthday cake in the break room",
   "Sender": "tom@smallsoft.comp",
+  "SenderName": "Tom",
   "IsSpam": false,
   "ImageFiles": [],
   "Headers": [],

@@ -2,6 +2,7 @@
   "Template": "ET_Img_Txt_UI.uxml",
   "Subject": "Greetings from the land of unicorns!",
   "Sender": "rainbowrider@unicorn.land",
+  "SenderName": "R.R.",
   "IsSpam": true,
   "ImageFiles": [
     "rainbow unicorn.jpg"

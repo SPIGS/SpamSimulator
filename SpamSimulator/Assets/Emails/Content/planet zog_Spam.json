@@ -2,6 +2,7 @@
   "Template": "ET_Img_Txt_Img_UI.uxml",
   "Subject": "Greetings from planet Zog!",
   "Sender": "gloopglorp@zog.planet",
+  "SenderName": "G.G.",
   "IsSpam": true,
   "ImageFiles": [
     "greetingszog.jpg",

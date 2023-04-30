@@ -2,6 +2,7 @@
   "Template": "ET_Img_Txt_UI.uxml",
   "Subject": "RIP Jasper",
   "Sender": "cindy@smallsoft.comp",
+  "SenderName": "Cindy",
   "IsSpam": false,
   "ImageFiles": [
     "rip jasper.jpg"

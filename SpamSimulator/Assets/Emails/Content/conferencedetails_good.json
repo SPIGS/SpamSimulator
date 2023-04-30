@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Conference next week",
   "Sender": "cindy@smallsoft.comp",
+  "SenderName": "Cindy",
   "IsSpam": false,
   "ImageFiles": [],
   "Headers": [],

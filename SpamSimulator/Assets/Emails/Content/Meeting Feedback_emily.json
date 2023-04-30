@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Meeting Feedback",
   "Sender": "emily@smallsoft.comp",
+  "SenderName": "Emily",
   "IsSpam": false,
   "ImageFiles": [],
   "Headers": [],

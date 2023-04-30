@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Meeting Confirmation",
   "Sender": "jane@smallsoft.comp",
+  "SenderName": "Jane",
   "IsSpam": false,
   "ImageFiles": [],
   "Headers": [],
