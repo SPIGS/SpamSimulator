@@ -81,7 +81,6 @@ public class Toolbar : MonoBehaviour
     }
     void OnPointerUp (PointerUpEvent evt) {
         // This is to handle the case where we click somewhere that isn't the toolbar
-        Debug.Log("Pointer Up");
         DeactivateButtons();
         HideAllDropdowns();
     }
@@ -94,27 +93,22 @@ public class Toolbar : MonoBehaviour
     }
 
     void ShowFileDropdown () {
-        Debug.Log("File Dropdown");
         VisualElement fileDropdown = root.Query<VisualElement>("FileDropdown");
         fileDropdown.visible = true;
     }
 
     void ShowSettingsDropdown() {
-        Debug.Log("Settings Dropdown");
         VisualElement settingsDropdown = root.Query<VisualElement>("SettingsDropdown");
         settingsDropdown.visible = true;
     }
 
     void ShowToolsDropdown() {
-        Debug.Log("Tools Dropdown");
         VisualElement toolsDropdown = root.Query<VisualElement>("ToolsDropdown");
         toolsDropdown.visible = true;
     }
 
     void ShowAboutModal () {
-        Debug.Log("About Dropdown");
         float width = 600.0f * fontScaler.fontScale *fontScaler.fontScale;
-        Debug.Log(width);
         float height = 200.0f * fontScaler.fontScale * fontScaler.fontScale;
         this.windowCreator.CreateModal(this.aboutWindowTemplate, 
                 (Screen.width/2.0f) - width/2.0f, 

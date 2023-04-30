@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 6d4ad3e9f05cba743b8989a13d1109bc
+=======
+guid: 61c4c1dbf19fafe9bafed01fb8b16c0e
+>>>>>>> storyController
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
