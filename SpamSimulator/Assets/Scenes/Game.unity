@@ -594,8 +594,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1584827663 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5245622613734006303, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
-  m_PrefabInstance: {fileID: 5245622615173337872}
+  m_CorrespondingSourceObject: {fileID: 5292840395744211088, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+  m_PrefabInstance: {fileID: 5292840396519210399}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -715,6 +715,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aboutWindowTemplate: {fileID: 9197481963319205126, guid: 8be11a9c8edf5e6a08222c6a3d316435, type: 3}
+  audioSettingsWindowTemplate: {fileID: 9197481963319205126, guid: 5a8567f9c1ed97fc4a7a43832006440c, type: 3}
+  graphicsSettingsWindowTemplate: {fileID: 9197481963319205126, guid: 42412caba8b35e65dba5458e7845928f, type: 3}
+  hotkeysWindowTemplate: {fileID: 9197481963319205126, guid: f3939ba820f4302ffa15c0042bfd3d33, type: 3}
   windowCreator: {fileID: 1919040972}
   fontScaler: {fileID: 1523744960}
 --- !u!1 &1919040971
@@ -748,6 +751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uIDocument: {fileID: 1890862834}
   fontScaler: {fileID: 1523744960}
+  soundController: {fileID: 1584827663}
 --- !u!4 &1919040973
 Transform:
   m_ObjectHideFlags: 0
@@ -763,60 +767,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &5245622615173337872
+--- !u!1001 &5292840396519210399
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5245622613734006272, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+    - target: {fileID: 2144055019242179723, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 5245622613734006272, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+    - target: {fileID: 2144055019242179723, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.62820613
       objectReference: {fileID: 0}
-    - target: {fileID: 5245622613734006272, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+    - target: {fileID: 2144055019242179723, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.011658639
       objectReference: {fileID: 0}
-    - target: {fileID: 5245622613734006272, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+    - target: {fileID: 2144055019242179723, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.022584768
       objectReference: {fileID: 0}
-    - target: {fileID: 5245622613734006272, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+    - target: {fileID: 2144055019242179723, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5245622613734006272, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+    - target: {fileID: 2144055019242179723, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5245622613734006272, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+    - target: {fileID: 2144055019242179723, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5245622613734006272, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+    - target: {fileID: 2144055019242179723, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5245622613734006272, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+    - target: {fileID: 2144055019242179723, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5245622613734006272, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+    - target: {fileID: 2144055019242179723, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5245622613734006272, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+    - target: {fileID: 2144055019242179723, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5245622613734006301, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+    - target: {fileID: 5292840395744211088, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+      propertyPath: musicTracks.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292840395744211088, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+      propertyPath: musicTracks.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ca0f93c8802ed347a0cf39f6bec28d1, type: 3}
+    - target: {fileID: 5292840395744211088, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+      propertyPath: musicTracks.Array.data[0].name
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276695702607677076, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6729585518766401029, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: m_Name
       value: SoundController
+      objectReference: {fileID: 0}
+    - target: {fileID: 7045594474294985983, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
