@@ -1,0 +1,11 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Employee review",
+  "Sender": "alice@smallsoft.comp",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi Emily,\r\n\r\nI wanted to touch base about the employee review process. Can you send me the list of employees you'll be reviewing so I can make sure to coordinate with you on any overlaps? Also, do you have any feedback on my performance as a manager?\r\n\r\nBest,\r\nAlice"
+  ]
+}
