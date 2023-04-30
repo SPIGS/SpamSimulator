@@ -10,8 +10,8 @@ public class GameController : MonoBehaviour
     public UIDocument uiDocument;
     public StoryController storyController;
     public EmailController emailController;
+    public int[] adminEmailCounters;
     public int score = 0;
-    public int strikes = 0;
     public Vector2 emailDelayRange = new Vector2(5.0f, 10.0f);
     
     [Range(0.0f, 1.0f)]
@@ -21,6 +21,8 @@ public class GameController : MonoBehaviour
     private VisualElement root;
     
     private float timeElapsed = 0.0f;
+    private int numEmailsCreated = 0;
+    private int nextAdminEmail = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,16 +37,27 @@ public class GameController : MonoBehaviour
             float delay = Random.Range(emailDelayRange.x, emailDelayRange.y);
             if (timeElapsed >= delay)
             {
-                double randomValue = Random.Range(0.0f, 1.0f);
-                if (randomValue <= spamWeight) {
-                    string email = storyController.GetEmail(true);
+                if (numEmailsCreated == nextAdminEmail) {
+                    //Send an admin email
+                    string email = storyController.GetAdminEmail(nextAdminEmail);
                     emailController.AddEmail(email);
+                    nextAdminEmail ++;
                 } else {
-                    string email = storyController.GetEmail(false);
-                    emailController.AddEmail(email);
+                    // Ask pretty please for a new email
+                    double randomValue = Random.Range(0.0f, 1.0f);
+                    if (randomValue <= spamWeight)
+                    {
+                        string email = storyController.GetEmail(true);
+                        emailController.AddEmail(email);
+                    }
+                    else
+                    {
+                        string email = storyController.GetEmail(false);
+                        emailController.AddEmail(email);
+                    }
                 }
-                // Tell email controller to make new email.
                 timeElapsed = 0.0f;
+                numEmailsCreated++;
             }
         } else {
             // Load BSOD

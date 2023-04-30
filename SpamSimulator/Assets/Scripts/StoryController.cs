@@ -14,6 +14,7 @@ public class StoryController : MonoBehaviour
     public List<string> storylineFiles;
     public List<string> spamFiles;
     public List<string> goodGenericFiles;
+    public List<string> adminFiles;
     private List<string> goodEmailsAList = new List<string>();
     private List<string> goodEmailsBList = new List<string>();
     private List<string> badEmailsAList = new List<string>();
@@ -116,5 +117,9 @@ public class StoryController : MonoBehaviour
             }
 
         }
+    }
+
+    public string GetAdminEmail (int index) {
+        return adminFiles[index] + ".json";
     }
 }
