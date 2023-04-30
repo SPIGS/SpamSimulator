@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Welcome to smallsoft!",
   "Sender": "ADMIN@smallsoft.comp",
+  "SenderName": "ADMIN",
   "IsSpam": false,
   "IsAdmin": true,
   "ImageFiles": [],

@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Bob's Famous Chili Recipe",
   "Sender": "bob@smallsoft.comp",
+  "SenderName": "Bob",
   "IsSpam": false,
   "ImageFiles": [],
   "Headers": [],

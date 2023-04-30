@@ -2,6 +2,7 @@
   "Template": "ET_Img_UI.uxml",
   "Subject": "Good Advice!",
   "Sender": "jack@boxtoobig.comp",
+  "SenderName": "Jack",
   "IsSpam": true,
   "ImageFiles": [
     "forestgump.jpg"

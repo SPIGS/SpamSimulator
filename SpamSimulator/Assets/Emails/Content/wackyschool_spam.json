@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Important Announcement from Wacky School",
   "Sender": "principal@wackyschool.com",
+  "SenderName": "P.W.",
   "IsSpam": true,
   "ImageFiles": [],
   "Headers": [],

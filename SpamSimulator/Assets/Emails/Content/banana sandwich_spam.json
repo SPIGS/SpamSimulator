@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Recipe for banana sandwich surprise!",
   "Sender": "chefbanana@sillykitchen.com",
+  "SenderName": "Chef Banana",
   "IsSpam": true,
   "ImageFiles": [],
   "Headers": [],

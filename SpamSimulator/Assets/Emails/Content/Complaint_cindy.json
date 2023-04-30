@@ -1,10 +1,10 @@
 {
   "Template": "ET_Img_Txt_UI.uxml",
-  "Subject": "RIP Jasper",
+  "Subject": "Complaint",
   "Sender": "cindy@smallsoft.comp",
+  "SenderName": "Cindy",
   "IsSpam": false,
   "ImageFiles": [
-  "rip jasper.jpg"
   ],
   "Headers": [],
   "Paragraphs": [

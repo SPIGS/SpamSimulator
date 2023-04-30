@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Lunch next week",
   "Sender": "jack@bigsoft.comp",
+  "SenderName": "Jack",
   "IsSpam": false,
   "ImageFiles": [],
   "Headers": [],

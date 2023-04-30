@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Introduction of New Employee",
   "Sender": "hr@smallsoft.comp",
+  "SenderName": "HR",
   "IsSpam": false,
   "ImageFiles": [],
   "Headers": [],

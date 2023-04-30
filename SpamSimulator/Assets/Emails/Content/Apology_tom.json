@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Apology for Unprofessional Remarks",
   "Sender": "tom@smallsoft.comp",
+  "SenderName": "Tom",
   "IsSpam": false,
   "ImageFiles": [],
   "Headers": [],

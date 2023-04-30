@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Check out this crazy video, dude!",
   "Sender": "yourdude@brocodez.com",
+  "SenderName": "Chet",
   "IsSpam": true,
   "ImageFiles": [],
   "Headers": [],
