@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Bob's Famous Chili Recipe",
+  "Sender": "bob@smallsoft.comp",
+  "SenderName": "Bob",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hey everyone,\r\n\r\nI wanted to share my famous chili recipe with you all. This is a recipe that's been in my family for generations and it always hits the spot on a cold winter day. It's also great for tailgating or game day parties. Give it a try and let me know what you think!\r\n\r\nIngredients:\r\n- 2 lbs ground beef\r\n- 1 large onion, chopped\r\n- 3 cloves garlic, minced\r\n- 2 cans diced tomatoes (14.5 oz each)\r\n- 1 can tomato sauce (8 oz)\r\n- 1 can kidney beans, drained and rinsed (15 oz)\r\n- 1 can black beans, drained and rinsed (15 oz)\r\n- 2 tbsp chili powder\r\n- 1 tbsp cumin\r\n- 1 tsp salt\r\n- 1/4 tsp black pepper\r\n- 1/4 tsp cayenne pepper (optional)\r\n\r\nDirections:\r\n1. In a large pot or Dutch oven, brown the ground beef over medium-high heat. Drain off any excess fat.\r\n2. Add the onion and garlic to the pot and sauté until the onion is translucent.\r\n3. Stir in the diced tomatoes, tomato sauce, kidney beans, black beans, chili powder, cumin, salt, black pepper, and cayenne pepper (if using).\r\n4. Bring the chili to a simmer and let it cook for at least 30 minutes, stirring occasionally.\r\n5. Serve hot with your favorite toppings, such as shredded cheese, sour cream, or green onions.\r\n\r\nEnjoy!\r\n\r\nBest,\r\nBob"
+  ]
+}

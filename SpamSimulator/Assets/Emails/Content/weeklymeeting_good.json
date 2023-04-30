@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Reminder: Weekly meeting tomorrow",
+  "Sender": "john@smallsoft.comp",
+  "SenderName": "John",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi team,\r\n\r\nJust a quick reminder that we have our weekly meeting scheduled for tomorrow at 10:00 AM in the conference room. Please make sure to review the agenda beforehand and bring any updates or questions you may have.\r\n\r\nSee you all there,\r\nJohn"
+  ]
+}

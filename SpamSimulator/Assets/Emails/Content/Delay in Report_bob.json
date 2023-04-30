@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Delay in Sales Report",
   "Sender": "bob@smallsoft.comp",
+  "SenderName": "Bob",
   "IsSpam": false,
   "ImageFiles": [],
   "Headers": [],

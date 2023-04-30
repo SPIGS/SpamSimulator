@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "UFO sighting near the office",
+  "Sender": "jane@smallsoft.comp",
+  "SenderName": "Jane",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hey everyone,\r\n\r\nI know this sounds crazy, but I swear I saw a UFO hovering over the office building this morning. I couldn't believe my eyes and had to do a double take, but it was definitely there.\r\n\r\nHas anyone else seen anything strange or out of the ordinary around here lately? Maybe we should report this to someone.\r\n\r\nTake care,\r\nJane"
+  ]
+}

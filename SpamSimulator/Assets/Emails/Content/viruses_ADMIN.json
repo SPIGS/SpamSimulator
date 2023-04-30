@@ -1,0 +1,13 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "UPDATE: Preventing Virus Infections",
+  "Sender": "ADMIN@smallsoft.comp",
+  "SenderName": "ADMIN",
+  "IsSpam": false,
+  "IsAdmin": true,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Dear NEW HIRE,\r\n\r\nI hope this email finds you well. I wanted to take a moment to emphasize the importance of identifying spam emails in our company's email system.\r\n\r\nAs you know, your primary responsibility is to review and categorize incoming emails as legitimate or spam. It is critical that we identify and quarantine spam emails to prevent virus infections and other security breaches.\r\n\r\nWhile our IT department has robust security measures in place, it is always possible for a virus to slip through the cracks. This is why your role is so important. By diligently identifying spam emails, you help to protect our company's email system and the sensitive data it contains.\r\n\r\nPlease take the time to review our company's email filtering policies and ensure that you are following them carefully. If you are ever unsure about the legitimacy of an email, please do not hesitate to contact me or the IT department for assistance.\r\n\r\nThank you for your hard work and dedication to keeping our company's email system secure.\r\n\r\nBest regards,\r\n\r\nAdministrator"
+  ]
+}

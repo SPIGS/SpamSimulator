@@ -17,6 +17,7 @@ namespace SpamSim
         public VisualTreeAsset inboxItemTemplate;
         public FontScaler fontScaler;
         public GameController gameController;
+        public SoundController soundController; 
 
         public int maxEmails;
 
@@ -28,15 +29,6 @@ namespace SpamSim
 
             emailRoot = uI.rootVisualElement.Q<VisualElement>(name: "EmailUI");
             inboxScrollView = uI.rootVisualElement.Q<ScrollView>(name: "InboxScrollView");
-
-            AddEmail("testEmail.json");
-            AddEmail("Apology_tom.json");
-            AddEmail("Company Picnic_events.json");
-            AddEmail("Complaint_cindy.json");
-            AddEmail("Delay in Report_bob.json");
-            //AddEmail("smellsuft_widgets_intro_spam.json");
-            AddEmail("Meeting Confirmation_jane.json");
-            AddEmail("smellsuft_widgets_promo1_spam.json");
         }
 
         // Update is called once per frame
@@ -45,7 +37,7 @@ namespace SpamSim
             
         }
 
-        void AddEmail(string emailFileName)
+        public void AddEmail(string emailFileName)
         {
             if (inbox.Count >= maxEmails)
             {
@@ -91,6 +83,8 @@ namespace SpamSim
             fontScaler.scaleFont(inboxItem);
 
             inboxScrollView.Add(inboxItem);
+
+            soundController.PlaySoundEffect("New Email");
         }
 
         void OnOpenEmail(Email email)
@@ -110,7 +104,19 @@ namespace SpamSim
                 currentEmail = null;
             }
 
+            if (email.IsAdmin) {
+                gameController.SetAdminEmailInactive();
+            }
+
             inbox.Remove(email);
+
+            // if delete play trash sound else play approve sound
+            if (action == "delete") {
+                soundController.PlaySoundEffect("Trash Email");
+            } else {
+
+            }
+
 
             if (action == "approve" && !email.IsSpam) 
             {

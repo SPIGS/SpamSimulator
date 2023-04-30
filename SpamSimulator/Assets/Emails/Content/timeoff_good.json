@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Re: Request for time off",
+  "Sender": "mark@smallsoft.comp",
+  "SenderName": "Mark",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi Sarah,\r\n\r\nThanks for letting me know about your request for time off. I checked the calendar and it looks like we should be able to accommodate your request, as long as it doesn't conflict with any other team members' schedules.\r\n\r\nI'll confirm with the rest of the team and get back to you with a final answer as soon as possible.\r\n\r\nBest,\r\nMark"
+  ]
+}

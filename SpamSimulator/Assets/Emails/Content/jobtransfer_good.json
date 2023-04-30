@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Job transfer request",
+  "Sender": "jane@smallsoft.comp",
+  "SenderName": "Jane",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi Manager,\r\n\r\nI hope this email finds you well. I wanted to inform you that I am interested in transferring to Bigsoft. I feel that this opportunity would help me develop new skills and experiences that I cannot gain at Smallsoft.\r\n\r\nI have been with Smallsoft for over two years, and I have gained valuable experience and knowledge. However, I feel that it is time for me to seek new challenges.\r\n\r\nPlease let me know what the process is to apply for a transfer and what the next steps are.\r\n\r\nThank you for your time and consideration.\r\n\r\nBest regards,\r\nJane"
+  ]
+}

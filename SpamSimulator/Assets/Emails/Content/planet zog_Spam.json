@@ -1,0 +1,15 @@
+{
+  "Template": "ET_Img_Txt_Img_UI.uxml",
+  "Subject": "Greetings from planet Zog!",
+  "Sender": "gloopglorp@zog.planet",
+  "SenderName": "G.G.",
+  "IsSpam": true,
+  "ImageFiles": [
+    "greetingszog.jpg",
+    "zogrock.jpg"
+  ],
+  "Headers": [],
+  "Paragraphs": [
+    "Dear Snickerdoodle,\r\n\r\nGreetings from the planet Zog! I hope this email finds you doing the hokey-pokey while juggling pineapples in a tutu. I myself am currently sitting in a bathtub filled with jellybeans, sipping on a smoothie made of moon rocks and star dust.\r\n\r\nSpeaking of moon rocks, did you know that they have the power to make your hair grow backwards? It's true! I tried it myself and now I have a full head of hair on my chin.\r\n\r\nAnyway, enough about me. How are you doing? Are you still wearing your socks on your hands and your gloves on your feet? I hope so, because that's the only way to keep the purple giraffes from stealing your toothbrush.\r\n\r\nWell, I must go now. I have a date with a unicorn and we're going to ride rainbows into the sunset. Take care, and don't forget to brush your teeth with pickle juice!\r\n\r\nSincerely,\r\nGloop Glorp"
+  ]
+}

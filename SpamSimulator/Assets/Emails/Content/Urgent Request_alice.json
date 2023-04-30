@@ -2,6 +2,7 @@
   "Template": "ET_Txt_UI.uxml",
   "Subject": "Urgent Request for Sales Report",
   "Sender": "alice@smallsoft.comp",
+  "SenderName": "Alice",
   "IsSpam": false,
   "ImageFiles": [],
   "Headers": [],

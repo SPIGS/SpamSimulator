@@ -1,0 +1,14 @@
+{
+  "Template": "ET_Img_Txt_UI.uxml",
+  "Subject": "RIP Jasper",
+  "Sender": "cindy@smallsoft.comp",
+  "SenderName": "Cindy",
+  "IsSpam": false,
+  "ImageFiles": [
+    "rip jasper.jpg"
+  ],
+  "Headers": [],
+  "Paragraphs": [
+    "Dear Team,\r\n\r\nJasper was the best pet rock I could ever have met. He meant the world to me, and now he is gone. He fell apart after being thrown from the 12th floor of our office yesterday.\r\n\r\nThank you all for your help during this hard time.\r\n\r\nCindy"
+  ]
+}

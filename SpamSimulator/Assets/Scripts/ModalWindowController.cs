@@ -7,6 +7,7 @@ public class ModalWindowController : MonoBehaviour
 {
     public UIDocument uIDocument;
     public FontScaler fontScaler;
+    public SoundController soundController;
     private VisualElement root;
     private int modalWindowCounter = 0;
     private float mouseX = 0.0f;
@@ -26,7 +27,6 @@ public class ModalWindowController : MonoBehaviour
         if (currentDrag != null) {
             currentDrag.style.left = (StyleLength)(mouseX - mouseXOnDrag + windowXOnDrag);
             currentDrag.style.top = (StyleLength)(Screen.height - mouseY);
-            Debug.Log(mouseY);
         }
     }
 
@@ -85,6 +85,59 @@ public class ModalWindowController : MonoBehaviour
             LetGoWindow(evt);
         });
         
+        root.Add(modalWindow);
+    }
+
+    public void CreateAudioSettingsModal(VisualTreeAsset windowTemplate, float x, float y, float width, float height, string title)
+    {
+        modalWindowCounter++;
+        //styling
+        VisualElement modalWindow = windowTemplate.Instantiate();
+        modalWindow.style.width = width;
+        modalWindow.style.height = height;
+        modalWindow.style.position = Position.Absolute;
+        modalWindow.style.left = x;
+        modalWindow.style.top = y;
+        fontScaler.scaleFont(modalWindow);
+
+        //set the windows id
+        int windowId = modalWindowCounter;
+        modalWindow.name = "Window" + windowId;
+
+        //set window title
+        modalWindow.Q<Label>("Title").text = title;
+
+        //Close window callback
+        Button closeButton = modalWindow.Q<Button>("CloseWindow");
+        closeButton.clickable.clicked += () =>
+        {
+            CloseWindow(windowId);
+        };
+
+        //Drag window callback 
+        modalWindow.Q<VisualElement>("WindowTitlebar").RegisterCallback<MouseDownEvent>((evt) =>
+        {
+            DragWindow(evt, windowId);
+        });
+
+        //Let go windwo callabck
+        root.RegisterCallback<MouseUpEvent>((evt) =>
+        {
+            LetGoWindow(evt);
+        });
+
+        //Sound effects volume slider callback to SOund Controller
+        Slider effectsSilder = modalWindow.Q<Slider>("SoundEffects");
+        effectsSilder.RegisterValueChangedCallback(v =>
+        {
+           soundController.SetSoundEffectsVolume(v.newValue/100.0f);
+        });
+
+        Slider musicSlider = modalWindow.Q<Slider>("Music");
+        effectsSilder.RegisterValueChangedCallback(v =>
+        {
+            soundController.SetMusicVolume(v.newValue / 100.0f);
+        });
         root.Add(modalWindow);
     }
 

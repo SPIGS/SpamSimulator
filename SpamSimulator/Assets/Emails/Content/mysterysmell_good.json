@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Mystery smell in the office",
+  "Sender": "jessica@smallsoft.comp",
+  "SenderName": "Jessica",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi team,\r\n\r\nI'm not sure if anyone else has noticed, but there's a strange smell in the office today. It's hard to describe, but it's definitely not a pleasant scent. I've already checked with the facilities team and they are investigating, but in the meantime, please be aware of the odor and let me know if you have any concerns.\r\n\r\nThanks,\r\nJessica"
+  ]
+}

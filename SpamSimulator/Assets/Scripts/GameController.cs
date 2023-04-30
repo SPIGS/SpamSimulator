@@ -3,18 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using SpamSim;
 
 public class GameController : MonoBehaviour
 {
     public UIDocument uiDocument;
+    public StoryController storyController;
+    public EmailController emailController;
+    public int[] adminEmailCounters;
     public int score = 0;
-    public int strikes = 0;
-    public float newEmailDelaySec = 1.0f;
+    public Vector2 emailDelayRange = new Vector2(5.0f, 10.0f);
+    
+    [Range(0.0f, 1.0f)]
+    public float spamWeight = 0.10f;
     public bool gameOver = false;
     
     private VisualElement root;
     
     private float timeElapsed = 0.0f;
+    private int numEmailsCreated = 0;
+    private int nextAdminEmail = 0;
+    private bool adminEmailIsActive = false;
+
+    private bool bootIsDone = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,11 +37,44 @@ public class GameController : MonoBehaviour
         if (!gameOver) {
             // Email generation timing
             timeElapsed += Time.deltaTime;
-            if (timeElapsed >= newEmailDelaySec)
-            {
-                // Tell email controller to make new email.
-                timeElapsed = 0.0f;
-            }
+            if (bootIsDone) {
+                float delay = Random.Range(emailDelayRange.x, emailDelayRange.y);
+                if (timeElapsed >= delay)
+                {
+                    if (numEmailsCreated >= nextAdminEmail && nextAdminEmail < adminEmailCounters.Length && !adminEmailIsActive)
+                    {
+                        //Send an admin email
+                        adminEmailIsActive = true;
+                        string email = storyController.GetAdminEmail(nextAdminEmail);
+                        emailController.AddEmail(email);
+                        nextAdminEmail++;
+                    }
+                    else
+                    {
+                        if (!adminEmailIsActive)
+                        {
+                            // Ask pretty please for a new email
+                            double randomValue = Random.Range(0.0f, 1.0f);
+                            if (randomValue <= spamWeight)
+                            {
+                                string email = storyController.GetEmail(true);
+                                emailController.AddEmail(email);
+                            }
+                            else
+                            {
+                                string email = storyController.GetEmail(false);
+                                emailController.AddEmail(email);
+                            }
+                        }
+                    }
+                    timeElapsed = 0.0f;
+                    numEmailsCreated++;
+                }
+            } else {
+                if (timeElapsed >= 6.5) {
+                    bootIsDone = true;
+                }
+            } 
         } else {
             // Load BSOD
             SceneManager.LoadScene("BlueScreen");
@@ -62,5 +106,9 @@ public class GameController : MonoBehaviour
     public void OnFullStorage () {
         //end game
         this.gameOver = true;
+    }
+
+    public void SetAdminEmailInactive () {
+        adminEmailIsActive = false;
     }
 }

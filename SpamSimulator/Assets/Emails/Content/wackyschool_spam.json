@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Important Announcement from Wacky School",
+  "Sender": "principal@wackyschool.com",
+  "SenderName": "P.W.",
+  "IsSpam": true,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Greetings students and faculty of Wacky School,\r\n\r\nI hope this message finds you ready for another day of wackiness! As you all know, our school is a place where imagination and creativity run wild. However, there have been some concerns raised about the safety of our wacky experiments.\r\n\r\nI am pleased to announce that we have implemented new safety measures to ensure that all of our wacky experiments are conducted in a safe and responsible manner. From now on, all students and faculty must wear safety goggles, lab coats, and anti-gravity boots when participating in wacky experiments.\r\n\r\nIn addition, we will be holding a Wacky Experiment Showcase next week to demonstrate the latest and greatest in wacky science. We encourage all of you to participate and show off your wacky creations.\r\n\r\nRemember, safety first, wackiness second. Let's continue to make Wacky School the wackiest place on earth!\r\n\r\nSincerely,\r\nPrincipal Wacko"
+  ]
+}
