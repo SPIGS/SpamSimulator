@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class Toolbar : MonoBehaviour
 {
@@ -10,9 +12,19 @@ public class Toolbar : MonoBehaviour
     public FontScaler fontScaler;
 
     private VisualElement root;
+    
+    // File Dropdown and buttons
     private Button fileButton;
+    private Button newGameButton;
+    private Button exitGameButton;
+
+    // Settings dropdown and buttons
     private Button settingsButton;
+
+    // Tools dropdown and buttons
     private Button toolsButton;
+
+    // About button
     private Button aboutButton;
 
     private enum ToolbarButtons {
@@ -27,15 +39,39 @@ public class Toolbar : MonoBehaviour
     {
         // Get the buttons
         root = GetComponent<UIDocument>().rootVisualElement;
+
+        // File buttons
         fileButton = root.Query<Button>("FileButton");
+        newGameButton = root.Query<Button>("New");
+        exitGameButton = root.Query<Button>("Exit");
+
         settingsButton = root.Query<Button>("SettingsButton");
         toolsButton = root.Query<Button>("ToolsButton");
         aboutButton = root.Query<Button>("AboutButton");
 
         //Register Callbacks
+
+        // File Dropdown
         fileButton.clickable.clicked += () => {
             ToggleButtonActive(ToolbarButtons.FILE);
         };
+        newGameButton.clickable.clicked += () => {
+            SceneManager.LoadScene("Game");
+        };
+        exitGameButton.clickable.clicked += () =>
+        {
+            if (EditorApplication.isPlaying)
+            {
+                EditorApplication.isPlaying = false;
+            }
+            else
+            {
+                Application.Quit();
+            }
+        };
+
+
+
         settingsButton.clickable.clicked += () =>
         {
             ToggleButtonActive(ToolbarButtons.SETTINGS);
