@@ -8,7 +8,7 @@ public class FontScaler : MonoBehaviour
     public float fontScale = 1.0f;
     private VisualElement root;
 
-    void Start() {
+    void Awake() {
         float playableHeight = Screen.height;
         fontScale = playableHeight / 1080;
 
@@ -53,6 +53,9 @@ public class FontScaler : MonoBehaviour
             }else if(element.ClassListContains("dropdown")) {
                 element.style.paddingTop = 1 * fontScale;
                 element.style.paddingBottom = 1 * fontScale;
+            }else if(element.ClassListContains("titlebar-button")) {
+                element.style.width = 32 * fontScale;
+                element.style.height = 32 * fontScale;
             }
 
             //Name execptions
@@ -61,7 +64,10 @@ public class FontScaler : MonoBehaviour
                 element.style.paddingRight = 10 * fontScale;
                 element.style.paddingTop = 5 * fontScale;
                 element.style.paddingBottom = 5 * fontScale;
-            } 
+            } else if (element.name == "LDLogo") {
+                element.style.width = 100 * fontScale;
+                element.style.height = 100 * fontScale;
+            }
 
         } else if (element.childCount > 0) {
             foreach(VisualElement child in element.Children()) {
