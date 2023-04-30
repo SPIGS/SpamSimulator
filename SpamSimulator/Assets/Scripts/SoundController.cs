@@ -31,8 +31,10 @@ public class SoundController : MonoBehaviour
     }
 
     public void PlayMusic(string name) {
-        foreach (NamedAudioClip audioClip in soundEffects)
+        Debug.Log("sadfsdfa");
+        foreach (NamedAudioClip audioClip in musicTracks)
         {
+            Debug.Log(audioClip.name);
             if (audioClip.name == name)
             {
                 musicSource.clip = audioClip.clip;

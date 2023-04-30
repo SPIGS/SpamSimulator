@@ -817,9 +817,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5292840395744211088, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+      propertyPath: musicTracks.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292840395744211088, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+      propertyPath: musicTracks.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ca0f93c8802ed347a0cf39f6bec28d1, type: 3}
+    - target: {fileID: 5292840395744211088, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+      propertyPath: musicTracks.Array.data[0].name
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276695702607677076, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6729585518766401029, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
       propertyPath: m_Name
       value: SoundController
+      objectReference: {fileID: 0}
+    - target: {fileID: 7045594474294985983, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2e29f9b60261284b9d4da8e5a5072b4, type: 3}

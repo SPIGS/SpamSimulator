@@ -132,6 +132,12 @@ public class ModalWindowController : MonoBehaviour
         {
            soundController.SetSoundEffectsVolume(v.newValue/100.0f);
         });
+
+        Slider musicSlider = modalWindow.Q<Slider>("Music");
+        effectsSilder.RegisterValueChangedCallback(v =>
+        {
+            soundController.SetMusicVolume(v.newValue / 100.0f);
+        });
         root.Add(modalWindow);
     }
 
