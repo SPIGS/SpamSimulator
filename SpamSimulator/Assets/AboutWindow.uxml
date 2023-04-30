@@ -1,3 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="AboutWindow" style="position: absolute; width: 300px; height: 200px; background-color: rgb(64, 94, 147);" />
+    <ui:Template name="WindowTitlebar" src="project://database/Assets/WindowTitlebar.uxml?fileID=9197481963319205126&amp;guid=8c5717db815e72a12b2ddb6d6a8abbbb&amp;type=3#WindowTitlebar" />
+    <Style src="project://database/Assets/WindowModal.uss?fileID=7433441132597879392&amp;guid=8ce807b5deaa0ed708f31bc6d07a295a&amp;type=3#WindowModal" />
+    <ui:VisualElement name="AboutWindowContainer" class="window-pane" style="position: absolute;">
+        <ui:Instance template="WindowTitlebar" name="WindowTitlebar" />
+        <ui:VisualElement style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+            <ui:VisualElement name="LDLogo" style="background-image: url(&apos;project://database/Assets/Images/ludum%20dare.png?fileID=2800000&amp;guid=1151bed62c9f2384ba22dccbcdcbad28&amp;type=3#ludum dare&apos;); width: 100px; height: 100px; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;" />
+            <ui:Label text="Made for Ludum  Dare 53 by" display-tooltip-when-elided="true" name="Text" style="color: rgb(0, 0, 0); justify-content: flex-start; align-items: flex-start; -unity-text-align: middle-center;" />
+            <ui:Label text="Brian, Parker, and Mitchell" display-tooltip-when-elided="true" name="Text" style="color: rgb(0, 0, 0); justify-content: flex-start; align-items: flex-start; -unity-text-align: middle-center; margin-bottom: 5px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
 </ui:UXML>

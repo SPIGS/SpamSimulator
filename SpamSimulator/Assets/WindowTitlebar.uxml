@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/WindowModal.uss?fileID=7433441132597879392&amp;guid=8ce807b5deaa0ed708f31bc6d07a295a&amp;type=3#WindowModal" />
+    <ui:VisualElement name="WindowTitlebar" style="flex-direction: row; color: rgb(255, 255, 255); -unity-font-style: bold; align-items: center; background-color: rgb(0, 0, 170); font-size: 32px; padding-left: 2px; padding-right: 2px;">
+        <ui:Label text="Title" display-tooltip-when-elided="true" name="Title" style="flex-grow: 1;" />
+        <ui:VisualElement name="buttonContainer" style="justify-content: center;">
+            <ui:Button display-tooltip-when-elided="true" name="CloseWindow" class="titlebar-button" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-left-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); background-image: url(&apos;project://database/Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/iconclosebutton.png?fileID=2800000&amp;guid=13527793884104b46b7446fd7464c3ed&amp;type=3#iconclosebutton&apos;); width: 32px; height: 32px; justify-content: flex-start;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
