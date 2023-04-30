@@ -1,6 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:Template name="InboxUI" src="project://database/Assets/InboxUI.uxml?fileID=9197481963319205126&amp;guid=40e2335921e9ee64da4a8fb4ef26ed3e&amp;type=3#InboxUI" />
     <ui:Template name="EmailUI" src="project://database/Assets/EmailUI.uxml?fileID=9197481963319205126&amp;guid=b49323493463b814fbeacf70719d339a&amp;type=3#EmailUI" />
-    <ui:Instance template="InboxUI" name="InboxUI" style="flex-direction: column; width: 25%; height: 100%; background-color: rgba(136, 136, 136, 255);" />
-    <ui:Instance template="EmailUI" name="EmailUI" style="flex-grow: 0; flex-direction: column; position: absolute; right: 0; width: 75%; height: 100%;" />
+    <Style src="project://database/Assets/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=521bf7393d89ac74baa331aa3a6d696d&amp;type=3#GeneralStyle" />
+    <ui:Instance template="InboxUI" name="InboxUI" class="gray" style="flex-direction: column; width: 25%; height: 100%;" />
+    <ui:Instance template="EmailUI" name="EmailUI" class="teal" style="flex-grow: 1; flex-direction: column; position: absolute; right: 0; width: 75%; height: 100%; margin-top: 0.5%;" />
 </ui:UXML>

@@ -56,25 +56,20 @@ public class Toolbar : MonoBehaviour
 
     void ToggleButtonActive (ToolbarButtons pressed) {
 
-        DeactivateButtons();
         HideAllDropdowns();
 
         switch (pressed)
         {
             case ToolbarButtons.FILE:
-                fileButton.AddToClassList("toolbar-button-selected");
                 ShowFileDropdown();
                 break;
             case ToolbarButtons.SETTINGS:
-                settingsButton.AddToClassList("toolbar-button-selected");
                 ShowSettingsDropdown();
                 break;
             case ToolbarButtons.TOOLS:
-                toolsButton.AddToClassList("toolbar-button-selected");
                 ShowToolsDropdown();
                 break;
             case ToolbarButtons.ABOUT:
-                aboutButton.AddToClassList("toolbar-button-selected");
                 ShowAboutModal();
                 break;
         }
@@ -82,15 +77,7 @@ public class Toolbar : MonoBehaviour
     void OnPointerUp (PointerUpEvent evt) {
         // This is to handle the case where we click somewhere that isn't the toolbar
         Debug.Log("Pointer Up");
-        DeactivateButtons();
         HideAllDropdowns();
-    }
-
-    void DeactivateButtons() {
-        fileButton.RemoveFromClassList("toolbar-button-selected");
-        settingsButton.RemoveFromClassList("toolbar-button-selected");
-        toolsButton.RemoveFromClassList("toolbar-button-selected");
-        aboutButton.RemoveFromClassList("toolbar-button-selected");
     }
 
     void ShowFileDropdown () {
