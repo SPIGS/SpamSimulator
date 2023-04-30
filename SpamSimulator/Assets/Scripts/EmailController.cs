@@ -18,6 +18,8 @@ namespace SpamSim
         public FontScaler fontScaler;
         public GameController gameController;
 
+        public int maxEmails;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -45,6 +47,12 @@ namespace SpamSim
 
         void AddEmail(string emailFileName)
         {
+            if (inbox.Count >= maxEmails)
+            {
+                OnGameOver();
+                return;
+            }
+
             Email email = Email.LoadEmail(emailFileName, emailCounter);
 
             inbox.Add(email);
@@ -132,6 +140,11 @@ namespace SpamSim
             {
                 gameController.OnDeleteBadEmail();
             }
+        }
+
+        void OnGameOver()
+        {
+            gameController.OnFullStorage();
         }
     }
 }
