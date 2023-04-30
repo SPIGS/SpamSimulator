@@ -33,7 +33,7 @@ public class GameController : MonoBehaviour
             }
         } else {
             // Load BSOD
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("BlueScreen");
         }
     }
 

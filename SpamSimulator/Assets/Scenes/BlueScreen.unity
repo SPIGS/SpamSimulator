@@ -526,4 +526,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0726031f7fcc9893836171acb6e4569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uI: {fileID: 1890862834}
   fontScale: 1
