@@ -6,8 +6,9 @@ using UnityEngine.UIElements;
 public class Toolbar : MonoBehaviour
 {
     public VisualTreeAsset aboutWindowTemplate;
+    public ModalWindowController windowCreator;
+    public FontScaler fontScaler;
 
-    private ModalWindowCreator windowCreator;
     private VisualElement root;
     private Button fileButton;
     private Button settingsButton;
@@ -24,7 +25,6 @@ public class Toolbar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        windowCreator = GetComponent<ModalWindowCreator>();
         // Get the buttons
         root = GetComponent<UIDocument>().rootVisualElement;
         fileButton = root.Query<Button>("FileButton");
@@ -113,13 +113,15 @@ public class Toolbar : MonoBehaviour
 
     void ShowAboutModal () {
         Debug.Log("About Dropdown");
-        int width = 300;
-        int height = 200;
+        float width = 600.0f * fontScaler.fontScale *fontScaler.fontScale;
+        Debug.Log(width);
+        float height = 200.0f * fontScaler.fontScale * fontScaler.fontScale;
         this.windowCreator.CreateModal(this.aboutWindowTemplate, 
-                (Screen.width/2) - width/2, 
-                (Screen.height/2) - height/2, 
+                (Screen.width/2.0f) - width/2.0f, 
+                (Screen.height/2.0f) - height/2.0f, 
                 width, 
-                height);
+                height,
+                "About this game");
     }
 
     void HideAllDropdowns () {
