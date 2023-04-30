@@ -8,6 +8,10 @@ using UnityEditor;
 public class Toolbar : MonoBehaviour
 {
     public VisualTreeAsset aboutWindowTemplate;
+    public VisualTreeAsset audioSettingsWindowTemplate;
+    public VisualTreeAsset graphicsSettingsWindowTemplate;
+    public VisualTreeAsset hotkeysWindowTemplate;
+
     public ModalWindowController windowCreator;
     public FontScaler fontScaler;
 
@@ -20,6 +24,9 @@ public class Toolbar : MonoBehaviour
 
     // Settings dropdown and buttons
     private Button settingsButton;
+    private Button audioSettingsButton;
+    private Button graphicsSettingsButton;
+    private Button hotkeysSettingsButton;
 
     // Tools dropdown and buttons
     private Button toolsButton;
@@ -45,7 +52,12 @@ public class Toolbar : MonoBehaviour
         newGameButton = root.Query<Button>("New");
         exitGameButton = root.Query<Button>("Exit");
 
+        // Settings Buttons 
         settingsButton = root.Query<Button>("SettingsButton");
+        audioSettingsButton = root.Query<Button>("Audio");
+        graphicsSettingsButton = root.Query<Button>("Visual");
+        hotkeysSettingsButton = root.Query<Button>("Hotkeys");
+
         toolsButton = root.Query<Button>("ToolsButton");
         aboutButton = root.Query<Button>("AboutButton");
 
@@ -70,12 +82,28 @@ public class Toolbar : MonoBehaviour
             }
         };
 
-
-
         settingsButton.clickable.clicked += () =>
         {
             ToggleButtonActive(ToolbarButtons.SETTINGS);
         };
+        audioSettingsButton.clickable.clicked += () => {
+            DeactivateButtons();
+            HideAllDropdowns();
+            ShowAudioSettingsModal();
+        };
+        graphicsSettingsButton.clickable.clicked += () =>
+        {
+            DeactivateButtons();
+            HideAllDropdowns();
+            ShowGraphicsSettingsModal();
+        };
+        hotkeysSettingsButton.clickable.clicked += () =>
+        {
+            DeactivateButtons();
+            HideAllDropdowns();
+            ShowHotkeysSettingsModal();
+        };
+
         toolsButton.clickable.clicked += () =>
         {
             ToggleButtonActive(ToolbarButtons.TOOLS);
@@ -152,6 +180,41 @@ public class Toolbar : MonoBehaviour
                 width, 
                 height,
                 "About this game");
+    }
+
+    void ShowAudioSettingsModal () {
+        float width = 600.0f * fontScaler.fontScale * fontScaler.fontScale;
+        float height = 200.0f * fontScaler.fontScale * fontScaler.fontScale;
+        this.windowCreator.CreateModal(this.audioSettingsWindowTemplate,
+                (Screen.width / 2.0f) - width / 2.0f,
+                (Screen.height / 2.0f) - height / 2.0f,
+                width,
+                height,
+                "Audio Settings");
+    }
+
+    void ShowGraphicsSettingsModal()
+    {
+        float width = 600.0f * fontScaler.fontScale * fontScaler.fontScale;
+        float height = 200.0f * fontScaler.fontScale * fontScaler.fontScale;
+        this.windowCreator.CreateModal(this.graphicsSettingsWindowTemplate,
+                (Screen.width / 2.0f) - width / 2.0f,
+                (Screen.height / 2.0f) - height / 2.0f,
+                width,
+                height,
+                "Visual Settings");
+    }
+
+    void ShowHotkeysSettingsModal()
+    {
+        float width = 600.0f * fontScaler.fontScale * fontScaler.fontScale;
+        float height = 200.0f * fontScaler.fontScale * fontScaler.fontScale;
+        this.windowCreator.CreateModal(this.graphicsSettingsWindowTemplate,
+                (Screen.width / 2.0f) - width / 2.0f,
+                (Screen.height / 2.0f) - height / 2.0f,
+                width,
+                height,
+                "Hotkeys");
     }
 
     void HideAllDropdowns () {
