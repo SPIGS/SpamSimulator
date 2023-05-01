@@ -8,7 +8,10 @@ using UnityEditor;
 public class BlueScreenController : MonoBehaviour
 {
     public UIDocument uiDocument;
+    public string scoreLabelText = "*** YOUR SCORE: ";
+    public string highscoreLabelText = "*** HIGHSCORE: ";
     private VisualElement root;
+    private Label scoreLabel;
 
     private enum Option {
         NEW_GAME,
@@ -19,6 +22,13 @@ public class BlueScreenController : MonoBehaviour
 
     void Start() {
         root = uiDocument.rootVisualElement;
+
+        scoreLabel = root.Q<Label>("Score");
+        scoreLabel.text = scoreLabelText + PlayerPrefs.GetInt("Score", -1);
+
+        scoreLabel = root.Q<Label>("Highscore");
+        scoreLabel.text = highscoreLabelText + PlayerPrefs.GetInt("Highscore", -1);
+
         Button newgameButton = root.Query<Button>("NewGame");
         newgameButton.Focus();
     }

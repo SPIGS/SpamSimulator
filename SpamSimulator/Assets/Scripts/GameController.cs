@@ -13,21 +13,25 @@ public class GameController : MonoBehaviour
     public VirusController virusController;
     public int[] adminEmailCounters;
     public int score = 0;
+    public float totalTimePassed = 0.0f;
     public Vector2 emailDelayRange = new Vector2(5.0f, 10.0f);
-    
+
     [Range(0.0f, 1.0f)]
     public float spamWeight = 0.10f;
     public bool gameOver = false;
     public string scoreFooterLabel = "Score: ";
     public string storageFooterLabel = "Available Storage: ";
-    
+
+    public int adminEmailsSent = 0;
+
     private VisualElement root;
-    
+
     private float timeElapsed = 0.0f;
     private int numEmailsCreated = 0;
-    private int nextAdminEmail = 0;
+    private int nextAdminEmailScore = 0;
+    private int adminEmailIndex = 0;
     private bool adminEmailIsActive = false;
-    private bool bootIsDone = false;
+    private bool allAdminEmailsSent = false;
     private Label scoreLabel;
     private Label storageLabel;
     void Start()
@@ -39,88 +43,139 @@ public class GameController : MonoBehaviour
         UpdateStorage();
     }
 
-    void Update () {
+    void Update()
+    {
 
-        if (!gameOver) {
+        if (!gameOver)
+        {
             // Email generation timing
             timeElapsed += Time.deltaTime;
-            if (bootIsDone) {
-                float delay = Random.Range(emailDelayRange.x, emailDelayRange.y);
-                if (timeElapsed >= delay)
+            float delay = Random.Range(emailDelayRange.x, emailDelayRange.y);
+            if (timeElapsed >= delay)
+            {
+                if (ShouldSendAdminEmail())
                 {
-                    if (numEmailsCreated >= nextAdminEmail && nextAdminEmail < adminEmailCounters.Length && !adminEmailIsActive)
+                    //Send an admin email
+                    adminEmailIsActive = true;
+                    string email = storyController.GetAdminEmail(adminEmailIndex);
+                    emailController.AddEmail(email);
+                    adminEmailsSent++;
+                    if (adminEmailIndex + 1 >= adminEmailCounters.Length)
                     {
-                        //Send an admin email
-                        adminEmailIsActive = true;
-                        string email = storyController.GetAdminEmail(nextAdminEmail);
-                        emailController.AddEmail(email);
-                        nextAdminEmail++;
+                        allAdminEmailsSent = true;
                     }
                     else
                     {
-                        if (!adminEmailIsActive)
+                        nextAdminEmailScore = adminEmailCounters[adminEmailIndex + 1];
+                        adminEmailIndex++;
+                    }
+                }
+                else
+                {
+                    if (!adminEmailIsActive)
+                    {
+                        // Ask pretty please for a new email
+                        double randomValue = Random.Range(0.0f, 1.0f);
+                        if (randomValue <= spamWeight)
                         {
-                            // Ask pretty please for a new email
-                            double randomValue = Random.Range(0.0f, 1.0f);
-                            if (randomValue <= spamWeight)
-                            {
-                                string email = storyController.GetEmail(true);
-                                emailController.AddEmail(email);
-                            }
-                            else
-                            {
-                                string email = storyController.GetEmail(false);
-                                emailController.AddEmail(email);
-                            }
+                            string email = storyController.GetEmail(true);
+                            emailController.AddEmail(email);
+                        }
+                        else
+                        {
+                            string email = storyController.GetEmail(false);
+                            emailController.AddEmail(email);
                         }
                     }
-                    timeElapsed = 0.0f;
-                    numEmailsCreated++;
-                    UpdateStorage();
                 }
-            } else {
-                if (timeElapsed >= 6.5) {
-                    bootIsDone = true;
-                }
-            } 
-        } else {
+                timeElapsed = 0.0f;
+                numEmailsCreated++;
+                UpdateStorage();
+            }
+
+        }
+        else
+        {
             // Load BSOD
+
+            int score = PlayerPrefs.GetInt("Score");
+
+            // If the players current score is higher than the last highscore,
+            // make it the new high score
+            if (PlayerPrefs.GetInt("Highscore", -1) == -1 || PlayerPrefs.GetInt("Highscore", -1) <= score)
+            {
+                PlayerPrefs.SetInt("Highscore", score);
+            }
             SceneManager.LoadScene("BlueScreen");
         }
     }
 
-    public void OnDeleteGoodEmail () {
+    bool ShouldSendAdminEmail()
+    {
+        if (allAdminEmailsSent)
+        {
+            return false;
+        }
+        if (adminEmailIsActive)
+        {
+            return false;
+        }
+        if (score < nextAdminEmailScore)
+        {
+            return false;
+        }
+        if (adminEmailIndex >= adminEmailCounters.Length)
+        {
+            return false;
+        }
+        return true;
+    }
+
+    public void OnDeleteGoodEmail()
+    {
         UpdateScore(-1);
     }
 
-    public void OnPassGoodEmail () {
+    public void OnPassGoodEmail()
+    {
         UpdateScore(1);
     }
 
-    public void OnPassBadEmail () {
+    public void OnPassBadEmail()
+    {
         Debug.Log("Pass bad email");
         UpdateScore(-1);
-        int choice = Random.Range(0,4);
-        virusController.CreateAndTriggerVirus((VirusType)choice);
+        if (adminEmailsSent >= 2)
+        {
+            int choice = Random.Range(0, 4);
+            virusController.CreateAndTriggerVirus((VirusType)choice);
+        }
     }
 
-    public void OnDeleteBadEmail () {
+    public void OnDeleteBadEmail()
+    {
         Debug.Log("Delete Bad Email");
         UpdateScore(1);
     }
 
-    public void OnFullStorage () {
+    public void OnFullStorage()
+    {
         //end game
         this.gameOver = true;
     }
 
-    public void SetAdminEmailInactive () {
+    public void SetAdminEmailInactive()
+    {
         adminEmailIsActive = false;
     }
 
-    public void UpdateScore(int points){
+    public void UpdateScore(int points)
+    {
         score += points;
         scoreLabel.text = scoreFooterLabel + score;
+
+        //Store the players current score
+        PlayerPrefs.SetInt("Score", score);
     }
 
     public void UpdateStorage()

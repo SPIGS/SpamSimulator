@@ -608,8 +608,9 @@ MonoBehaviour:
   storyController: {fileID: 646660211}
   emailController: {fileID: 555065346}
   virusController: {fileID: 972933260}
-  adminEmailCounters: 0000000000000000
+  adminEmailCounters: 0000000005000000
   score: 0
+  totalTimePassed: 0
   emailDelayRange: {x: 1, y: 2}
   spamWeight: 0.889
   gameOver: 0

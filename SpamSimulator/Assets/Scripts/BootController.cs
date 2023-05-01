@@ -26,6 +26,7 @@ public class BootController : MonoBehaviour
     private VisualElement spinner;
     private int splashCount = 0;
     private int maxSplashCount;
+    private bool osChimePlayed = false;
 
     private enum BootStage {
         BEEP,
@@ -47,7 +48,7 @@ public class BootController : MonoBehaviour
         spinner = root.Q<VisualElement>("Spinner");
         bootScreen.visible = true;
         splashScreen.visible = false;
-        maxSplashCount = (int)(Screen.width / 40);
+        maxSplashCount = (int)(Screen.width / 25);
     }
 
     // Update is called once per frame
@@ -99,6 +100,10 @@ public class BootController : MonoBehaviour
             break;
             case BootStage.SPLASH:
                 if (timeElapsed >= 0.1f) {
+                    if (!osChimePlayed) {
+                        osChimePlayed = true;
+                        soundController.PlaySoundEffect("Start Up");
+                    }
                     float offset = spinner.style.left.value.value + 450 * timeElapsed;
                     if (offset > Screen.width) {
                         offset = -spinner.style.width.value.value;
