@@ -30,7 +30,8 @@ namespace SpamSim
         public static Email LoadEmail(string emailFileName, int id)
         {
             string jsonString = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Content/{emailFileName}", typeof(TextAsset))).text;
-
+            
+            Debug.Log(emailFileName);
             Email email = JsonUtility.FromJson<Email>(jsonString);
 
             email.id = id;

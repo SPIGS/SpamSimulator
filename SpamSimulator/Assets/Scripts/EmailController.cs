@@ -145,11 +145,16 @@ namespace SpamSim
             {
                 gameController.OnDeleteBadEmail();
             }
+            gameController.UpdateStorage();
         }
 
         void OnGameOver()
         {
             gameController.OnFullStorage();
+        }
+
+        public int GetCurrentStorage() {
+            return inbox.Count;
         }
     }
 }

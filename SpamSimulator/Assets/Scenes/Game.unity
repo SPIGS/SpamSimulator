@@ -436,25 +436,6 @@ MonoBehaviour:
   storylineFiles:
   - Tom_v_Cindy
   - Toms_Outburst
-  spamFiles:
-  - banana sandwich_spam
-  - company chain_spam
-  - deborahchain_spam
-  - dept of dad jokes_spam
-  - drboom chain_spam
-  - johnmarketing_spam
-  - marshmallowqueen_spam
-  - planet zog_Spam
-  - rainbowrider_spam
-  - readyforfun_spam
-  - smellsuft_widgets_intro_spam
-  - smellsuft_widgets_promo1_spam
-  goodGenericFiles:
-  - bdaycake_good
-  - bobschilirecipe_good
-  - Company Picnic_good
-  - conferencedetails_good
-  - employeereview_good
   adminStoryline: Admin emails
   storyWeight: 0.33
 --- !u!4 &646660212
@@ -571,9 +552,11 @@ MonoBehaviour:
   emailController: {fileID: 555065346}
   adminEmailCounters: 0000000000000000
   score: 0
-  emailDelayRange: {x: 5, y: 10}
+  emailDelayRange: {x: 1, y: 2}
   spamWeight: 0.1
   gameOver: 0
+  scoreFooterLabel: 'Score:'
+  storageFooterLabel: 'Available Storage:'
 --- !u!4 &1265334164
 Transform:
   m_ObjectHideFlags: 0

@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/GUI/Styles/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=521bf7393d89ac74baa331aa3a6d696d&amp;type=3#GeneralStyle" />
+    <Style src="project://database/Assets/GUI/Styles/scaler.uss?fileID=7433441132597879392&amp;guid=8c16d175bfeee7344a448ebb32324540&amp;type=3#scaler" />
+    <ui:VisualElement name="WindowFooter" class="gray" style="width: 100%; flex-direction: row;">
+        <ui:VisualElement class="gray-reverse-bezel" style="flex-grow: 1; margin-left: 10px; margin-right: 5px; margin-top: 2.5px; margin-bottom: 5px;">
+            <ui:Label text="Deliveries Sorted:" display-tooltip-when-elided="true" name="ScoreLabel" class="font-scale" />
+        </ui:VisualElement>
+        <ui:VisualElement class="gray-reverse-bezel" style="flex-grow: 1; margin-left: 5px; margin-right: 10px; margin-top: 2.5px; margin-bottom: 5px;">
+            <ui:Label text="Storage:" display-tooltip-when-elided="true" name="StorageLabel" class="font-scale" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
