@@ -616,6 +616,7 @@ MonoBehaviour:
   emailDelayRange: {x: 5, y: 7}
   spamWeight: 0.324
   gameOver: 0
+  DEBUG_LOAD_ALL_EMAILS: 0
   scoreFooterLabel: 'Score:'
   storageFooterLabel: 'Available Storage:'
   strikesFooterLabel: 'Strikes: '

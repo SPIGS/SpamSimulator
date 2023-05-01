@@ -82,7 +82,7 @@ public class StoryController : MonoBehaviour
         int index = Random.Range(0, badEmailsAList.Count);
         string email = badEmailsAList[index];
         badEmailsAList.Remove(email);
-        badEmailsAList.Add(email);
+        badEmailsBList.Add(email);
 
         return email;
     }
@@ -129,5 +129,25 @@ public class StoryController : MonoBehaviour
 
     public string GetAdminEmail (int index) {
         return adminStory.Storyline[index];
+    }
+
+    public List<string> GetAllEmails()
+    {
+        var allEmails = new List<string>();
+
+        allEmails.AddRange(goodEmailsAList);
+        allEmails.AddRange(goodEmailsBList);
+
+        allEmails.AddRange(badEmailsAList);
+        allEmails.AddRange(badEmailsBList);
+        
+        foreach (var story in stories)
+        {
+            allEmails.AddRange(story.Storyline);
+        }
+
+        allEmails.AddRange(adminStory.Storyline);
+
+        return allEmails;
     }
 }
