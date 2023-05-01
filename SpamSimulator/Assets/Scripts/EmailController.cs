@@ -110,6 +110,17 @@ namespace SpamSim
 
         void OnProcessEmail(VisualElement inboxItem, Email email, string action)
         {
+            if (email.IsAdmin) 
+            {
+                if (inbox.Count != 1)
+                {
+                    // Can't pass an admin email unless its the only one
+                    return;
+                }
+
+                gameController.SetAdminEmailInactive();
+            }
+
             inboxScrollView.Remove(inboxItem);
 
             if (currentEmail == email) 
@@ -118,14 +129,11 @@ namespace SpamSim
                 currentEmail = null;
             }
 
-            if (email.IsAdmin) {
-                gameController.SetAdminEmailInactive();
-            }
-
             inbox.Remove(email);
 
             // if delete play trash sound else play approve sound
-            if (action == "delete") {
+            if (action == "delete") 
+            {
                 soundController.PlaySoundEffect(deleteEmailSoundEffect);
             } else {
                 soundController.PlaySoundEffect(passEmailSoundEffect);
