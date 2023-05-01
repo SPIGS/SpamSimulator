@@ -92,7 +92,7 @@ namespace SpamSim
 
             fontScaler.scaleFont(inboxItem);
 
-            inboxScrollView.Add(inboxItem);
+            inboxScrollView.Insert(0, inboxItem);
 
             soundController.PlaySoundEffect(newEmailSoundEffect);
         }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.UIElements;
@@ -64,7 +65,10 @@ namespace SpamSim
             int iCount = 0;
             foreach (VisualElement i in emailElement.Query<VisualElement>("Image").ToList())
             {
-                i.style.backgroundImage = new StyleBackground(Images[iCount]);
+                Texture2D image = Images[iCount];
+                i.style.backgroundImage = new StyleBackground(image);
+                i.style.height = image.height;
+                i.style.width = image.width;
                 iCount++;
             }
 
@@ -84,7 +88,7 @@ namespace SpamSim
                 bCount++;
             }
 
-            return emailElement;
+            return emailElement.Children().First();
         }
 
         public void LoadImages()
