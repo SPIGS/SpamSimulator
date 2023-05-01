@@ -41,6 +41,10 @@ namespace SpamSim {
 
         public abstract void Update ();
         public abstract void TriggerVirus();
+
+        public VirusType GetVirusType () {
+            return this.virusType;
+        }
     }
     
 }

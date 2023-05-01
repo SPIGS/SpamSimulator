@@ -24,8 +24,32 @@ public class VirusController : MonoBehaviour
         root = uIDocument.rootVisualElement;
     }
 
+    public bool VirusListContainsVirusType (VirusType virusType) {
+        foreach(Virus virus in viruses) {
+            if (virus.GetVirusType() == virusType) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public void CreateAndTriggerVirus(VirusType virusType) {
-        switch(virusType){
+        VirusType actualVirusType = virusType;
+
+        // check if cetain type of viruses have been acitvated already
+        // set it to another virus type.
+        if (virusType == VirusType.SOUND && VirusListContainsVirusType(virusType) 
+            || virusType == VirusType.CURSOR && VirusListContainsVirusType(virusType)) {
+                float coinFlip = Random.Range(0.0f, 1.0f);
+                if (coinFlip < 0.50f) {
+                    actualVirusType = VirusType.SEND_EXTRA_SPAM;
+                } else {
+                    actualVirusType = VirusType.POPUP;
+                }      
+        }
+
+        switch(actualVirusType){
             case VirusType.SEND_EXTRA_SPAM:
                 Virus sendExtraSpamVirus = new ExtraSpamVirus(
                     root, 
@@ -62,6 +86,7 @@ public class VirusController : MonoBehaviour
                     soundVirusTemplate
                 );
                 soundVirus.TriggerVirus();
+                viruses.Add(soundVirus);
             break;
             case VirusType.CURSOR:
                 Virus cursorVirus = new CursorVirus(
@@ -75,8 +100,8 @@ public class VirusController : MonoBehaviour
                     virusCursor
                 );
                 cursorVirus.TriggerVirus();
-            break;
-            
+                viruses.Add(cursorVirus);
+            break;      
         }
     }
 

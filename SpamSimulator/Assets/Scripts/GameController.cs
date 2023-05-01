@@ -100,7 +100,8 @@ public class GameController : MonoBehaviour
     public void OnPassBadEmail () {
         Debug.Log("Pass bad email");
         UpdateScore(-1);
-        virusController.CreateAndTriggerVirus(VirusType.CURSOR);
+        int choice = Random.Range(0,4);
+        virusController.CreateAndTriggerVirus((VirusType)choice);
     }
 
     public void OnDeleteBadEmail () {
