@@ -19,7 +19,8 @@ namespace SpamSim
         public GameController gameController;
         public SoundController soundController; 
 
-        public int maxEmails;
+        public int maxEmails = 32;
+        public int subjectLengthCutoff = 25;
 
         // Start is called before the first frame update
         void Start()
@@ -66,8 +67,14 @@ namespace SpamSim
             Label fromLabel = inboxItem.Q<Label>("FromLabel");
             fromLabel.text = email.SenderName;
 
+            string subject = email.Subject;
+            if (email.Subject.Length > subjectLengthCutoff)
+            {
+                subject = $"{email.Subject.Substring(0, subjectLengthCutoff-3)}...";
+            }
+
             Label subjectLabel = inboxItem.Q<Label>("SubjectLabel");
-            subjectLabel.text = email.Subject;
+            subjectLabel.text = subject;
 
             //Set button callbacks
             inboxItem.Q<Button>("MainItemButton").clickable.clicked += () => {
