@@ -12,8 +12,6 @@ public class StoryController : MonoBehaviour
 
     public int maxActiveStories = 1;
     public List<string> storylineFiles;
-    public List<string> spamFiles;
-    public List<string> goodGenericFiles;
     public string adminStoryline;
     private List<string> goodEmailsAList = new List<string>();
     private List<string> goodEmailsBList = new List<string>();
@@ -37,17 +35,19 @@ public class StoryController : MonoBehaviour
         }
 
         //Load spam
-        foreach (string spamFile in spamFiles)
+        string badJson = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/bad.json", typeof(TextAsset))).text;
+        Story tempStory = JsonUtility.FromJson<Story>(badJson);
+        foreach (string badEmail in tempStory.Storyline)
         {
-            string spamFilename = $"{spamFile}.json";
-            badEmailsAList.Add(spamFilename);
+            badEmailsAList.Add(badEmail);
         }
 
         //Load generic good
-        foreach (string goodFile in goodGenericFiles)
+        string goodJson = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/good.json", typeof(TextAsset))).text;
+        tempStory = JsonUtility.FromJson<Story>(goodJson);
+        foreach (string goodEmail in tempStory.Storyline)
         {
-            string goodFilename = $"{goodFile}.json";
-            goodEmailsAList.Add(goodFilename);
+            goodEmailsAList.Add(goodEmail);
         }
 
         //Load admin Story
