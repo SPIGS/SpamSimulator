@@ -152,7 +152,7 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("Pass bad email");
         UpdateScore(-1);
-        if (adminEmailsSent >= 2)
+        if (adminEmailsSent >= 2 && !adminEmailIsActive)
         {
             int choice = Random.Range(0, 4);
             virusController.CreateAndTriggerVirus((VirusType)choice);

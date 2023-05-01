@@ -42,7 +42,7 @@ namespace SpamSim
         private void CreatePopup () {
             float xPos = Random.Range(0.0f, Screen.width - 500.0f);
             float yPos = Random.Range(0.0f, Screen.height - 500.0f);
-            windowController.CreateModal(popupWindowTemplate, xPos, yPos, 500, 500, "You've been gnomed!");
+            windowController.CreateModal(popupWindowTemplate, xPos, yPos, 500, 300, "You've been gnomed!");
             soundController.PlaySoundEffect("Trash Email");
         }
     }

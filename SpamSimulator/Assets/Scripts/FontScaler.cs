@@ -47,17 +47,20 @@ public class FontScaler : MonoBehaviour
         }
     }
 
-    public void scaleImage(VisualElement root) 
-    {
-        List<VisualElement> elements = root.Query<VisualElement>(className: "image-scale").ToList();
+    // public void scaleImage(VisualElement root) 
+    // {
+    //     List<VisualElement> elements = root.Query<VisualElement>("Image").ToList();
 
-        foreach (var element in elements)
-        {
-            // Doesn't work - element.style.width.value.value is always 0
-            // Debug.Log(element.style.width.value.value);
-            // Debug.Log(element.style.height.value.value);
-            element.style.width = element.style.width.value.value * fontScale;
-            element.style.height = element.style.height.value.value * fontScale;
-        }
-    }
+    //     foreach (var element in elements)
+    //     {
+    //         // Doesn't work - element.style.width.value.value is always 0
+    //         Debug.Log(element.style.width);
+    //         Debug.Log(element.style.height);
+    //         int imageWidth = element.style.width.value;
+    //         int imageHeight = element.style.height.value;
+
+    //         element.style.width = imageWidth * fontScale;
+    //         element.style.height = imageHeight * fontScale;
+    //     }
+    // }
 }
