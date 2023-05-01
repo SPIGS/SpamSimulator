@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour
     [Range(0.0f, 1.0f)]
     public float spamWeight = 0.10f;
     public bool gameOver = false;
+    public string scoreFooterLabel = "Score: ";
+    public string storageFooterLabel = "Available Storage: ";
     
     private VisualElement root;
     
@@ -24,12 +26,16 @@ public class GameController : MonoBehaviour
     private int numEmailsCreated = 0;
     private int nextAdminEmail = 0;
     private bool adminEmailIsActive = false;
-
     private bool bootIsDone = false;
-    // Start is called before the first frame update
+    private Label scoreLabel;
+    private Label storageLabel;
     void Start()
     {
         root = uiDocument.rootVisualElement;
+        scoreLabel = root.Q<Label>("ScoreLabel");
+        scoreLabel.text = scoreFooterLabel + score;
+        storageLabel = root.Q<Label>("StorageLabel");
+        UpdateStorage();
     }
 
     void Update () {
@@ -69,6 +75,7 @@ public class GameController : MonoBehaviour
                     }
                     timeElapsed = 0.0f;
                     numEmailsCreated++;
+                    UpdateStorage();
                 }
             } else {
                 if (timeElapsed >= 6.5) {
@@ -82,25 +89,20 @@ public class GameController : MonoBehaviour
     }
 
     public void OnDeleteGoodEmail () {
-        //
-        Debug.Log("Delete Good Email");
+        UpdateScore(-1);
     }
 
     public void OnPassGoodEmail () {
-        //score go up
-        // power up points?
-        Debug.Log("Approve Good Email");
+        UpdateScore(1);
     }
 
     public void OnPassBadEmail () {
-        /// various things
-        Debug.Log("Approve Bad Email");
+        UpdateScore(-1);
     }
 
     public void OnDeleteBadEmail () {
-        //score go up
-        //power up poitns?
         Debug.Log("Delete Bad Email");
+        UpdateScore(1);
     }
 
     public void OnFullStorage () {
@@ -110,5 +112,15 @@ public class GameController : MonoBehaviour
 
     public void SetAdminEmailInactive () {
         adminEmailIsActive = false;
+    }
+
+    public void UpdateScore(int points){
+        score += points;
+        scoreLabel.text = scoreFooterLabel + score;
+    }
+
+    public void UpdateStorage()
+    {
+        storageLabel.text = storageFooterLabel + emailController.GetCurrentStorage() + " / " + emailController.maxEmails;
     }
 }

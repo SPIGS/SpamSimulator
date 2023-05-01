@@ -573,6 +573,8 @@ MonoBehaviour:
   emailDelayRange: {x: 5, y: 10}
   spamWeight: 0.1
   gameOver: 0
+  scoreFooterLabel: 'Score:'
+  storageFooterLabel: 'Available Storage:'
 --- !u!4 &1265334164
 Transform:
   m_ObjectHideFlags: 0
