@@ -35,7 +35,3 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-
-.dropdown-button:hover {
-    background-color: rgb(106, 106, 106);
-}

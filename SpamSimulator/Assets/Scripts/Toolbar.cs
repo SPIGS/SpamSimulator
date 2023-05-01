@@ -92,13 +92,13 @@ public class Toolbar : MonoBehaviour
         };
         graphicsSettingsButton.clickable.clicked += () =>
         {
-            HideAllDropdowns();
-            ShowGraphicsSettingsModal();
+            //HideAllDropdowns();
+            //ShowGraphicsSettingsModal();
         };
         hotkeysSettingsButton.clickable.clicked += () =>
         {
-            HideAllDropdowns();
-            ShowHotkeysSettingsModal();
+            //HideAllDropdowns();
+            //ShowHotkeysSettingsModal();
         };
 
         toolsButton.clickable.clicked += () =>

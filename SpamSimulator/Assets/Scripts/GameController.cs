@@ -39,6 +39,7 @@ public class GameController : MonoBehaviour
     private Label scoreLabel;
     private Label storageLabel;
     private Label strikesLabel;
+
     void Start()
     {
         root = uiDocument.rootVisualElement;
@@ -49,7 +50,7 @@ public class GameController : MonoBehaviour
         UpdateStorage();
         UpdateStrikes(0);
 
-        float delay = Random.Range(emailDelayRange.x, emailDelayRange.y);
+        delay = 1f;
     }
 
     void Update()
@@ -103,7 +104,7 @@ public class GameController : MonoBehaviour
                 float delayOffset = (570f/ (-totalTimePassed - 114f)) + 5;
 
                 delay = Random.Range(emailDelayRange.x - delayOffset, emailDelayRange.y - delayOffset);
-                Debug.Log($"Time Passed: {totalTimePassed} Range: {emailDelayRange.x - delayOffset}, {emailDelayRange.y - delayOffset} Next Email: {delay}");
+                //Debug.Log($"Time Passed: {totalTimePassed} Range: {emailDelayRange.x - delayOffset}, {emailDelayRange.y - delayOffset} Next Email: {delay}");
             }
 
             if (!adminEmailIsActive)
