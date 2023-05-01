@@ -32,6 +32,7 @@
         "timeoff_good.json",
         "UFO_good.json",
         "weeklymeeting_good.json",
-        "unusualsighting_good.json"
+        "unusualsighting_good.json",
+        "hardware_good.json"
     ]
 }
