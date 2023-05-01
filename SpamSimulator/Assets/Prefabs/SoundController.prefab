@@ -65,7 +65,7 @@ MonoBehaviour:
   - clip: {fileID: 8300000, guid: 2627c0797e18afae088038dd3701b9fe, type: 3}
     name: Whirl
   musicTracks:
-  - clip: {fileID: 8300000, guid: 3d3ca2497ee607c2c8d9a818f6b015ed, type: 3}
+  - clip: {fileID: 8300000, guid: 166a009ecb7ceaaa5acb5b8ec731b4c6, type: 3}
     name: Music
   soundEffectsVolume: 1
   musicVolume: 1
