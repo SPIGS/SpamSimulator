@@ -87,19 +87,16 @@ public class Toolbar : MonoBehaviour
             ToggleButtonActive(ToolbarButtons.SETTINGS);
         };
         audioSettingsButton.clickable.clicked += () => {
-            DeactivateButtons();
             HideAllDropdowns();
             ShowAudioSettingsModal();
         };
         graphicsSettingsButton.clickable.clicked += () =>
         {
-            DeactivateButtons();
             HideAllDropdowns();
             ShowGraphicsSettingsModal();
         };
         hotkeysSettingsButton.clickable.clicked += () =>
         {
-            DeactivateButtons();
             HideAllDropdowns();
             ShowHotkeysSettingsModal();
         };

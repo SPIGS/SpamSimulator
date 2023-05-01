@@ -8,7 +8,6 @@ using UnityEditor;
 public class BlueScreenController : MonoBehaviour
 {
     public UIDocument uiDocument;
-    public SoundController soundController;
     private VisualElement root;
 
     private enum Option {
@@ -22,7 +21,6 @@ public class BlueScreenController : MonoBehaviour
         root = uiDocument.rootVisualElement;
         Button newgameButton = root.Query<Button>("NewGame");
         newgameButton.Focus();
-        soundController.PlaySoundEffect("BIOS Beep");
     }
 
     // Update is called once per frame
@@ -40,7 +38,7 @@ public class BlueScreenController : MonoBehaviour
             }
         } else if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)) {
             if (currentOption == Option.NEW_GAME) {
-                SceneManager.LoadScene("Game");
+                SceneManager.LoadScene("Boot");
             } else {
                 
                 if (EditorApplication.isPlaying) {
