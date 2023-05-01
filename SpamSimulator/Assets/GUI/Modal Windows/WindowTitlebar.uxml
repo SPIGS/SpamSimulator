@@ -1,9 +1,15 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/WindowModal.uss?fileID=7433441132597879392&amp;guid=8ce807b5deaa0ed708f31bc6d07a295a&amp;type=3#WindowModal" />
-    <ui:VisualElement name="WindowTitlebar" style="flex-direction: row; color: rgb(255, 255, 255); -unity-font-style: bold; align-items: center; background-color: rgb(0, 0, 170); font-size: 32px; padding-left: 2px; padding-right: 2px;">
-        <ui:Label text="Title" display-tooltip-when-elided="true" name="Title" style="flex-grow: 1;" />
-        <ui:VisualElement name="buttonContainer" style="justify-content: center;">
-            <ui:Button display-tooltip-when-elided="true" name="CloseWindow" class="titlebar-button" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-left-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); background-image: url(&apos;project://database/Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/iconclosebutton.png?fileID=2800000&amp;guid=13527793884104b46b7446fd7464c3ed&amp;type=3#iconclosebutton&apos;); width: 32px; height: 32px; justify-content: flex-start;" />
-        </ui:VisualElement>
+    <Style src="project://database/Assets/GUI/Styles/WindowModal.uss?fileID=7433441132597879392&amp;guid=8ce807b5deaa0ed708f31bc6d07a295a&amp;type=3#WindowModal" />
+    <Style src="project://database/Assets/GUI/Styles/Fonts.uss?fileID=7433441132597879392&amp;guid=12d01be755bd86d45aa749ecdc63a3a6&amp;type=3#Fonts" />
+    <Style src="project://database/Assets/GUI/Styles/scaler.uss?fileID=7433441132597879392&amp;guid=8c16d175bfeee7344a448ebb32324540&amp;type=3#scaler" />
+    <Style src="project://database/Assets/GUI/Styles/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=521bf7393d89ac74baa331aa3a6d696d&amp;type=3#GeneralStyle" />
+    <ui:VisualElement name="WindowTitlebar" style="flex-direction: row; color: rgb(255, 255, 255); -unity-font-style: bold; align-items: center; background-color: rgb(0, 0, 170); font-size: 32px; padding-left: 2px; padding-right: 2px; flex-grow: 1;">
+        <ui:Label text="Title" display-tooltip-when-elided="true" name="Title" class="system-font font-scale" style="flex-grow: 1;" />
+        <ui:VisualElement name="buttonContainer" style="justify-content: center;" />
+        <ui:Button display-tooltip-when-elided="true" name="CloseWindow" class="gray-icon-button-outer" style="flex-shrink: 1; margin-left: 0; margin-right: 5px; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; align-items: center; justify-content: center; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; width: 32px; height: 32px;">
+            <ui:VisualElement class="gray-icon-button-inner" style="flex-grow: 1; align-items: center; justify-content: center; width: 100%;">
+                <ui:VisualElement name="TrashIcon" style="background-image: url(&apos;project://database/Assets/Images/Close.png?fileID=2800000&amp;guid=eedcddee9bb1a394cbdeb66f5200dac8&amp;type=3#Close&apos;); flex-grow: 1; width: 100%;" />
+            </ui:VisualElement>
+        </ui:Button>
     </ui:VisualElement>
 </ui:UXML>

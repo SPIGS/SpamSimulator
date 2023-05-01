@@ -156,8 +156,8 @@ public class Toolbar : MonoBehaviour
     }
 
     void ShowAboutModal () {
-        float width = 600.0f * fontScaler.fontScale *fontScaler.fontScale;
-        float height = 200.0f * fontScaler.fontScale * fontScaler.fontScale;
+        float width = 600.0f * fontScaler.fontScale;
+        float height = 400.0f * fontScaler.fontScale;
         this.windowCreator.CreateModal(this.aboutWindowTemplate, 
                 (Screen.width/2.0f) - width/2.0f, 
                 (Screen.height/2.0f) - height/2.0f, 

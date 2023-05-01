@@ -1,12 +1,14 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:Template name="WindowTitlebar" src="project://database/Assets/WindowTitlebar.uxml?fileID=9197481963319205126&amp;guid=8c5717db815e72a12b2ddb6d6a8abbbb&amp;type=3#WindowTitlebar" />
-    <Style src="project://database/Assets/WindowModal.uss?fileID=7433441132597879392&amp;guid=8ce807b5deaa0ed708f31bc6d07a295a&amp;type=3#WindowModal" />
-    <ui:VisualElement name="AboutWindowContainer" class="window-pane" style="position: absolute;">
+    <ui:Template name="WindowTitlebar" src="project://database/Assets/GUI/Modal%20Windows/WindowTitlebar.uxml?fileID=9197481963319205126&amp;guid=8c5717db815e72a12b2ddb6d6a8abbbb&amp;type=3#WindowTitlebar" />
+    <Style src="project://database/Assets/GUI/Styles/WindowModal.uss?fileID=7433441132597879392&amp;guid=8ce807b5deaa0ed708f31bc6d07a295a&amp;type=3#WindowModal" />
+    <Style src="project://database/Assets/GUI/Styles/Fonts.uss?fileID=7433441132597879392&amp;guid=12d01be755bd86d45aa749ecdc63a3a6&amp;type=3#Fonts" />
+    <Style src="project://database/Assets/GUI/Styles/scaler.uss?fileID=7433441132597879392&amp;guid=8c16d175bfeee7344a448ebb32324540&amp;type=3#scaler" />
+    <ui:VisualElement name="AboutWindowContainer" class="window-pane" style="flex-grow: 1;">
         <ui:Instance template="WindowTitlebar" name="WindowTitlebar" />
-        <ui:VisualElement style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
-            <ui:VisualElement name="LDLogo" style="background-image: url(&apos;project://database/Assets/Images/ludum%20dare.png?fileID=2800000&amp;guid=1151bed62c9f2384ba22dccbcdcbad28&amp;type=3#ludum dare&apos;); width: 100px; height: 100px; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;" />
-            <ui:Label text="Made for Ludum  Dare 53 by" display-tooltip-when-elided="true" name="Text" style="color: rgb(0, 0, 0); justify-content: flex-start; align-items: flex-start; -unity-text-align: middle-center;" />
-            <ui:Label text="Brian, Parker, and Mitchell" display-tooltip-when-elided="true" name="Text" style="color: rgb(0, 0, 0); justify-content: flex-start; align-items: flex-start; -unity-text-align: middle-center; margin-bottom: 5px;" />
+        <ui:VisualElement style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; flex-grow: 1;">
+            <ui:VisualElement name="Image" style="background-image: url(&apos;project://database/Assets/Images/ludum%20dare.png?fileID=2800000&amp;guid=1151bed62c9f2384ba22dccbcdcbad28&amp;type=3#ludum dare&apos;); width: 200px; height: 200px; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; -unity-background-scale-mode: scale-to-fit;" />
+            <ui:Label text="Made for Ludum  Dare 53 by" display-tooltip-when-elided="true" name="Text" class="system-font font-scale" style="color: rgb(0, 0, 0); justify-content: flex-start; align-items: flex-start; -unity-text-align: middle-center;" />
+            <ui:Label text="Brian, Parker, and Mitchell" display-tooltip-when-elided="true" name="Text" class="system-font font-scale" style="color: rgb(0, 0, 0); justify-content: flex-start; align-items: flex-start; -unity-text-align: middle-center; margin-bottom: 5px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
