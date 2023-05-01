@@ -15,7 +15,7 @@ namespace SpamSim
         private float currentDelayBetweenNewPopupsSec = 30.0f;
         private VisualTreeAsset popupWindowTemplate;
 
-        public PopUpVirus(VirusType virusType, VisualElement root, GameController gameController,
+        public PopUpVirus(VisualElement root, GameController gameController,
                      EmailController emailController, SoundController soundController, 
                      ModalWindowController windowController, StoryController storyController, VisualTreeAsset popupWindow): 
             base(VirusType.POPUP, root, gameController, emailController, soundController, windowController, storyController)

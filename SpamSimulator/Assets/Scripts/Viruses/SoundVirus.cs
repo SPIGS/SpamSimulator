@@ -12,7 +12,7 @@ namespace SpamSim
         private string passEmailVirusSound = "Whirl";
         private VisualTreeAsset thankyouPopupTemplate;
 
-        public SoundVirus(VirusType virusType, VisualElement root, GameController gameController,
+        public SoundVirus(VisualElement root, GameController gameController,
                      EmailController emailController, SoundController soundController,
                      ModalWindowController windowController, StoryController storyController, VisualTreeAsset popupTemplate) :
             base(VirusType.SOUND, root, gameController, emailController, soundController, windowController, storyController)

@@ -14,6 +14,8 @@ public class VirusController : MonoBehaviour
     public StoryController storyController;
     public VisualTreeAsset popupVirusTemplate;
     public VisualTreeAsset soundVirusTemplate;
+    public VisualTreeAsset cursorVirusTemplate;
+    public Texture2D virusCursor;
 
     private VisualElement root;
     private List<Virus> viruses = new List<Virus>();
@@ -26,7 +28,6 @@ public class VirusController : MonoBehaviour
         switch(virusType){
             case VirusType.SEND_EXTRA_SPAM:
                 Virus sendExtraSpamVirus = new ExtraSpamVirus(
-                    VirusType.SEND_EXTRA_SPAM, 
                     root, 
                     gameController, 
                     emailController, 
@@ -39,7 +40,6 @@ public class VirusController : MonoBehaviour
             break;
             case VirusType.POPUP:
                 Virus popupVirus = new PopUpVirus(
-                    VirusType.POPUP,
                     root,
                     gameController,
                     emailController,
@@ -53,7 +53,6 @@ public class VirusController : MonoBehaviour
             break;
             case VirusType.SOUND:
                 Virus soundVirus = new SoundVirus(
-                    VirusType.SOUND,
                     root,
                     gameController,
                     emailController,
@@ -64,6 +63,20 @@ public class VirusController : MonoBehaviour
                 );
                 soundVirus.TriggerVirus();
             break;
+            case VirusType.CURSOR:
+                Virus cursorVirus = new CursorVirus(
+                    root,
+                    gameController,
+                    emailController,
+                    soundController,
+                    windowController,
+                    storyController,
+                    cursorVirusTemplate,
+                    virusCursor
+                );
+                cursorVirus.TriggerVirus();
+            break;
+            
         }
     }
 

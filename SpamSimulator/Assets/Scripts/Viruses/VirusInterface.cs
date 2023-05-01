@@ -8,6 +8,7 @@ namespace SpamSim {
         SEND_EXTRA_SPAM,
         POPUP,
         SOUND,
+        CURSOR
     }
 
     public abstract class Virus {

@@ -14,7 +14,7 @@ namespace SpamSim
         private float delayBetweenSpamSec = 0.75f;
         private float timeElapsed = 0.0f;
 
-        public ExtraSpamVirus(VirusType virusType, VisualElement root, GameController gameController,
+        public ExtraSpamVirus(VisualElement root, GameController gameController,
                      EmailController emailController, SoundController soundController, 
                      ModalWindowController windowController, StoryController storyController): 
             base(VirusType.SEND_EXTRA_SPAM, root, gameController, emailController, soundController, windowController, storyController) {}
