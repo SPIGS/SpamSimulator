@@ -278,7 +278,7 @@ MonoBehaviour:
   newEmailSoundEffect: New Email
   deleteEmailSoundEffect: Trash Email
   passEmailSoundEffect: Pass Email
-  maxEmails: 1000
+  maxEmails: 15000
   subjectLengthCutoff: 25
 --- !u!4 &555065347
 Transform:
@@ -611,9 +611,9 @@ MonoBehaviour:
   adminEmailCounters: 0000000005000000
   score: 0
   strikes: 0
-  maxStrikes: 10
+  maxStrikes: 5
   totalTimePassed: 0
-  emailDelayRange: {x: 1, y: 2}
+  emailDelayRange: {x: 5, y: 7}
   spamWeight: 0.324
   gameOver: 0
   scoreFooterLabel: 'Score:'

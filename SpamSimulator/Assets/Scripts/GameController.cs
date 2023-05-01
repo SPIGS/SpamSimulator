@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour
     public int strikes = 0;
     public int maxStrikes = 10;
     public float totalTimePassed = 0.0f;
-    public Vector2 emailDelayRange = new Vector2(5.0f, 10.0f);
+    public Vector2 emailDelayRange = new Vector2(5.0f, 7.0f);
 
     [Range(0.0f, 1.0f)]
     public float spamWeight = 0.10f;
@@ -30,6 +30,7 @@ public class GameController : MonoBehaviour
     private VisualElement root;
 
     private float timeElapsed = 0.0f;
+    private float delay;
     private int numEmailsCreated = 0;
     private int nextAdminEmailScore = 0;
     private int adminEmailIndex = 0;
@@ -47,6 +48,8 @@ public class GameController : MonoBehaviour
         strikesLabel = root.Q<Label>("StrikesLabel");
         UpdateStorage();
         UpdateStrikes(0);
+
+        float delay = Random.Range(emailDelayRange.x, emailDelayRange.y);
     }
 
     void Update()
@@ -56,7 +59,6 @@ public class GameController : MonoBehaviour
         {
             // Email generation timing
             timeElapsed += Time.deltaTime;
-            float delay = Random.Range(emailDelayRange.x, emailDelayRange.y);
             if (timeElapsed >= delay)
             {
                 if (ShouldSendAdminEmail())
@@ -97,6 +99,16 @@ public class GameController : MonoBehaviour
                 timeElapsed = 0.0f;
                 numEmailsCreated++;
                 UpdateStorage();
+
+                float delayOffset = (570f/ (-totalTimePassed - 114f)) + 5;
+
+                delay = Random.Range(emailDelayRange.x - delayOffset, emailDelayRange.y - delayOffset);
+                Debug.Log($"Time Passed: {totalTimePassed} Range: {emailDelayRange.x - delayOffset}, {emailDelayRange.y - delayOffset} Next Email: {delay}");
+            }
+
+            if (!adminEmailIsActive)
+            {
+                totalTimePassed += Time.deltaTime;
             }
 
         }
