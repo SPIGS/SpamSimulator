@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
     public VirusController virusController;
     public int[] adminEmailCounters;
     public int score = 0;
+    public float totalTimePassed = 0.0f;
     public Vector2 emailDelayRange = new Vector2(5.0f, 10.0f);
     
     [Range(0.0f, 1.0f)]
@@ -85,6 +86,15 @@ public class GameController : MonoBehaviour
             } 
         } else {
             // Load BSOD
+            
+            int score = PlayerPrefs.GetInt("Score");
+
+            // If the players current score is higher than the last highscore,
+            // make it the new high score
+            if (PlayerPrefs.GetInt("Highscore", -1) == -1 || PlayerPrefs.GetInt("Highscore", -1) <= score)
+            {
+                PlayerPrefs.SetInt("Highscore", score);
+            }
             SceneManager.LoadScene("BlueScreen");
         }
     }
@@ -121,6 +131,9 @@ public class GameController : MonoBehaviour
     public void UpdateScore(int points){
         score += points;
         scoreLabel.text = scoreFooterLabel + score;
+        
+        //Store the players current score
+        PlayerPrefs.SetInt("Score", score);
     }
 
     public void UpdateStorage()
