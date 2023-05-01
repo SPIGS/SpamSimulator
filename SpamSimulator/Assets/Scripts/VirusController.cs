@@ -12,6 +12,8 @@ public class VirusController : MonoBehaviour
     public SoundController soundController;
     public ModalWindowController windowController;
     public StoryController storyController;
+    public VisualTreeAsset popupVirusTemplate;
+    public VisualTreeAsset soundVirusTemplate;
 
     private VisualElement root;
     private List<Virus> viruses = new List<Virus>();
@@ -34,6 +36,33 @@ public class VirusController : MonoBehaviour
                 );
                 sendExtraSpamVirus.TriggerVirus();
                 viruses.Add(sendExtraSpamVirus);
+            break;
+            case VirusType.POPUP:
+                Virus popupVirus = new PopUpVirus(
+                    VirusType.POPUP,
+                    root,
+                    gameController,
+                    emailController,
+                    soundController,
+                    windowController,
+                    storyController,
+                    popupVirusTemplate
+                );
+                popupVirus.TriggerVirus();
+                viruses.Add(popupVirus);
+            break;
+            case VirusType.SOUND:
+                Virus soundVirus = new SoundVirus(
+                    VirusType.SOUND,
+                    root,
+                    gameController,
+                    emailController,
+                    soundController,
+                    windowController,
+                    storyController,
+                    soundVirusTemplate
+                );
+                soundVirus.TriggerVirus();
             break;
         }
     }

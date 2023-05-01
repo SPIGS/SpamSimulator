@@ -5,7 +5,9 @@ using UnityEngine.UIElements;
 
 namespace SpamSim {
     public enum VirusType {
-        SEND_EXTRA_SPAM
+        SEND_EXTRA_SPAM,
+        POPUP,
+        SOUND,
     }
 
     public abstract class Virus {

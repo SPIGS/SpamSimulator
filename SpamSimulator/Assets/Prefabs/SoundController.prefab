@@ -56,6 +56,14 @@ MonoBehaviour:
     name: Boot Beep
   - clip: {fileID: 8300000, guid: a12e741fc8fa2aa63955342c4cf1f033, type: 3}
     name: Start Up
+  - clip: {fileID: 8300000, guid: dd10fbef695eef5fab0c4c9773596cbc, type: 3}
+    name: YouveGotMail
+  - clip: {fileID: 8300000, guid: 97283e9658160d764bfe5a6ae7f23c6d, type: 3}
+    name: Zap
+  - clip: {fileID: 8300000, guid: 0d5d556b31b45642dbed34fdcd220017, type: 3}
+    name: Pass Email
+  - clip: {fileID: 8300000, guid: 2627c0797e18afae088038dd3701b9fe, type: 3}
+    name: Whirl
   musicTracks: []
   soundEffectsVolume: 1
   musicVolume: 1
