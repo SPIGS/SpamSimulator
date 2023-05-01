@@ -8,7 +8,11 @@ using UnityEditor;
 public class BlueScreenController : MonoBehaviour
 {
     public UIDocument uiDocument;
+    public string scoreLabelText = "*** SCORE: ";
+    public string timeLabelText = "*** TIME: ";
     private VisualElement root;
+    private Label scoreLabel;
+    private Label timeLabel;
 
     private enum Option {
         NEW_GAME,
@@ -19,6 +23,12 @@ public class BlueScreenController : MonoBehaviour
 
     void Start() {
         root = uiDocument.rootVisualElement;
+
+        scoreLabel = root.Q<Label>("Score");
+        scoreLabel.text = scoreLabelText + PlayerPrefs.GetInt("Score", -1);
+
+        timeLabel = root.Q<Label>("Time");
+        timeLabel.text = timeLabelText;
         Button newgameButton = root.Query<Button>("NewGame");
         newgameButton.Focus();
     }
