@@ -247,3 +247,78 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
+
+.unity-scroller__low-button {
+    background-color: rgba(195, 199, 203, 255);
+    color: rgba(0, 0, 0, 255);
+    background-image: url('project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=8300712400058098730&guid=9c8eb8d1148711da899a42f4ae454f6e&type=3#arrow-up');
+    -unity-background-image-tint-color: rgba(0, 0, 0, 255);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgba(195, 199, 203, 255);
+    border-right-color: rgba(0, 0, 0, 255);
+    border-top-color: rgba(195, 199, 203, 255);
+    border-bottom-color: rgba(0, 0, 0, 255);
+}
+
+.unity-scroller__high-button {
+    background-color: rgb(195, 199, 203);
+    color: rgb(0, 0, 0);
+    background-image: url('project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=4154780841294389669&guid=9c8eb8d1148711da899a42f4ae454f6e&type=3#arrow-down');
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(195, 199, 203);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(195, 199, 203);
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+.unity-scroll-view__vertical-scroller {
+    opacity: 1;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.unity-base__slider-dragger {
+    color: rgba(0, 0, 0, 255);
+    background-color: rgba(195, 199, 203, 255);
+    border-left-color: rgba(195, 199, 203, 255);
+    border-top-color: rgba(195, 199, 203, 255);
+    border-right-color: rgba(0, 0, 0, 255);
+    border-bottom-color: rgba(0, 0, 0, 255);
+}
