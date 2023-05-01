@@ -1,10 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/Email%20Container.uss?fileID=7433441132597879392&amp;guid=de3baff19c89db94cac454dd67fb2905&amp;type=3#Email Container" />
-    <ui:VisualElement name="Container" class="Template_Container email-container" style="padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px; align-items: center; flex-grow: 1;">
-        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(255, 39, 39);" />
-        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(171, 109, 0);" />
-        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(66, 81, 221);" />
-        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(25, 214, 15);" />
-        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(185, 25, 172);" />
+    <Style src="project://database/Assets/GUI/Styles/Email%20Container.uss?fileID=7433441132597879392&amp;guid=de3baff19c89db94cac454dd67fb2905&amp;type=3#Email Container" />
+    <Style src="project://database/Assets/GUI/Styles/Fonts.uss?fileID=7433441132597879392&amp;guid=12d01be755bd86d45aa749ecdc63a3a6&amp;type=3#Fonts" />
+    <Style src="project://database/Assets/GUI/Styles/Scaler.uss?fileID=7433441132597879392&amp;guid=8c16d175bfeee7344a448ebb32324540&amp;type=3#Scaler" />
+    <ui:VisualElement name="Container" class="Template_Container email-container" style="padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px; align-items: center; flex-grow: 1; height: auto;">
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" class="system-font font-scale" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(255, 39, 39);" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" class="system-font font-scale" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(171, 109, 0);" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" class="system-font font-scale" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(66, 81, 221);" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" class="system-font font-scale" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(25, 214, 15);" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" class="system-font" style="font-size: 20px; margin-bottom: 16px; height: 15%; width: 60%; background-color: rgb(185, 25, 172);" />
     </ui:VisualElement>
 </ui:UXML>

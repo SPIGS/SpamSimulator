@@ -64,7 +64,7 @@ namespace SpamSim
 
             //Set From and Subject
             Label fromLabel = inboxItem.Q<Label>("FromLabel");
-            fromLabel.text = email.Sender;
+            fromLabel.text = email.SenderName;
 
             Label subjectLabel = inboxItem.Q<Label>("SubjectLabel");
             subjectLabel.text = email.Subject;
@@ -90,7 +90,11 @@ namespace SpamSim
         void OnOpenEmail(Email email)
         {
             emailRoot.Clear();
-            emailRoot.Add(email.InstantiateEmail());
+
+            VisualElement emailView = email.InstantiateEmail();
+            fontScaler.scaleFont(emailView);
+
+            emailRoot.Add(emailView);
             currentEmail = email;
         }
 

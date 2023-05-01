@@ -10,6 +10,7 @@ namespace SpamSim
     {
         public string Subject;
         public string Sender;
+        public string SenderName;
 
         public List<string> ImageFiles;
         public List<string> Headers;
