@@ -610,12 +610,16 @@ MonoBehaviour:
   virusController: {fileID: 972933260}
   adminEmailCounters: 0000000005000000
   score: 0
+  strikes: 0
+  maxStrikes: 10
   totalTimePassed: 0
   emailDelayRange: {x: 1, y: 2}
-  spamWeight: 0.889
+  spamWeight: 0.324
   gameOver: 0
   scoreFooterLabel: 'Score:'
   storageFooterLabel: 'Available Storage:'
+  strikesFooterLabel: 'Strikes: '
+  adminEmailsSent: 0
 --- !u!4 &1265334164
 Transform:
   m_ObjectHideFlags: 0

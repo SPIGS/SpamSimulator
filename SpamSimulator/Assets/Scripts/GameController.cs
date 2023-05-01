@@ -13,6 +13,8 @@ public class GameController : MonoBehaviour
     public VirusController virusController;
     public int[] adminEmailCounters;
     public int score = 0;
+    public int strikes = 0;
+    public int maxStrikes = 10;
     public float totalTimePassed = 0.0f;
     public Vector2 emailDelayRange = new Vector2(5.0f, 10.0f);
 
@@ -21,6 +23,7 @@ public class GameController : MonoBehaviour
     public bool gameOver = false;
     public string scoreFooterLabel = "Score: ";
     public string storageFooterLabel = "Available Storage: ";
+    public string strikesFooterLabel = "Strikes: ";
 
     public int adminEmailsSent = 0;
 
@@ -34,12 +37,14 @@ public class GameController : MonoBehaviour
     private bool allAdminEmailsSent = false;
     private Label scoreLabel;
     private Label storageLabel;
+    private Label strikesLabel;
     void Start()
     {
         root = uiDocument.rootVisualElement;
         scoreLabel = root.Q<Label>("ScoreLabel");
         scoreLabel.text = scoreFooterLabel + score;
         storageLabel = root.Q<Label>("StorageLabel");
+        strikesLabel = root.Q<Label>("StrikesLabel");
         UpdateStorage();
     }
 
@@ -134,6 +139,7 @@ public class GameController : MonoBehaviour
     public void OnDeleteGoodEmail()
     {
         UpdateScore(-1);
+        UpdateStrikes(1);
     }
 
     public void OnPassGoodEmail()
@@ -181,5 +187,13 @@ public class GameController : MonoBehaviour
     public void UpdateStorage()
     {
         storageLabel.text = storageFooterLabel + emailController.GetCurrentStorage() + " / " + emailController.maxEmails;
+    }
+
+    public void UpdateStrikes(int strikes) {
+        this.strikes += strikes;
+        strikesLabel.text = strikesFooterLabel + this.strikes + "/" + maxStrikes; 
+        if (this.strikes >= maxStrikes) {
+            this.gameOver = true;
+        }
     }
 }
