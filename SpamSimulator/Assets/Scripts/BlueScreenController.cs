@@ -13,6 +13,8 @@ public class BlueScreenController : MonoBehaviour
     private VisualElement root;
     private Label scoreLabel;
 
+    private Label lossLabel;
+
     private enum Option {
         NEW_GAME,
         QUIT
@@ -28,6 +30,13 @@ public class BlueScreenController : MonoBehaviour
 
         scoreLabel = root.Q<Label>("Highscore");
         scoreLabel.text = highscoreLabelText + PlayerPrefs.GetInt("Highscore", -1);
+
+        lossLabel = root.Q<Label>("GameOverReason");
+        if (PlayerPrefs.GetInt("Fired", 0) == 0) {
+            lossLabel.text = "SERVER OVERLOAD";
+        } else {
+            lossLabel.text = "YOU'VE BEEN FIRED";
+        }
 
         Button newgameButton = root.Query<Button>("NewGame");
         newgameButton.Focus();

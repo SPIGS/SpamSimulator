@@ -167,6 +167,7 @@ public class GameController : MonoBehaviour
     public void OnFullStorage()
     {
         //end game
+        PlayerPrefs.SetInt("Fired", 0);
         this.gameOver = true;
     }
 
@@ -193,6 +194,7 @@ public class GameController : MonoBehaviour
         this.strikes += strikes;
         strikesLabel.text = strikesFooterLabel + this.strikes + "/" + maxStrikes; 
         if (this.strikes >= maxStrikes) {
+            PlayerPrefs.SetInt("Fired", 1);
             this.gameOver = true;
         }
     }
