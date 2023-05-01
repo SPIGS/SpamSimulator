@@ -1,15 +1,16 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:Template name="ToolbarUI" src="project://database/Assets/ToolbarUI.uxml?fileID=9197481963319205126&amp;guid=556bbc199c7b877418ad119989b47aaa&amp;type=3#ToolbarUI" />
-    <ui:Template name="MainContentUI" src="project://database/Assets/MainContentUI.uxml?fileID=9197481963319205126&amp;guid=73e9cb6606a3b4948ab4cbee861416c0&amp;type=3#MainContentUI" />
-    <Style src="project://database/Assets/Dropdown.uss?fileID=7433441132597879392&amp;guid=d81c3eff75c5077ffb0acb4e19bdd9f6&amp;type=3#Dropdown" />
-    <Style src="project://database/Assets/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=521bf7393d89ac74baa331aa3a6d696d&amp;type=3#GeneralStyle" />
-    <Style src="project://database/Assets/scaler.uss?fileID=7433441132597879392&amp;guid=8c16d175bfeee7344a448ebb32324540&amp;type=3#scaler" />
+    <ui:Template name="ToolbarUI" src="project://database/Assets/GUI/Game/ToolbarUI.uxml?fileID=9197481963319205126&amp;guid=556bbc199c7b877418ad119989b47aaa&amp;type=3#ToolbarUI" />
+    <ui:Template name="MainContentUI" src="project://database/Assets/GUI/Game/MainContentUI.uxml?fileID=9197481963319205126&amp;guid=73e9cb6606a3b4948ab4cbee861416c0&amp;type=3#MainContentUI" />
+    <Style src="project://database/Assets/GUI/Styles/Dropdown.uss?fileID=7433441132597879392&amp;guid=d81c3eff75c5077ffb0acb4e19bdd9f6&amp;type=3#Dropdown" />
+    <Style src="project://database/Assets/GUI/Styles/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=521bf7393d89ac74baa331aa3a6d696d&amp;type=3#GeneralStyle" />
+    <Style src="project://database/Assets/GUI/Styles/Scaler.uss?fileID=7433441132597879392&amp;guid=8c16d175bfeee7344a448ebb32324540&amp;type=3#Scaler" />
+    <Style src="project://database/Assets/GUI/Styles/Fonts.uss?fileID=7433441132597879392&amp;guid=12d01be755bd86d45aa749ecdc63a3a6&amp;type=3#Fonts" />
     <ui:VisualElement class="gray-gray-bezel" style="flex-grow: 1;">
         <ui:VisualElement class="gray-bezel gray-light-bezel" style="flex-grow: 1;">
             <ui:VisualElement name="WindowHeader" class="gray" style="width: 100%; height: auto; padding-left: 2px; padding-right: 2px; padding-top: 2px; padding-bottom: 2px;">
                 <ui:VisualElement class="blue" style="flex-direction: row; align-items: center;">
-                    <ui:VisualElement class="image-scale" style="background-image: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=4584671053970592468&amp;guid=9c8eb8d1148711da899a42f4ae454f6e&amp;type=3#console.warnicon&apos;); width: auto; height: auto; min-width: 32px; min-height: 32px;" />
-                    <ui:Label text="Smallsoft Internet Mail" display-tooltip-when-elided="true" class="font-scale" style="font-size: 24px; flex-grow: 1; -unity-text-align: middle-left;" />
+                    <ui:VisualElement style="background-image: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=4584671053970592468&amp;guid=9c8eb8d1148711da899a42f4ae454f6e&amp;type=3#console.warnicon&apos;); width: auto; height: auto; min-width: 32px; min-height: 32px;" />
+                    <ui:Label text="Smallsoft Internet Mail" display-tooltip-when-elided="true" class="font-scale system-font" style="font-size: 24px; flex-grow: 1; -unity-text-align: middle-left;" />
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:Instance template="ToolbarUI" name="ToolbarUI" style="width: 100%; height: auto;" />
