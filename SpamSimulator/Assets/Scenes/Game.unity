@@ -858,8 +858,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2669845311140681525, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
+      propertyPath: playMusic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669845311140681525, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
       propertyPath: playStartupSound
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669845311140681525, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
+      propertyPath: musicTracks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669845311140681525, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
+      propertyPath: musicTracks.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 166a009ecb7ceaaa5acb5b8ec731b4c6, type: 3}
+    - target: {fileID: 2669845311140681525, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
+      propertyPath: musicTracks.Array.data[0].name
+      value: Music
       objectReference: {fileID: 0}
     - target: {fileID: 2669845311140681526, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
       propertyPath: m_RootOrder
@@ -908,6 +924,10 @@ PrefabInstance:
     - target: {fileID: 2669845311626336463, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
       propertyPath: m_Name
       value: SoundController
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669845312132091513, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
+      propertyPath: Loop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}

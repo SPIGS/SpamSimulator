@@ -134,7 +134,7 @@ public class ModalWindowController : MonoBehaviour
         });
 
         Slider musicSlider = modalWindow.Q<Slider>("Music");
-        effectsSilder.RegisterValueChangedCallback(v =>
+        musicSlider.RegisterValueChangedCallback(v =>
         {
             soundController.SetMusicVolume(v.newValue / 100.0f);
         });
