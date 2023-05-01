@@ -46,6 +46,7 @@ public class GameController : MonoBehaviour
         storageLabel = root.Q<Label>("StorageLabel");
         strikesLabel = root.Q<Label>("StrikesLabel");
         UpdateStorage();
+        UpdateStrikes(0);
     }
 
     void Update()
@@ -192,7 +193,7 @@ public class GameController : MonoBehaviour
 
     public void UpdateStrikes(int strikes) {
         this.strikes += strikes;
-        strikesLabel.text = strikesFooterLabel + this.strikes + "/" + maxStrikes; 
+        strikesLabel.text = strikesFooterLabel + this.strikes + " / " + maxStrikes; 
         if (this.strikes >= maxStrikes) {
             PlayerPrefs.SetInt("Fired", 1);
             this.gameOver = true;
