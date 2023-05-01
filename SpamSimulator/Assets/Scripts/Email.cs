@@ -10,6 +10,7 @@ namespace SpamSim
     {
         public string Subject;
         public string Sender;
+        public string SenderName;
 
         public List<string> ImageFiles;
         public List<string> Headers;
@@ -44,6 +45,13 @@ namespace SpamSim
             VisualTreeAsset vta = (VisualTreeAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Templates/{Template}", typeof(VisualTreeAsset));
 
             VisualElement emailElement = vta.Instantiate();
+
+            // Update Email Header
+            Label fromHeader = emailElement.Q<Label>("EmailHeaderFrom");
+            fromHeader.text = $"{SenderName} ({Sender})";
+
+            Label subjectHeader = emailElement.Q<Label>("EmailHeaderSubject");
+            subjectHeader.text = Subject;
 
             // Update Paragraphs
             int pCount = 0;

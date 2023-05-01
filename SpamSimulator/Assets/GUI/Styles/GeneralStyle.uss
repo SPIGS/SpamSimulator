@@ -112,13 +112,31 @@
 }
 
 .gray-gray-light-bezel {
-    border-left-color: rgba(195, 199, 203, 255);
-    border-top-color: rgba(195, 199, 203, 255);
-    border-right-color: rgba(134, 138, 142, 255);
-    border-bottom-color: rgba(134, 138, 142, 255);
+    border-left-color: rgb(195, 199, 203);
+    border-top-color: rgb(195, 199, 203);
+    border-right-color: rgb(134, 138, 142);
+    border-bottom-color: rgb(134, 138, 142);
     border-left-width: 1px;
     border-right-width: 1px;
     border-top-width: 1px;
     border-bottom-width: 1px;
+    background-color: rgb(195, 199, 203);
+}
+
+.white {
+    color: rgba(0, 0, 0, 255);
+    background-color: rgba(255, 255, 255, 255);
+}
+
+.gray-all-black-bezel {
     background-color: rgba(195, 199, 203, 255);
+    border-left-color: rgba(0, 0, 0, 255);
+    border-right-color: rgba(0, 0, 0, 255);
+    border-top-color: rgba(0, 0, 0, 255);
+    border-bottom-color: rgba(0, 0, 0, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    color: rgba(0, 0, 0, 255);
 }

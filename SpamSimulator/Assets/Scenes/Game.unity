@@ -275,7 +275,8 @@ MonoBehaviour:
   fontScaler: {fileID: 1825506927}
   gameController: {fileID: 1265334163}
   soundController: {fileID: 1169927864077087796}
-  maxEmails: 1000
+  maxEmails: 10
+  subjectLengthCutoff: 25
 --- !u!4 &555065347
 Transform:
   m_ObjectHideFlags: 0
