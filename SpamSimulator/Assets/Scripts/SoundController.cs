@@ -19,6 +19,7 @@ public class SoundController : MonoBehaviour
     public float musicVolume = 1.0f;
     public AudioSource musicSource;
     public bool playStartupSound = false;
+    public bool playBlueScreenSound = false;
 
     void Start () {
         foreach(NamedAudioClip clip in soundEffects) {
@@ -31,6 +32,10 @@ public class SoundController : MonoBehaviour
         if (playStartupSound)
         {
             this.PlaySoundEffect("Start Up");
+        }
+
+        if (playBlueScreenSound) {
+            this.PlaySoundEffect("BIOS Beep");
         }
     }
 

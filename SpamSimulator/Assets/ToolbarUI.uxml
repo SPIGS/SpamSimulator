@@ -1,9 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/Toolbar.uss?fileID=7433441132597879392&amp;guid=359010bca3342f022a28bb71ccccb046&amp;type=3#Toolbar" />
-    <ui:VisualElement name="ToolbarContainer" style="-unity-text-align: middle-left; height: auto; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; background-color: rgb(191, 184, 191); align-items: center; justify-content: flex-start; flex-direction: row; font-size: initial;">
-        <ui:Button text="File" display-tooltip-when-elided="true" name="FileButton" class="toolbar-button" style="flex-grow: 0; flex-basis: auto; height: auto; font-size: 24px;" />
-        <ui:Button text="Settings" display-tooltip-when-elided="true" name="SettingsButton" class="toolbar-button" style="margin-left: 0; margin-right: 1%; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; flex-grow: 0; font-size: 24px;" />
-        <ui:Button text="Tools" display-tooltip-when-elided="true" name="ToolsButton" class="toolbar-button" style="margin-left: 0; margin-right: 1%; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; font-size: 24px;" />
-        <ui:Button text="About" display-tooltip-when-elided="true" name="AboutButton" class="toolbar-button" style="margin-left: 0; margin-right: 1%; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; font-size: 24px;" />
-    </ui:VisualElement>
-</ui:UXML>

@@ -1,0 +1,124 @@
+.gray-bezel {
+    background-color: rgb(195, 199, 203);
+    color: rgb(0, 0, 0);
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-bottom-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+}
+
+.darkgray-flat {
+    background-color: rgb(134, 138, 142);
+    color: rgb(195, 199, 203);
+}
+
+.gray-flat {
+    background-color: rgb(195, 199, 203);
+    color: rgb(0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.teal {
+    background-color: rgb(85, 170, 170);
+    color: rgb(255, 255, 255);
+}
+
+.blue {
+    background-color: rgb(0, 0, 170);
+    color: rgb(255, 255, 255);
+}
+
+.gray-flat:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 170);
+}
+
+.gray-reverse-bezel {
+    background-color: rgb(195, 199, 203);
+    border-top-color: rgb(134, 138, 142);
+    border-left-color: rgb(134, 138, 142);
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    color: rgb(0, 0, 0);
+}
+
+.gray {
+    background-color: rgb(195, 199, 203);
+    color: rgb(0, 0, 0);
+}
+
+.darkgray {
+    background-color: rgb(134, 138, 142);
+    color: rgb(195, 199, 203);
+}
+
+.gray-flat:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 170);
+}
+
+.gray-light-bezel {
+    background-color: rgb(195, 199, 203);
+    color: rgb(0, 0, 0);
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-bottom-color: rgb(134, 138, 142);
+    border-right-color: rgb(134, 138, 142);
+}
+
+.white-bezel {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-bottom-color: rgb(195, 199, 203);
+    border-right-color: rgb(195, 199, 203);
+}
+
+.gray-gray-bezel {
+    color: rgb(0, 0, 0);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(195, 199, 203);
+    border-top-color: rgb(195, 199, 203);
+    border-right-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    background-color: rgb(195, 199, 203);
+}
+
+.gray-gray-light-bezel {
+    border-left-color: rgba(195, 199, 203, 255);
+    border-top-color: rgba(195, 199, 203, 255);
+    border-right-color: rgba(134, 138, 142, 255);
+    border-bottom-color: rgba(134, 138, 142, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    background-color: rgba(195, 199, 203, 255);
+}

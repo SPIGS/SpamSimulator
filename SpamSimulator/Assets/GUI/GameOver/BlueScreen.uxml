@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/BlueScreen.uss?fileID=7433441132597879392&amp;guid=aa455f70d949cc9539f11b6f1c7fa327&amp;type=3#BlueScreen" />
+    <Style src="project://database/Assets/scaler.uss?fileID=7433441132597879392&amp;guid=8c16d175bfeee7344a448ebb32324540&amp;type=3#scaler" />
+    <Style src="project://database/Assets/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=521bf7393d89ac74baa331aa3a6d696d&amp;type=3#GeneralStyle" />
+    <ui:VisualElement name="BlueScreenContainer" class="blue-screen" style="width: 100%; height: 100%; background-color: rgb(0, 0, 136);">
+        <ui:Label text="A problem has been detected and your computer has been shutdown to prevent damage to your computer" display-tooltip-when-elided="true" name="Header" class="blue-screen-text font-scale-large" style="white-space: normal; padding-left: 2px;" />
+        <ui:Label text="GAME_OVER_BLUE_SCREEN_OF_DEATH" display-tooltip-when-elided="true" name="GameOverMessage" class="blue-screen-text font-scale-large" style="white-space: normal; padding-left: 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 136); width: auto; height: auto;" />
+        <ui:Label text="If this is the first time you&apos;ve seen this stop error screen, restart your the game, If this screen appears again, follow these steps:" display-tooltip-when-elided="true" name="Filler1" class="blue-screen-text font-scale-large" style="white-space: normal; padding-left: 2px;" />
+        <ui:Label text="Choose the reboot option below or close and restart the application. If you have any questions, ask your software manufacturer for any game updates you might need." display-tooltip-when-elided="true" name="Step1" class="blue-screen-text font-scale-large" style="white-space: normal; padding-left: 2px;" />
+        <ui:Label text="If problems continue, try these strategies: Utilize all available information given from the graphical user interface; utilize the available hot-keys and shortcuts if implemented." display-tooltip-when-elided="true" name="Step2" class="blue-screen-text font-scale-large" style="white-space: normal; padding-left: 2px;" />
+        <ui:Label text="Technical information:" display-tooltip-when-elided="true" name="StatsHeader" class="blue-screen-text font-scale-large" style="white-space: normal; padding-left: 2px;" />
+        <ui:Label text="*** SCORE: 12345 (0x000000c, 0x00000002, 0x00000000, x0000000)" display-tooltip-when-elided="true" name="Score" class="blue-screen-text font-scale-large" style="white-space: normal; padding-left: 2px;" />
+        <ui:Label text="*** TIME: 11:12  (0x000000c, 0x00000002, 0x00000000, x0000000)" display-tooltip-when-elided="true" name="Score" class="blue-screen-text font-scale-large" style="white-space: normal; padding-left: 2px;" />
+        <ui:Label text="Beginng dump of physical memory" display-tooltip-when-elided="true" name="Filler2" class="blue-screen-text font-scale-large" style="white-space: normal; padding-left: 2px;" />
+        <ui:Label text="Physical memory dump complete" display-tooltip-when-elided="true" name="Filler3" class="blue-screen-text" style="white-space: normal; padding-left: 2px;" />
+        <ui:Label text="Reboot now?" display-tooltip-when-elided="true" name="Prompt" class="blue-screen-text font-scale-large" style="white-space: normal; padding-left: 2px;" />
+        <ui:VisualElement style="flex-direction: row; padding-left: 2px; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+            <ui:Button text="Reboot" display-tooltip-when-elided="true" name="NewGame" class="blue-screen-button font-scale-large" />
+            <ui:Button text="Shutdown" display-tooltip-when-elided="true" name="Quit" class="blue-screen-button font-scale-large" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -65,23 +65,9 @@ namespace SpamSim
             //Set From and Subject
             Label fromLabel = inboxItem.Q<Label>("FromLabel");
             fromLabel.text = email.Sender;
-            fromLabel.style.fontSize = 24 * fontScaler.fontScale;
 
             Label subjectLabel = inboxItem.Q<Label>("SubjectLabel");
             subjectLabel.text = email.Subject;
-            subjectLabel.style.fontSize = 24 * fontScaler.fontScale;
-
-            inboxItem.Q<Label>("FromTitle").style.fontSize = 24 * fontScaler.fontScale;
-            inboxItem.Q<Label>("SubjectTitle").style.fontSize = 24 * fontScaler.fontScale;
-
-            //Button scaling
-            VisualElement trashButton = inboxItem.Q<VisualElement>("TrashIcon");
-            trashButton.style.width = 24 * fontScaler.fontScale;
-            trashButton.style.height = 24 * fontScaler.fontScale;
-
-            VisualElement passButton = inboxItem.Q<VisualElement>("PassIcon");
-            passButton.style.width = 24 * fontScaler.fontScale;
-            passButton.style.height = 24 * fontScaler.fontScale;
 
             //Set button callbacks
             inboxItem.Q<Button>("MainItemButton").clickable.clicked += () => {
@@ -93,6 +79,8 @@ namespace SpamSim
             inboxItem.Q<Button>("TrashButton").clickable.clicked += () => {
                 OnProcessEmail(inboxItem, email, "delete");
             };
+
+            fontScaler.scaleFont(inboxItem);
 
             inboxScrollView.Add(inboxItem);
 

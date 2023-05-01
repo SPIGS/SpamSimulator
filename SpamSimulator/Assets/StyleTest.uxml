@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=521bf7393d89ac74baa331aa3a6d696d&amp;type=3#GeneralStyle" />
+    <ui:Label text="gray-bezel" display-tooltip-when-elided="true" class="gray-bezel" style="color: rgb(0, 0, 0);" />
+    <ui:Label text="darkgray-flat" display-tooltip-when-elided="true" class="darkgray-flat" />
+    <ui:Label text="gray-flat" display-tooltip-when-elided="true" class="gray-flat" />
+    <ui:Label text="teal" display-tooltip-when-elided="true" class="teal" />
+    <ui:Label text="blue" display-tooltip-when-elided="true" class="blue" />
+    <ui:Label text="gray-reverse-bezel" display-tooltip-when-elided="true" class="gray-reverse-bezel" />
+    <ui:Label text="gray" display-tooltip-when-elided="true" class="gray" />
+    <ui:Label text="darkgray" display-tooltip-when-elided="true" class="darkgray" />
+    <ui:Label text="gray-light-bezel" display-tooltip-when-elided="true" class="gray-light-bezel" />
+    <ui:Label text="white-bezel" display-tooltip-when-elided="true" class="white-bezel" />
+    <ui:Label text="gray-gray-bezel" display-tooltip-when-elided="false" class="gray-gray-bezel" />
+</ui:UXML>
