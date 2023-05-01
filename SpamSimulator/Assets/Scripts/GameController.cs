@@ -44,7 +44,6 @@ public class GameController : MonoBehaviour
         if (!gameOver) {
             // Email generation timing
             timeElapsed += Time.deltaTime;
-            totalTimePassed += Time.deltaTime;
             if (bootIsDone) {
                 float delay = Random.Range(emailDelayRange.x, emailDelayRange.y);
                 if (timeElapsed >= delay)
@@ -86,9 +85,15 @@ public class GameController : MonoBehaviour
             } 
         } else {
             // Load BSOD
-            int seconds = (int)totalTimePassed;
-            int minutes = seconds % 60;
-            int hours = minutes % 60;
+            
+            int score = PlayerPrefs.GetInt("Score");
+
+            // If the players current score is higher than the last highscore,
+            // make it the new high score
+            if (PlayerPrefs.GetInt("Highscore", -1) == -1 || PlayerPrefs.GetInt("Highscore", -1) <= score)
+            {
+                PlayerPrefs.SetInt("Highscore", score);
+            }
             SceneManager.LoadScene("BlueScreen");
         }
     }
@@ -125,12 +130,6 @@ public class GameController : MonoBehaviour
         
         //Store the players current score
         PlayerPrefs.SetInt("Score", score);
-        
-        // If the players current score is higher than the last highscore,
-        // make it the new high score
-        if (PlayerPrefs.GetInt("Highscore", -1) == -1 || PlayerPrefs.GetInt("Highscore", -1) <= score) {
-            PlayerPrefs.SetInt("Highscore", score);
-        }
     }
 
     public void UpdateStorage()
