@@ -278,7 +278,7 @@ MonoBehaviour:
   newEmailSoundEffect: New Email
   deleteEmailSoundEffect: Trash Email
   passEmailSoundEffect: Pass Email
-  maxEmails: 15000
+  maxEmails: 15
   subjectLengthCutoff: 25
 --- !u!4 &555065347
 Transform:
