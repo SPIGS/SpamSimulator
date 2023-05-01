@@ -18,6 +18,9 @@ namespace SpamSim
         public FontScaler fontScaler;
         public GameController gameController;
         public SoundController soundController; 
+        public string newEmailSoundEffect = "New Email";
+        public string deleteEmailSoundEffect = "Trash Email";
+        public string passEmailSoundEffect = "Pass Email";
 
         public int maxEmails = 32;
         public int subjectLengthCutoff = 25;
@@ -91,7 +94,7 @@ namespace SpamSim
 
             inboxScrollView.Add(inboxItem);
 
-            soundController.PlaySoundEffect("New Email");
+            soundController.PlaySoundEffect(newEmailSoundEffect);
         }
 
         void OnOpenEmail(Email email)
@@ -123,9 +126,9 @@ namespace SpamSim
 
             // if delete play trash sound else play approve sound
             if (action == "delete") {
-                soundController.PlaySoundEffect("Trash Email");
+                soundController.PlaySoundEffect(deleteEmailSoundEffect);
             } else {
-
+                soundController.PlaySoundEffect(passEmailSoundEffect);
             }
 
 

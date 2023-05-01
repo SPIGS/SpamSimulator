@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     public UIDocument uiDocument;
     public StoryController storyController;
     public EmailController emailController;
+    public VirusController virusController;
     public int[] adminEmailCounters;
     public int score = 0;
     public Vector2 emailDelayRange = new Vector2(5.0f, 10.0f);
@@ -97,7 +98,10 @@ public class GameController : MonoBehaviour
     }
 
     public void OnPassBadEmail () {
+        Debug.Log("Pass bad email");
         UpdateScore(-1);
+        int choice = Random.Range(0,4);
+        virusController.CreateAndTriggerVirus((VirusType)choice);
     }
 
     public void OnDeleteBadEmail () {

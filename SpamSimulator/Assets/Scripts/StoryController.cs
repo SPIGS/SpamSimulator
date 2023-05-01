@@ -72,21 +72,24 @@ public class StoryController : MonoBehaviour
         return email;
     }
     
+    public string GetSpamEmail () {
+        if (badEmailsAList.Count == 0)
+        {
+            badEmailsAList.Clear();
+            badEmailsAList.AddRange(badEmailsBList);
+            badEmailsBList.Clear();
+        }
+        int index = Random.Range(0, badEmailsAList.Count);
+        string email = badEmailsAList[index];
+        badEmailsAList.Remove(email);
+        badEmailsAList.Add(email);
+
+        return email;
+    }
+    
     public string GetEmail(bool spam) {
         if (spam) {
-            if (badEmailsAList.Count == 0)
-            {
-                badEmailsAList.Clear();
-                badEmailsAList.AddRange(badEmailsBList);
-                badEmailsBList.Clear();
-            }
-            int index = Random.Range(0, badEmailsAList.Count);
-            string email = badEmailsAList[index];
-            badEmailsAList.Remove(email);
-            badEmailsAList.Add(email);
-
-            return email;
-
+            return GetSpamEmail();
         } else {
             // Decide if good email is story or generic
             double randomValue = Random.Range(0.0f, 1.0f);

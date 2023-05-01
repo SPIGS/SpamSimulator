@@ -46,6 +46,9 @@ public class SoundController : MonoBehaviour
                 AudioSource effectSource = soundObject.GetComponent<AudioSource>();
                 effectSource.clip = audioClip.clip;
                 effectSource.volume = soundEffectsVolume;
+                if (audioClip.name == "YouveGotMail") {
+                    effectSource.volume = 0.45f * soundEffectsVolume;
+                }
                 effectSource.Play();
                 break;
             }
