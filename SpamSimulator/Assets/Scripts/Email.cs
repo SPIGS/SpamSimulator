@@ -45,6 +45,13 @@ namespace SpamSim
 
             VisualElement emailElement = vta.Instantiate();
 
+            // Update Email Header
+            Label fromHeader = emailElement.Q<Label>("EmailHeaderFrom");
+            fromHeader.text = $"{SenderName} ({Sender})";
+
+            Label subjectHeader = emailElement.Q<Label>("EmailHeaderSubject");
+            subjectHeader.text = Subject;
+
             // Update Paragraphs
             int pCount = 0;
             foreach (Label p in emailElement.Query<Label>("Paragraph").ToList())
