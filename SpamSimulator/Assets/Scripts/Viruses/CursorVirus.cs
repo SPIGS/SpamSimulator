@@ -32,7 +32,7 @@ namespace SpamSim
                 (Screen.width / 2) - 250,
                 (Screen.height / 2) - 250,
                 500,
-                500,
+                300,
                 "Thank you!"
             );
         }

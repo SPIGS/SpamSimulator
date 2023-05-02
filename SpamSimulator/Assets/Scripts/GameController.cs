@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     public StoryController storyController;
     public EmailController emailController;
     public VirusController virusController;
+    public SoundController soundController;
     public int[] adminEmailCounters;
     public int score = 0;
     public int strikes = 0;
@@ -21,6 +22,7 @@ public class GameController : MonoBehaviour
     [Range(0.0f, 1.0f)]
     public float spamWeight = 0.10f;
     public bool gameOver = false;
+    public bool DEBUG_LOAD_ALL_EMAILS = false;
     public string scoreFooterLabel = "Score: ";
     public string storageFooterLabel = "Available Storage: ";
     public string strikesFooterLabel = "Strikes: ";
@@ -36,6 +38,7 @@ public class GameController : MonoBehaviour
     private int adminEmailIndex = 0;
     private bool adminEmailIsActive = false;
     private bool allAdminEmailsSent = false;
+    private bool DEBUG_SKIP_UPDATE = false;
     private Label scoreLabel;
     private Label storageLabel;
     private Label strikesLabel;
@@ -56,7 +59,23 @@ public class GameController : MonoBehaviour
     void Update()
     {
 
-        if (!gameOver)
+        if (DEBUG_LOAD_ALL_EMAILS)
+        {
+            emailController.maxEmails = 10000;
+            maxStrikes = 10000;
+
+            var emails = storyController.GetAllEmails();
+            foreach (var email in emails)
+            {
+                emailController.AddEmail(email);
+            }
+
+            DEBUG_LOAD_ALL_EMAILS = false;
+            DEBUG_SKIP_UPDATE = true;
+            return;
+        }
+
+        if (!gameOver && !DEBUG_SKIP_UPDATE)
         {
             // Email generation timing
             timeElapsed += Time.deltaTime;
@@ -113,7 +132,7 @@ public class GameController : MonoBehaviour
             }
 
         }
-        else
+        else if (!DEBUG_SKIP_UPDATE)
         {
             // Load BSOD
 
@@ -154,6 +173,7 @@ public class GameController : MonoBehaviour
     {
         UpdateScore(-1);
         UpdateStrikes(1);
+        soundController.PlaySoundEffect("Error");
     }
 
     public void OnPassGoodEmail()
@@ -170,6 +190,7 @@ public class GameController : MonoBehaviour
             int choice = Random.Range(0, 4);
             virusController.CreateAndTriggerVirus((VirusType)choice);
         }
+        soundController.PlaySoundEffect("Error");
     }
 
     public void OnDeleteBadEmail()

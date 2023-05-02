@@ -608,6 +608,7 @@ MonoBehaviour:
   storyController: {fileID: 646660211}
   emailController: {fileID: 555065346}
   virusController: {fileID: 972933260}
+  soundController: {fileID: 2038121567}
   adminEmailCounters: 0000000005000000
   score: 0
   strikes: 0
@@ -616,6 +617,7 @@ MonoBehaviour:
   emailDelayRange: {x: 5, y: 7}
   spamWeight: 0.324
   gameOver: 0
+  DEBUG_LOAD_ALL_EMAILS: 0
   scoreFooterLabel: 'Score:'
   storageFooterLabel: 'Available Storage:'
   strikesFooterLabel: 'Strikes: '
@@ -800,7 +802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1890862834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -870,12 +872,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2669845311140681525, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
+      propertyPath: soundEffects.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669845311140681525, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
       propertyPath: musicTracks.Array.data[0].clip
       value: 
       objectReference: {fileID: 8300000, guid: 166a009ecb7ceaaa5acb5b8ec731b4c6, type: 3}
     - target: {fileID: 2669845311140681525, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
       propertyPath: musicTracks.Array.data[0].name
       value: Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669845311140681525, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
+      propertyPath: soundEffects.Array.data[9].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6c62faf02871b6e42b74f9c9e11dfaaf, type: 3}
+    - target: {fileID: 2669845311140681525, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
+      propertyPath: soundEffects.Array.data[9].name
+      value: Error
       objectReference: {fileID: 0}
     - target: {fileID: 2669845311140681526, guid: fe0abd5ccefd6914ab87d34ae1b6eaf2, type: 3}
       propertyPath: m_RootOrder
