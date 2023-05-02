@@ -3,7 +3,7 @@
     <ui:Template name="EmailUI" src="project://database/Assets/GUI/Game/EmailUI.uxml?fileID=9197481963319205126&amp;guid=b49323493463b814fbeacf70719d339a&amp;type=3#EmailUI" />
     <Style src="project://database/Assets/GUI/Styles/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=521bf7393d89ac74baa331aa3a6d696d&amp;type=3#GeneralStyle" />
     <ui:VisualElement style="flex-direction: row; flex-grow: 1;">
-        <ui:Instance template="InboxUI" name="InboxUI" class="gray" style="flex-direction: column; width: 35%; height: 100%;" />
+        <ui:Instance template="InboxUI" name="InboxUI" class="gray" style="flex-direction: column; width: 25%; height: 100%;" />
         <ui:VisualElement style="flex-grow: 1;">
             <ui:VisualElement class="gray" style="flex-grow: 0; width: 100%; height: 10px;" />
             <ui:VisualElement class="gray-reverse-bezel" style="width: 100%; flex-grow: 1;">
