@@ -39,8 +39,16 @@ public class BlueScreenController : MonoBehaviour
             lossLabel.text = "YOU'VE BEEN FIRED";
         }
 
-        Button newgameButton = root.Query<Button>("NewGame");
-        newgameButton.Focus();
+        Button newGameButton = root.Query<Button>("NewGame");
+        newGameButton.clickable.clicked += () => {
+            SceneManager.LoadScene("Boot");
+        };
+
+        Button quitButton = root.Query<Button>("Quit");
+        quitButton.clickable.clicked += () => {
+            Application.Quit();
+        };
+        newGameButton.Focus();
     }
 
     // Update is called once per frame
