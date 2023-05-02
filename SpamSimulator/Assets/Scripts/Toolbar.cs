@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
-using UnityEditor;
+//using UnityEditor;
 
 public class Toolbar : MonoBehaviour
 {
@@ -72,14 +72,15 @@ public class Toolbar : MonoBehaviour
         };
         exitGameButton.clickable.clicked += () =>
         {
-            if (EditorApplication.isPlaying)
-            {
-                EditorApplication.isPlaying = false;
-            }
-            else
-            {
-                Application.Quit();
-            }
+            // if (EditorApplication.isPlaying)
+            // {
+            //     EditorApplication.isPlaying = false;
+            // }
+            // else
+            // {
+                
+            // }
+            Application.Quit();
         };
 
         settingsButton.clickable.clicked += () =>

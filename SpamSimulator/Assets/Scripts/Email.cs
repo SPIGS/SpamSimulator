@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEditor;
+//using UnityEditor;
 using UnityEngine.UIElements;
 
 namespace SpamSim
@@ -30,7 +30,7 @@ namespace SpamSim
 
         public static Email LoadEmail(string emailFileName, int id)
         {
-            string jsonString = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Content/{emailFileName}", typeof(TextAsset))).text;
+            string jsonString = Resources.Load<TextAsset>($"Emails/Content/{emailFileName}").text;
             
             Email email = JsonUtility.FromJson<Email>(jsonString);
 
@@ -42,7 +42,8 @@ namespace SpamSim
 
         public VisualElement InstantiateEmail()
         {
-            VisualTreeAsset vta = (VisualTreeAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Templates/{Template}", typeof(VisualTreeAsset));
+            string fileName = Template.Split('.')[0];
+            VisualTreeAsset vta = Resources.Load<VisualTreeAsset>($"Emails/Templates/{fileName}");
 
             VisualElement emailElement = vta.Instantiate();
 
@@ -97,8 +98,9 @@ namespace SpamSim
 
             foreach (string file in ImageFiles)
             {
-                Texture2D image = (Texture2D)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Images/{file}", typeof(Texture2D));
-
+                //Texture2D image = (Texture2D)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Images/{file}", typeof(Texture2D));
+                string fileName = file.Split('.')[0];
+                Texture2D image = (Texture2D)Resources.Load<Texture2D>($"Emails/Images/{fileName}");
                 Images.Add(image);
             }
         }

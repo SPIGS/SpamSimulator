@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+//using UnityEditor;
 
 public class StoryController : MonoBehaviour
 {
@@ -29,13 +29,16 @@ public class StoryController : MonoBehaviour
         // Load Stories emails
         foreach (string storylineFile in storylineFiles) {
             string path = $"Assets/Emails/Content/{storylineFile}.json";
-            string jsonString = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Storylines/{storylineFile}.json", typeof(TextAsset))).text;
+            //string jsonString = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Storylines/{storylineFile}.json", typeof(TextAsset))).text;
+            string jsonString = ((TextAsset)Resources.Load($"Emails/Storylines/{storylineFile}", typeof(TextAsset))).text;
+
             Story story = JsonUtility.FromJson<Story>(jsonString);
             this.stories.Add(story);
         }
 
         //Load spam
-        string badJson = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/bad.json", typeof(TextAsset))).text;
+        //string badJson = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/bad.json", typeof(TextAsset))).text;
+        string badJson = Resources.Load<TextAsset>($"Emails/bad").text;
         Story tempStory = JsonUtility.FromJson<Story>(badJson);
         foreach (string badEmail in tempStory.Storyline)
         {
@@ -43,7 +46,8 @@ public class StoryController : MonoBehaviour
         }
 
         //Load generic good
-        string goodJson = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/good.json", typeof(TextAsset))).text;
+        //string goodJson = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/good.json", typeof(TextAsset))).text;
+        string goodJson = Resources.Load<TextAsset>($"Emails/good").text;
         tempStory = JsonUtility.FromJson<Story>(goodJson);
         foreach (string goodEmail in tempStory.Storyline)
         {
@@ -51,7 +55,8 @@ public class StoryController : MonoBehaviour
         }
 
         //Load admin Story
-        string adminStoryLineJSON = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Storylines/{adminStoryline}.json", typeof(TextAsset))).text;
+        //string adminStoryLineJSON = ((TextAsset)AssetDatabase.LoadAssetAtPath($"Assets/Emails/Storylines/{adminStoryline}.json", typeof(TextAsset))).text;
+        string adminStoryLineJSON = Resources.Load<TextAsset>($"Emails/Storylines/{adminStoryline}").text;
         adminStory = JsonUtility.FromJson<Story>(adminStoryLineJSON);
        
     }

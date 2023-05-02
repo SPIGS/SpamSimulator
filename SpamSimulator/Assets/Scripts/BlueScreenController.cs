@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
-using UnityEditor;
+//using UnityEditor;
 
 public class BlueScreenController : MonoBehaviour
 {
@@ -60,11 +60,12 @@ public class BlueScreenController : MonoBehaviour
                 SceneManager.LoadScene("Boot");
             } else {
                 
-                if (EditorApplication.isPlaying) {
-                    EditorApplication.isPlaying = false;
-                } else {
-                    Application.Quit();
-                }
+                // if (EditorApplication.isPlaying) {
+                //     EditorApplication.isPlaying = false;
+                // } else {
+                    
+                // }
+                Application.Quit();
             }
             
         }
