@@ -1,0 +1,13 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Welcome to smallsoft!",
+  "Sender": "ADMIN@smallsoft.comp",
+  "SenderName": "ADMIN",
+  "IsSpam": false,
+  "IsAdmin": true,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Dear NEW HIRE,\r\n\r\nI am delighted to welcome you to smallsoft as our new Email Delivery Specialist. As discussed during the interview process, your primary responsibility will be to review and categorize incoming emails as legitimate or spam, thereby ensuring that our company's communications are secure and reliable.\r\n\r\nSimply click the checkmark or trash icon to sort the emails into their appropriate categories.\r\n\r\nPlease take some time to get familiarized with our company's email system and filtering policies:\r\n\r\nAny emails from our team @smallsoft.comp should be passed. You should also pass emails from senders who are collaborating with our team members. It is also critical that these types of emails are passed to prevent interruption of productivity. We will be monitoring your performance - if too many important emails get rejected, we will \"pull the plug\" on your employment. This is your only job here at smallsoft, and we need you to do it right!\r\n\r\nAny other kinds of emails (with few exceptions) should be trashed to prevent compromises of our systems and maintain free space on the server. As a burgeoning company, our server real estate is limited, so overloading our servers will not only lose us business but may crash our mainframe systems.\r\n\r\nIf you have any questions or need any assistance, do not hesitate to reach out to me or the IT department. Once again, welcome to the team! We are thrilled to have you aboard!\r\n\r\nYou will begin work immediately after passing this email.\r\n\r\nGood luck,\r\n\r\nThe Administrator"
+  ]
+}

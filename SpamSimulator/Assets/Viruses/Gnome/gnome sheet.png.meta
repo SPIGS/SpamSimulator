@@ -1,0 +1,1323 @@
+fileFormatVersion: 2
+guid: 783c86b247eef9a4da18761eac390adf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gnome sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b7cdabdceb65843a38da7c22fff90e
+      internalID: -1166550755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_1
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 3200
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0e5bc467cc28949b3ef66f49b4c84c
+      internalID: 1488545234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 3200
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273a8593b83c139449229913d98d11bc
+      internalID: -1411124072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 3200
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913ce4f0e9afc04498f74b07778c2db6
+      internalID: 1187212265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 3200
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c3f8fb6bf16704180565640a75a8aa
+      internalID: -617812933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 3200
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9a2885eece828488c577560d86e34b
+      internalID: -1833581725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2800
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24bc9dc16417e34093125aed26a99a4
+      internalID: 1357528341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_7
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 2800
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d1d78ec668001418069d8c695057f3
+      internalID: 2038745082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 2800
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49f754719eeb74479a15b2244a67560
+      internalID: 606630301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 2800
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00db1666792918444b416678997aed7a
+      internalID: 1541429258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 2800
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35796941e7af25b40a18957ffc31e274
+      internalID: -1005133218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 2800
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f692a516ca7d9be48893ba49e29c9c10
+      internalID: 1668548449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe2cf4c98d796b478e1316f28ff5b64
+      internalID: 479747448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_13
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 2400
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e3e212b00599749820b3ebe3c3d4fb
+      internalID: -1553778772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 2400
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bc3b7e3eef81d40842ec295fb8f11e
+      internalID: -460024076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 2400
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8cc9c2897a0cec4c9533499da2a0f8b
+      internalID: -1998247493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 2400
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9572b5ae83801a4c83641fa84d61f23
+      internalID: -605089479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 2400
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b7c46c34ca2054393f7d56e82790af
+      internalID: 51343990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3eb2dc1bec1db47b80ac1270c0357e
+      internalID: 985187985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_19
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 2000
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71ce654e5dabd64bb94375b1fe49e0e
+      internalID: 2133538449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 2000
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbe769dfc79d3e469fd05735fe1945d
+      internalID: 641972239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 2000
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdaa93523d6bc40468c95d5279f0a305
+      internalID: 2105892966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 2000
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd04118cd544474dbf8c2b82aebad40
+      internalID: -2021877749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 2000
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6897f993eefef2443a263de28d2ea687
+      internalID: 1970580607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a863e4dcf8e165b4b9c38c9795c94c85
+      internalID: 2006528467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_25
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1600
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d28ed1fae70834584390a6422aa08f
+      internalID: -951339745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 1600
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acff9ae1378af784b95d5b22dd40fa60
+      internalID: -998095629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 1600
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c39f9448b206f4884799f3de469343
+      internalID: 463787400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 1600
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b57a965ed9042e42ba55f71a6cdad11
+      internalID: -2051181376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 1600
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d175a39f52c5db4386eb04282fbfab3
+      internalID: -1235064784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8fc69307969951488742118f51f97eb
+      internalID: -1222883558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_31
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1200
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839c2a249a5eaa24493960be57e63986
+      internalID: -1220933024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 1200
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48700d02112c95746a090d5a76ab852a
+      internalID: -1877121924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 1200
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a4968b97e53534f9ab7e690eb42b55
+      internalID: -1200769574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 1200
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74719f4f31ec9ac44b81d255fddf0fe1
+      internalID: -388135437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_35
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 1200
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d08464f69dabfa478685896c6b599f2
+      internalID: 465394432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0292bd069cbbe194096ca6287c871b38
+      internalID: 761068742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_37
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 800
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24980c1fe03cd640aa46eb1ad43ae95
+      internalID: 63812079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 800
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99186631e3e0d6040a6bea5cd1f4143c
+      internalID: 1284045582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 800
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b7a28bd99a91045bdd62fbe6fb15cd
+      internalID: -506222648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_40
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 800
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6726e1b3d2628c94caf7abb548736dca
+      internalID: 1109325275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_41
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 800
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7852813c48479488f192a054cc7dfa
+      internalID: -1230113621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7df03ebc6c51ef4581188b2f987fd63
+      internalID: -1808074498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_43
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 400
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358b31fa15375e34990213b085f94885
+      internalID: -1651018989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 400
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc39907d1aef8747b1877cfc9438dec
+      internalID: 1649544678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 400
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d174803f02e6be243a4ba0b51fb48dbe
+      internalID: -1133732833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 400
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95eabe5ee55c41741a1624cbc7b3fe26
+      internalID: 481055450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_47
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 400
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8164c791dbbe2a340a462a433e193993
+      internalID: -330791154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b8071f493ef044a9b6d9c8712cfad7
+      internalID: -559929837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_49
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 0
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d142630fcceaa4d9cba49826034e43
+      internalID: 996533287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 0
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460ecb4d08c891449ad918c474dd6efb
+      internalID: 236131214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 0
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744ca0a089a38b64ca88e034a05865e2
+      internalID: 497689477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 0
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394a0b24e9765634aaf41d26e1043ed8
+      internalID: 286219757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome sheet_53
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 0
+        width: 652
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e6e12baf5d4754d97f85fb6045ccbd
+      internalID: -532219331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      gnome sheet_0: -1166550755
+      gnome sheet_1: 1488545234
+      gnome sheet_10: -1005133218
+      gnome sheet_11: 1668548449
+      gnome sheet_12: 479747448
+      gnome sheet_13: -1553778772
+      gnome sheet_14: -460024076
+      gnome sheet_15: -1998247493
+      gnome sheet_16: -605089479
+      gnome sheet_17: 51343990
+      gnome sheet_18: 985187985
+      gnome sheet_19: 2133538449
+      gnome sheet_2: -1411124072
+      gnome sheet_20: 641972239
+      gnome sheet_21: 2105892966
+      gnome sheet_22: -2021877749
+      gnome sheet_23: 1970580607
+      gnome sheet_24: 2006528467
+      gnome sheet_25: -951339745
+      gnome sheet_26: -998095629
+      gnome sheet_27: 463787400
+      gnome sheet_28: -2051181376
+      gnome sheet_29: -1235064784
+      gnome sheet_3: 1187212265
+      gnome sheet_30: -1222883558
+      gnome sheet_31: -1220933024
+      gnome sheet_32: -1877121924
+      gnome sheet_33: -1200769574
+      gnome sheet_34: -388135437
+      gnome sheet_35: 465394432
+      gnome sheet_36: 761068742
+      gnome sheet_37: 63812079
+      gnome sheet_38: 1284045582
+      gnome sheet_39: -506222648
+      gnome sheet_4: -617812933
+      gnome sheet_40: 1109325275
+      gnome sheet_41: -1230113621
+      gnome sheet_42: -1808074498
+      gnome sheet_43: -1651018989
+      gnome sheet_44: 1649544678
+      gnome sheet_45: -1133732833
+      gnome sheet_46: 481055450
+      gnome sheet_47: -330791154
+      gnome sheet_48: -559929837
+      gnome sheet_49: 996533287
+      gnome sheet_5: -1833581725
+      gnome sheet_50: 236131214
+      gnome sheet_51: 497689477
+      gnome sheet_52: 286219757
+      gnome sheet_53: -532219331
+      gnome sheet_6: 1357528341
+      gnome sheet_7: 2038745082
+      gnome sheet_8: 606630301
+      gnome sheet_9: 1541429258
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

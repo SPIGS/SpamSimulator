@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Urgent Request for Sales Report",
+  "Sender": "alice@smallsoft.comp",
+  "SenderName": "Alice",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Dear Team,\r\n\r\nI am in urgent need of the sales report for the last quarter. Can someone please send me the latest copy of the report by end of the day? We have an important meeting tomorrow and I need the data to prepare the presentation.\r\n\r\nThank you in advance for your cooperation.\r\n\r\nBest regards,\r\nAlice"
+  ]
+}

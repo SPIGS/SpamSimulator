@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "New product release",
+  "Sender": "jane@bigsoft.comp",
+  "SenderName": "Jane",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hello,\r\n\r\nI hope this email finds you well. I wanted to let you know that we will be releasing a new product next month. This product will be a direct competitor to one of your products, and I wanted to give you a heads up before we announce it publicly. I hope that our companies can continue to compete in a fair and respectful manner.\r\n\r\nBest regards,\r\nJane"
+  ]
+}

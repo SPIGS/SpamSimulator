@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="WindowTitlebar" src="project://database/Assets/GUI/Modal%20Windows/WindowTitlebar.uxml?fileID=9197481963319205126&amp;guid=8c5717db815e72a12b2ddb6d6a8abbbb&amp;type=3#WindowTitlebar" />
+    <Style src="project://database/Assets/GUI/Styles/WindowModal.uss?fileID=7433441132597879392&amp;guid=8ce807b5deaa0ed708f31bc6d07a295a&amp;type=3#WindowModal" />
+    <ui:VisualElement name="VirusPopup" class="window-pane" style="position: relative; flex-grow: 1;">
+        <ui:Instance template="WindowTitlebar" name="WindowTitlebar" />
+        <ui:VisualElement style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+            <ui:VisualElement name="Image" style="background-image: url(&apos;project://database/Assets/Images/spamsoft%20window%20icon.png?fileID=2800000&amp;guid=006c1f2dd29d3851e9d7e5f7f521222a&amp;type=3#spamsoft window icon&apos;); width: 250px; height: 250px; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

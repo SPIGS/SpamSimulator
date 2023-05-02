@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/GUI/Styles/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=521bf7393d89ac74baa331aa3a6d696d&amp;type=3#GeneralStyle" />
+    <Style src="project://database/Assets/GUI/Styles/scaler.uss?fileID=7433441132597879392&amp;guid=8c16d175bfeee7344a448ebb32324540&amp;type=3#scaler" />
+    <Style src="project://database/Assets/GUI/Styles/Fonts.uss?fileID=7433441132597879392&amp;guid=12d01be755bd86d45aa749ecdc63a3a6&amp;type=3#Fonts" />
+    <ui:Button name="MainItemButton" class="gray-button-outer" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; flex-grow: 1;">
+        <ui:VisualElement class="gray-button-inner" style="flex-grow: 1;">
+            <ui:VisualElement style="flex-direction: row; flex-grow: 1;">
+                <ui:VisualElement name="InboxItemInfoContainer" style="flex-grow: 1; align-items: flex-start; justify-content: flex-start;">
+                    <ui:VisualElement name="FromContainer" style="width: 100%; flex-direction: row; flex-grow: 1;">
+                        <ui:Label text="From:" display-tooltip-when-elided="true" name="FromTitle" class="font-scale system-font" style="font-size: 24px;" />
+                        <ui:Label text="Administrator" display-tooltip-when-elided="true" name="FromLabel" class="font-scale system-font" style="font-size: 24px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="SubjectContainer" style="width: 100%; flex-direction: row; flex-grow: 1;">
+                        <ui:Label text="Subject:" display-tooltip-when-elided="true" name="SubjectTitle" class="font-scale system-font" style="font-size: 24px;" />
+                        <ui:Label text="You&apos;ve got mail!" display-tooltip-when-elided="true" name="SubjectLabel" class="font-scale system-font" style="font-size: 24px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-direction: row; align-items: center; min-width: 62px;">
+                    <ui:Button display-tooltip-when-elided="true" name="PassButton" text=" " class="pass-button gray-icon-button-outer" style="flex-shrink: 1; margin-left: 0; margin-right: 5px; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; align-items: center; justify-content: center; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; flex-direction: column; width: 24px; height: 24px;">
+                        <ui:VisualElement class="gray-icon-button-inner" style="flex-grow: 1; width: 100%; align-items: center; justify-content: center; height: auto;">
+                            <ui:VisualElement name="PassIcon" style="width: 100%; height: auto; background-image: url(&apos;project://database/Assets/Images/email%20good.png?fileID=2800000&amp;guid=2c728686c15d181509e3d0dfd89f8ef2&amp;type=3#email good&apos;); flex-grow: 1;" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="TrashButton" class="gray-icon-button-outer" style="flex-shrink: 1; margin-left: 0; margin-right: 5px; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; align-items: center; justify-content: center; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; width: 24px; height: 24px;">
+                        <ui:VisualElement class="gray-icon-button-inner" style="flex-grow: 1; align-items: center; justify-content: center; width: 100%;">
+                            <ui:VisualElement name="TrashIcon" style="background-image: url(&apos;project://database/Assets/Images/delete%20email.png?fileID=2800000&amp;guid=3dbea668cffcfa74db92b65f3577d89b&amp;type=3#delete email&apos;); flex-grow: 1; width: 100%;" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:Button>
+</ui:UXML>

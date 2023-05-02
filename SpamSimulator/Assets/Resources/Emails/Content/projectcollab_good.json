@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Project status update",
+  "Sender": "alice@smallsoft.comp",
+  "SenderName": "Alice",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi team,\r\n\r\nI wanted to provide an update on the project status. Our team has made significant progress and we're currently ahead of schedule. However, we're still waiting on some deliverables from our partners at Second Choice, so we need to keep pushing them to get those to us on time. I'll follow up with them again this week.\r\n\r\nLet me know if you have any questions or concerns.\r\n\r\nBest,\r\nAlice"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Img_UI.uxml",
+  "Subject": "Check it out...",
+  "Sender": "reelman@smellsuft.cump",
+  "SenderName": "R.M.",
+  "IsSpam": true,
+  "ImageFiles": [
+    "smallsoft widgets.jpg"
+  ],
+  "Headers": [],
+  "Paragraphs": []
+}

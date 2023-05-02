@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Meeting with Second Choice",
+  "Sender": "bob@smallsoft.comp",
+  "SenderName": "Bob",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi team,\r\n\r\nI just wanted to let you know that I have a meeting scheduled with our partners at Second Choice this afternoon. We'll be going over the latest updates on the joint project and discussing next steps. If there's anything specific you'd like me to bring up in the meeting, please let me know.\r\n\r\nThanks,\r\nBob"
+  ]
+}

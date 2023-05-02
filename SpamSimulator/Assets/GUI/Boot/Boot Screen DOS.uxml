@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/GUI/Styles/BlueScreen.uss?fileID=7433441132597879392&amp;guid=aa455f70d949cc9539f11b6f1c7fa327&amp;type=3#BlueScreen" />
+    <Style src="project://database/Assets/GUI/Styles/scaler.uss?fileID=7433441132597879392&amp;guid=8c16d175bfeee7344a448ebb32324540&amp;type=3#scaler" />
+    <Style src="project://database/Assets/GUI/Styles/Fonts.uss?fileID=7433441132597879392&amp;guid=12d01be755bd86d45aa749ecdc63a3a6&amp;type=3#Fonts" />
+    <ui:VisualElement name="BootScreen" style="background-color: rgb(0, 0, 0); width: 100%; height: 100%; visibility: visible; position: absolute;">
+        <ui:Label text="Starting Spam Simulator" display-tooltip-when-elided="true" name="StartLabel" class="boot-screen-text font-scale-large system-font" />
+        <ui:Label text="Testing extended memory" display-tooltip-when-elided="true" name="TestingLabel" class="boot-screen-text font-scale-large system-font" style="visibility: hidden;" />
+        <ui:Label text="Reading operating system" display-tooltip-when-elided="true" name="DoneLabel" class="boot-screen-text font-scale-large system-font" style="visibility: hidden;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="SplashScreen" style="width: 100%; height: 100%; position: absolute; background-image: url(&apos;project://database/Assets/Images/unpixel%20splash%20screen.jpg?fileID=2800000&amp;guid=4205527ca025afa0ea2a79642b293734&amp;type=3#unpixel splash screen&apos;); visibility: visible;" />
+    <ui:VisualElement name="Spinner" style="background-color: rgb(40, 41, 79); width: 350px; height: 2%; position: absolute; bottom: 0; visibility: hidden;" />
+</ui:UXML>

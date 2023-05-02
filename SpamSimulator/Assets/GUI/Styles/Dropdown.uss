@@ -1,0 +1,37 @@
+.dropdown {
+    -unity-font: url('project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#Arial');
+    color: rgb(0, 0, 0);
+    background-color: rgb(196, 196, 196);
+    font-size: 24px;
+    border-right-color: rgb(0, 0, 0);
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+}
+
+.dropdown-button {
+    font-size: 24px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgb(196, 196, 196);
+    color: rgb(0, 0, 0);
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}

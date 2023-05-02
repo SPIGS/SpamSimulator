@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/GUI/Styles/Email%20Container.uss?fileID=7433441132597879392&amp;guid=de3baff19c89db94cac454dd67fb2905&amp;type=3#Email Container" />
+    <Style src="project://database/Assets/GUI/Styles/Fonts.uss?fileID=7433441132597879392&amp;guid=12d01be755bd86d45aa749ecdc63a3a6&amp;type=3#Fonts" />
+    <Style src="project://database/Assets/GUI/Styles/scaler.uss?fileID=7433441132597879392&amp;guid=8c16d175bfeee7344a448ebb32324540&amp;type=3#scaler" />
+    <Style src="project://database/Assets/GUI/Styles/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=521bf7393d89ac74baa331aa3a6d696d&amp;type=3#GeneralStyle" />
+    <ui:VisualElement name="Container" style="flex-grow: 1;">
+        <ui:VisualElement name="EmailHeader" class="white">
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:Label text="From: " display-tooltip-when-elided="true" class="font-scale system-font gray" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+                <ui:Label text="Label" display-tooltip-when-elided="true" name="EmailHeaderFrom" class="gray font-scale system-font" style="flex-grow: 1; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:Label text="Subject: " display-tooltip-when-elided="true" class="font-scale system-font gray" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+                <ui:Label text="Label" display-tooltip-when-elided="true" name="EmailHeaderSubject" class="gray font-scale system-font" style="flex-grow: 1; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:ScrollView mouse-wheel-scroll-size="1000" class="white" style="flex-grow: 1;">
+            <ui:VisualElement name="EmailContent" class="email-container" style="padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px; align-items: center; flex-grow: 1; height: auto;">
+                <ui:VisualElement name="Img_Container" style="-unity-background-scale-mode: scale-to-fit; align-items: center; overflow: hidden;">
+                    <ui:VisualElement name="Image" style="background-image: url(&apos;project://database/Assets/Emails/Images/rotatingspam.gif?fileID=2800000&amp;guid=896f46ceae8382147a7b12e418832395&amp;type=3#rotatingspam&apos;); -unity-background-scale-mode: scale-to-fit; width: 100px; height: 100px;" />
+                </ui:VisualElement>
+                <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." display-tooltip-when-elided="true" name="Paragraph" class="email-font font-scale" style="white-space: normal; padding-top: 16px; padding-bottom: 16px;" />
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

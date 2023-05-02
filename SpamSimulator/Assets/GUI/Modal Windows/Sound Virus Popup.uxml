@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="WindowTitlebar" src="project://database/Assets/GUI/Modal%20Windows/WindowTitlebar.uxml?fileID=9197481963319205126&amp;guid=8c5717db815e72a12b2ddb6d6a8abbbb&amp;type=3#WindowTitlebar" />
+    <Style src="project://database/Assets/GUI/Styles/WindowModal.uss?fileID=7433441132597879392&amp;guid=8ce807b5deaa0ed708f31bc6d07a295a&amp;type=3#WindowModal" />
+    <Style src="project://database/Assets/GUI/Styles/Fonts.uss?fileID=7433441132597879392&amp;guid=12d01be755bd86d45aa749ecdc63a3a6&amp;type=3#Fonts" />
+    <Style src="project://database/Assets/GUI/Styles/scaler.uss?fileID=7433441132597879392&amp;guid=8c16d175bfeee7344a448ebb32324540&amp;type=3#scaler" />
+    <ui:VisualElement name="VirusPopup" class="window-pane" style="position: relative; flex-grow: 1;">
+        <ui:Instance template="WindowTitlebar" name="WindowTitlebar" />
+        <ui:VisualElement style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; flex-direction: column;">
+            <ui:VisualElement style="background-image: none; width: auto; height: auto; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; flex-direction: row;">
+                <ui:VisualElement style="width: 75%; justify-content: center; align-items: center;">
+                    <ui:Label text="Thank you for installing the Wizard&apos;s Wacky System Sounds! We hope you enjoy your new upgraded experience!" display-tooltip-when-elided="true" class="system-font font-scale" style="color: rgb(0, 0, 0); -unity-text-align: middle-center; white-space: normal; flex-shrink: 1; width: auto;" />
+                    <ui:Label text="Copyright 19XX by Wizzkid Technologies Inc." display-tooltip-when-elided="true" class="system-font font-scale" style="-unity-text-align: upper-center; white-space: normal; color: rgb(0, 0, 0);" />
+                </ui:VisualElement>
+                <ui:VisualElement style="width: 25%; align-items: center; justify-content: center;">
+                    <ui:VisualElement name="Image" style="background-image: url(&apos;project://database/Assets/Images/Wizard.png?fileID=2800000&amp;guid=b2b8dcd552ea9b687a8185221da0bfc1&amp;type=3#Wizard&apos;); width: 50%; height: 150px; flex-grow: 1; justify-content: center; align-items: center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

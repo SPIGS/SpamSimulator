@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Conference next week",
+  "Sender": "cindy@smallsoft.comp",
+  "SenderName": "Cindy",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi Jack,\r\n\r\nI hope this email finds you well. I wanted to touch base about the conference next week. Are you still planning on attending? If so, we should coordinate travel arrangements and schedule some time to go over our joint project. Let me know if you're available for a call later this week.\r\n\r\nThanks,\r\nCindy"
+  ]
+}

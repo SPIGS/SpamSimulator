@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Unusual sighting in the break room",
+  "Sender": "lisa@smallsoft.comp",
+  "SenderName": "Lisa",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi team,\r\n\r\nI just wanted to give everyone a heads up about an unusual sighting I had in the break room this morning. I'm not sure if it was a rat or a large mouse, but it was definitely not a common sight around here. I've already let the facilities team know, but please be careful when using the break room until they can investigate and address the situation.\r\n\r\nThanks,\r\nLisa"
+  ]
+}

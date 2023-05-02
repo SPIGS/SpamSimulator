@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Meeting Recap",
+  "Sender": "jack@bigsoft.comp",
+  "SenderName": "Jack",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hi Alice,\r\n\r\nI wanted to thank you and your team for meeting with us yesterday. Overall, I thought it was productive and we made some good progress. That being said, I'm sorry about what happened with Tom. It was definitely an uncomfortable situation for everyone involved. I hope it doesn't jeopardize our collaboration moving forward. Let me know if you have any concerns.\r\n\r\nBest regards,\r\nJack"
+  ]
+}

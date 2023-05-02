@@ -1,0 +1,12 @@
+{
+  "Template": "ET_Txt_UI.uxml",
+  "Subject": "Strange smell in the break room",
+  "Sender": "tom@smallsoft.comp",
+  "SenderName": "Tom",
+  "IsSpam": false,
+  "ImageFiles": [],
+  "Headers": [],
+  "Paragraphs": [
+    "Hey everyone,\r\n\r\nHas anyone else noticed a strange smell in the break room? It smells kind of like burnt popcorn mixed with something else that I can't quite place. I looked around but I couldn't find anything that could be causing it. If anyone knows what's going on, please let me know. Thanks!\r\n\r\nBest,\r\nTom"
+  ]
+}
