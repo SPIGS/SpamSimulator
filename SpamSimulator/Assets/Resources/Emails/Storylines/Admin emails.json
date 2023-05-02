@@ -1,7 +1,7 @@
 {
   "Name": "Admin Emails",
   "Storyline": [
-    "intro_ADMIN.json",
-    "viruses_ADMIN.json"
+    "intro_ADMIN",
+    "viruses_ADMIN"
   ]
 }
