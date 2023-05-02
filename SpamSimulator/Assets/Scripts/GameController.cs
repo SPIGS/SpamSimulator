@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     public StoryController storyController;
     public EmailController emailController;
     public VirusController virusController;
+    public SoundController soundController;
     public int[] adminEmailCounters;
     public int score = 0;
     public int strikes = 0;
@@ -172,6 +173,7 @@ public class GameController : MonoBehaviour
     {
         UpdateScore(-1);
         UpdateStrikes(1);
+        soundController.PlaySoundEffect("Error");
     }
 
     public void OnPassGoodEmail()
@@ -188,6 +190,7 @@ public class GameController : MonoBehaviour
             int choice = Random.Range(0, 4);
             virusController.CreateAndTriggerVirus((VirusType)choice);
         }
+        soundController.PlaySoundEffect("Error");
     }
 
     public void OnDeleteBadEmail()

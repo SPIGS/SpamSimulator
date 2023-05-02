@@ -23,6 +23,7 @@ public class BlueScreenController : MonoBehaviour
     private Option currentOption = Option.NEW_GAME;
 
     void Start() {
+        UnityEngine.Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
         root = uiDocument.rootVisualElement;
 
         scoreLabel = root.Q<Label>("Score");
